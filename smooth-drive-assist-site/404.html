@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Not Found – Smooth Drive Assist</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <span>Smooth Drive Assist</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+        <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+        <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+      </nav>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+    <a href="index.html#pricing" class="nav-link">Pricing</a>
+    <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+    <a href="index.html#faq" class="nav-link">FAQ</a>
+    <a href="index.html#contact" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+
+  <main id="main">
+    <section class="error-page">
+      <div class="container">
+        <div class="error-content">
+          <span class="error-code">404</span>
+          <h1 class="text-headline">Page not found</h1>
+          <p class="text-body-lg">Sorry, we couldn't find the page you're looking for.</p>
+          <a href="index.html" class="btn btn-primary btn-lg">Back to Home</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2024 Smooth Drive Assist, LLC. All rights reserved.</span>
+        <div class="footer-legal"><a href="privacy.html" class="footer-link">Privacy</a><a href="terms.html" class="footer-link">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => { const isOpen = mobileNav.classList.toggle('open'); menuToggle.setAttribute('aria-expanded', isOpen); });
+    mobileNav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileNav.classList.remove('open'); menuToggle.setAttribute('aria-expanded', 'false'); }); });
+  </script>
+</body>
+</html>

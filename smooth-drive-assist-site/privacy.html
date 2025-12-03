@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – Smooth Drive Assist</title>
+  <meta name="description" content="Privacy Policy for Smooth Drive Assist driver-assist installation services in Austin, Texas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <span>Smooth Drive Assist</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+        <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+        <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+      </nav>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+    <a href="index.html#pricing" class="nav-link">Pricing</a>
+    <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+    <a href="index.html#faq" class="nav-link">FAQ</a>
+    <a href="index.html#contact" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+
+  <main id="main">
+    <section class="legal-hero">
+      <div class="container">
+        <h1 class="text-headline">Privacy <span class="text-gradient">Policy</span></h1>
+        <p class="text-caption">Last updated: November 27, 2024</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container legal-content">
+        <h2>Introduction</h2>
+        <p>Smooth Drive Assist, LLC ("we," "our," or "us") respects your privacy. This Privacy Policy explains how we collect, use, and protect your personal information when you use our website or services.</p>
+
+        <h2>Information We Collect</h2>
+        <p>We may collect the following information:</p>
+        <ul><li><strong>Contact information:</strong> Name, email address, phone number</li><li><strong>Vehicle information:</strong> Make, model, year, and configuration details</li><li><strong>Scheduling information:</strong> Preferred install dates and times</li><li><strong>Communications:</strong> Messages you send us through our contact form or email</li></ul>
+
+        <h2>How We Use Your Information</h2>
+        <ul><li>To confirm vehicle compatibility and schedule installations</li><li>To communicate with you about your install or support requests</li><li>To process payments and deposits</li><li>To improve our services</li></ul>
+
+        <h2>Information Sharing</h2>
+        <p>We do not sell your personal information. We may share information with:</p>
+        <ul><li>Payment processors to complete transactions</li><li>Service providers who assist our operations</li><li>As required by law or to protect our rights</li></ul>
+
+        <h2>Data Security</h2>
+        <p>We use reasonable measures to protect your personal information from unauthorized access, use, or disclosure.</p>
+
+        <h2>Your Rights</h2>
+        <p>You may request access to, correction of, or deletion of your personal information by contacting us at <a href="mailto:hello@smoothdriveassist.com">hello@smoothdriveassist.com</a>.</p>
+
+        <h2>Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated date.</p>
+
+        <h2>Contact Us</h2>
+        <p>If you have questions about this Privacy Policy, contact us at:<br><a href="mailto:hello@smoothdriveassist.com">hello@smoothdriveassist.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <span>&copy; 2024 Smooth Drive Assist, LLC. All rights reserved.</span>
+        <div class="footer-legal"><a href="privacy.html" class="footer-link">Privacy</a><a href="terms.html" class="footer-link">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 50); });
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => { const isOpen = mobileNav.classList.toggle('open'); menuToggle.setAttribute('aria-expanded', isOpen); });
+    mobileNav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { mobileNav.classList.remove('open'); menuToggle.setAttribute('aria-expanded', 'false'); }); });
+  </script>
+</body>
+</html>

@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Drive Assist — Professional Driver-Assist Installation in Austin</title>
+  <meta name="description" content="Transform your daily commute with professional openpilot installation. Expert installation in Austin, Texas. Make driving chill.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <meta property="og:title" content="Smooth Drive Assist — Make Driving Chill">
+  <meta property="og:description" content="Professional openpilot installation in Austin, Texas.">
+  <meta property="og:image" content="https://smoothdriveassist.com/og-image.svg">
+  <meta property="og:url" content="https://smoothdriveassist.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Smooth Drive Assist","description":"Professional openpilot installation services in Austin, Texas","url":"https://smoothdriveassist.com","email":"hello@smoothdriveassist.com","areaServed":"Austin, Texas","priceRange":"$$$"}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What vehicles are supported?","acceptedAnswer":{"@type":"Answer","text":"We support 250+ vehicle models from Toyota, Honda, Hyundai, Kia, and many more."}},{"@type":"Question","name":"How long does installation take?","acceptedAnswer":{"@type":"Answer","text":"Most installations take 2-4 hours depending on your specific vehicle."}},{"@type":"Question","name":"Is this legal?","acceptedAnswer":{"@type":"Answer","text":"Yes. openpilot is a driver-assist system, not autonomous driving. You remain responsible for the vehicle at all times."}},{"@type":"Question","name":"What's included in the $3,000?","acceptedAnswer":{"@type":"Answer","text":"Everything: the comma 3X device with openpilot pre-installed, your vehicle-specific harness, professional installation, calibration, testing, and training."}}]}
+  </script>
+</head>
+<body class="loading">
+  <!-- Page Loader -->
+  <div class="page-loader" id="pageLoader">
+    <div class="loader-content">
+      <div class="loader-logo">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+      </div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+  <!-- Cookie Consent -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p>We use cookies to improve your experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+    <div class="cookie-buttons">
+      <button type="button" class="btn btn-secondary btn-sm" id="cookieDecline">Decline</button>
+      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept">Accept</button>
+    </div>
+  </div>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span>Smooth Drive Assist</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#why-openpilot" class="nav-link">Why openpilot</a>
+        <a href="#how-it-works" class="nav-link">How It Works</a>
+        <a href="#pricing" class="nav-link">Pricing</a>
+        <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+        <a href="#faq" class="nav-link">FAQ</a>
+        <a href="#contact" class="btn btn-primary">Get Started</a>
+      </nav>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="#why-openpilot" class="nav-link">Why openpilot</a>
+    <a href="#how-it-works" class="nav-link">How It Works</a>
+    <a href="#pricing" class="nav-link">Pricing</a>
+    <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+    <a href="#faq" class="nav-link">FAQ</a>
+    <a href="#contact" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+  <main id="main">
+    <section class="hero">
+      <div class="hero-bg">
+        <div class="hero-gradient-1"></div>
+        <div class="hero-gradient-2"></div>
+        <div class="hero-gradient-3"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+      </div>
+      <div class="hero-content">
+        <div class="hero-badge"><span class="hero-badge-dot"></span><span>Now serving Austin, Texas</span></div>
+        <h1 class="text-display">Make driving <span class="text-gradient">chill</span></h1>
+        <p class="hero-subtitle">Professional openpilot installation. Transform your daily commute with advanced driver-assist technology.</p>
+        <div class="hero-ctas">
+          <a href="#contact" class="btn btn-primary btn-lg btn-glow">Book Your Install</a>
+          <a href="#demo" class="btn btn-secondary btn-lg"><span class="play-icon">▶</span> Watch Demo</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat"><div class="hero-stat-value" data-count="300">0</div><div class="hero-stat-label">Million miles driven</div></div>
+          <div class="hero-stat"><div class="hero-stat-value" data-count="250">0</div><div class="hero-stat-label">Supported vehicles</div></div>
+          <div class="hero-stat"><div class="hero-stat-value">$3,000</div><div class="hero-stat-label">Complete install</div></div>
+        </div>
+
+      </div>
+      <div class="hero-scroll-hint">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- Demo Video Section -->
+    <section class="section demo-section" id="demo">
+      <div class="container">
+        <div class="demo-header animate-on-scroll">
+          <h2 class="text-headline">See openpilot in action</h2>
+          <p class="text-body-lg">Watch how openpilot handles real-world highway driving</p>
+        </div>
+        <div class="video-container animate-on-scroll">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/NmBfgOanCyk?rel=0" title="openpilot demo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen loading="lazy"></iframe>
+          </div>
+          <div class="video-caption">openpilot driving on highway — hands-free lane centering and adaptive cruise</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why openpilot Section -->
+    <section class="section why-section" id="why-openpilot">
+      <div class="container">
+        <div class="why-header animate-on-scroll">
+          <h2 class="text-headline">Why choose <span class="text-gradient">openpilot</span>?</h2>
+          <p class="text-body-lg">The most advanced open-source driver assistance system available</p>
+        </div>
+        <div class="why-grid stagger-children">
+          <div class="card why-card">
+            <div class="why-icon">🧠</div>
+            <h3>Smarter Than Factory</h3>
+            <p>openpilot uses cutting-edge AI trained on billions of miles. It often outperforms factory ADAS systems in real-world conditions.</p>
+          </div>
+          <div class="card why-card">
+            <div class="why-icon">🔄</div>
+            <h3>Always Improving</h3>
+            <p>Regular software updates add new features and improvements. Your system gets better over time, unlike static factory systems.</p>
+          </div>
+          <div class="card why-card">
+            <div class="why-icon">🛣️</div>
+            <h3>Highway Autopilot</h3>
+            <p>Smooth lane centering and adaptive cruise control. Makes highway driving relaxing instead of exhausting.</p>
+          </div>
+          <div class="card why-card">
+            <div class="why-icon">🚗</div>
+            <h3>Works With Your Car</h3>
+            <p>Compatible with 250+ vehicle models. Likely works with the car you already own — no need to buy a Tesla.</p>
+          </div>
+          <div class="card why-card">
+            <div class="why-icon">💰</div>
+            <h3>One-Time Cost</h3>
+            <p>No monthly subscriptions required. Pay once and enjoy the technology forever with free software updates.</p>
+          </div>
+          <div class="card why-card">
+            <div class="why-icon">🔓</div>
+            <h3>Open Source</h3>
+            <p>Built by a passionate community. Transparent, auditable code that you can trust with your safety.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Comparison Table -->
+    <section class="section comparison-section" id="compare">
+      <div class="container">
+        <div class="comparison-header animate-on-scroll">
+          <h2 class="text-headline">How does it compare?</h2>
+          <p class="text-body-lg">See how openpilot stacks up against other systems</p>
+        </div>
+        <div class="comparison-table-wrapper animate-on-scroll">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Feature</th>
+                <th class="highlight">openpilot</th>
+                <th>Tesla Autopilot</th>
+                <th>Factory ADAS</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Lane Centering</td><td class="highlight">✓ Excellent</td><td>✓ Excellent</td><td>△ Basic</td></tr>
+              <tr><td>Adaptive Cruise</td><td class="highlight">✓ Smooth</td><td>✓ Good</td><td>✓ Good</td></tr>
+              <tr><td>Stop & Go Traffic</td><td class="highlight">✓ Full support</td><td>✓ Full support</td><td>△ Limited</td></tr>
+              <tr><td>Software Updates</td><td class="highlight">✓ Frequent</td><td>✓ Regular</td><td>✗ Rare</td></tr>
+              <tr><td>Works on 250+ cars</td><td class="highlight">✓ Yes</td><td>✗ Tesla only</td><td>✗ One brand</td></tr>
+              <tr><td>Open Source</td><td class="highlight">✓ Yes</td><td>✗ No</td><td>✗ No</td></tr>
+              <tr><td>Monthly Fee</td><td class="highlight">✓ None</td><td>$99-199/mo</td><td>✓ None</td></tr>
+              <tr><td>Upfront Cost</td><td class="highlight">$3,000</td><td>$8,000-15,000</td><td>Included</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <section class="section features" id="how-it-works">
+      <div class="container">
+        <div class="features-header animate-on-scroll">
+          <h2 class="text-headline">How it works</h2>
+          <p class="text-body-lg">From first contact to hitting the road, we make the process seamless.</p>
+        </div>
+        <div class="features-grid stagger-children">
+          <div class="card feature-card card-glow"><div class="feature-number">1</div><h3>Check Compatibility</h3><p>Verify your vehicle is supported and reach out to schedule your install.</p></div>
+          <div class="card feature-card card-glow"><div class="feature-number">2</div><h3>Pay Deposit</h3><p>$1,500 deposit to book your slot. We order your vehicle-specific harness.</p></div>
+          <div class="card feature-card card-glow"><div class="feature-number">3</div><h3>Drop Off</h3><p>Bring your car to our Austin location. Pay remaining $1,500 at drop-off.</p></div>
+          <div class="card feature-card card-glow"><div class="feature-number">4</div><h3>Drive Away</h3><p>Pick up your car with a fully installed and calibrated system, ready to go.</p></div>
+        </div>
+      </div>
+    </section>
+    <section class="section pricing" id="pricing">
+      <div class="container">
+        <div class="pricing-header animate-on-scroll">
+          <h2 class="text-headline">Simple, transparent pricing</h2>
+          <p class="text-body-lg">Everything you need to upgrade your driving experience.</p>
+        </div>
+        <div class="pricing-cards stagger-children">
+          <div class="card pricing-card featured">
+            <div class="pricing-card-header">
+              <div class="pricing-card-title">Complete Installation</div>
+              <div class="pricing-card-price">$3,000</div>
+              <div class="pricing-card-desc">One-time payment (split into two $1,500 payments)</div>
+            </div>
+            <ul class="pricing-features">
+              <li>comma 3X device included</li><li>Vehicle-specific harness</li><li>openpilot software pre-installed</li>
+              <li>System calibration & testing</li><li>Hands-on training session</li><li>30-day support included</li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Book Installation</a>
+          </div>
+          <div class="card pricing-card">
+            <div class="pricing-card-header">
+              <div class="pricing-card-title">Monthly Support</div>
+              <div class="pricing-card-price">$100<span>/month</span></div>
+              <div class="pricing-card-desc">Optional ongoing support plan</div>
+            </div>
+            <ul class="pricing-features">
+              <li>Priority support access</li><li>Software update assistance</li><li>Troubleshooting help</li>
+              <li>Hardware check-ups</li><li>Cancel anytime</li>
+            </ul>
+            <a href="#contact" class="btn btn-secondary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Install Day -->
+    <section class="section install-day" id="install-day">
+      <div class="container">
+        <div class="install-day-header animate-on-scroll">
+          <h2 class="text-headline">What to expect on install day</h2>
+          <p class="text-body-lg">A smooth, professional experience from start to finish.</p>
+        </div>
+        <div class="install-timeline animate-on-scroll">
+          <div class="timeline-item"><div class="timeline-marker">1</div><div class="timeline-content"><h3>Morning Drop-Off</h3><p>Bring your vehicle to our Austin location. We'll do a quick inspection and confirm everything is ready.</p></div></div>
+          <div class="timeline-item"><div class="timeline-marker">2</div><div class="timeline-content"><h3>Professional Installation</h3><p>Our technicians install the openpilot device and vehicle-specific harness. Takes 2-4 hours depending on your vehicle.</p></div></div>
+          <div class="timeline-item"><div class="timeline-marker">3</div><div class="timeline-content"><h3>Calibration & Testing</h3><p>We calibrate the system and run comprehensive tests to ensure everything works perfectly.</p></div></div>
+          <div class="timeline-item"><div class="timeline-marker">4</div><div class="timeline-content"><h3>Training & Handoff</h3><p>We walk you through how to use the system, answer your questions, and send you on your way.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation Gallery -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <div class="gallery-header animate-on-scroll">
+          <h2 class="text-headline">Professional installation process</h2>
+          <p class="text-body-lg">Our certified technicians follow industry-standard procedures for safe, reliable installations</p>
+        </div>
+        <div class="gallery-grid stagger-children">
+          <div class="gallery-item">
+            <div class="gallery-image" style="background: linear-gradient(135deg, var(--color-accent-dim), var(--color-bg-card));">
+              <div class="gallery-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-caption">Initial vehicle inspection & compatibility verification</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-image" style="background: linear-gradient(135deg, var(--color-accent-dim), var(--color-bg-card));">
+              <div class="gallery-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-caption">Professional harness installation & device mounting</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-image" style="background: linear-gradient(135deg, var(--color-accent-dim), var(--color-bg-card));">
+              <div class="gallery-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-caption">Factory system integration & electrical work</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-image" style="background: linear-gradient(135deg, var(--color-accent-dim), var(--color-bg-card));">
+              <div class="gallery-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-caption">Software configuration & openpilot setup</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-image" style="background: linear-gradient(135deg, var(--color-accent-dim), var(--color-bg-card));">
+              <div class="gallery-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-caption">Comprehensive testing & calibration drive</div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-image" style="background: linear-gradient(135deg, var(--color-accent-dim), var(--color-bg-card));">
+              <div class="gallery-placeholder">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+                </svg>
+              </div>
+            </div>
+            <div class="gallery-caption">Quality assurance & customer training</div>
+          </div>
+        </div>
+        <div class="gallery-cta animate-on-scroll">
+          <p class="text-body-lg text-center">Ready to experience the difference professional installation makes?</p>
+          <a href="#contact" class="btn btn-primary btn-lg">Schedule Your Installation</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="testimonials-header animate-on-scroll">
+          <h2 class="text-headline">Trusted by Austin drivers</h2>
+          <p class="text-body-lg">See how openpilot has transformed the driving experience for our customers</p>
+        </div>
+
+        <!-- Featured Testimonial -->
+        <div class="featured-testimonial animate-on-scroll">
+          <div class="featured-testimonial-card card">
+            <div class="featured-testimonial-content">
+              <div class="testimonial-quote-icon">"</div>
+              <blockquote class="featured-quote">
+                <p class="featured-quote-text">After my openpilot installation, my 90-minute daily commute became effortless. I save 2 hours per week and arrive at work completely relaxed instead of stressed. The adaptive cruise control alone has paid for the installation multiple times over.</p>
+                <div class="featured-metrics">
+                  <div class="metric"><span class="metric-value">2hrs</span><span class="metric-label">saved/week</span></div>
+                  <div class="metric"><span class="metric-value">90min</span><span class="metric-label">commute time</span></div>
+                  <div class="metric"><span class="metric-value">100%</span><span class="metric-label">ROI in 6 months</span></div>
+                </div>
+              </blockquote>
+              <div class="featured-author">
+                <div class="featured-avatar">
+                  <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%2300ff88'/%3E%3Ctext x='30' y='38' text-anchor='middle' fill='white' font-family='Inter' font-size='24' font-weight='600'%3EJL%3C/text%3E%3C/svg%3E" alt="James L." width="60" height="60">
+                </div>
+                <div class="featured-author-info">
+                  <div class="featured-name">James L.</div>
+                  <div class="featured-role">Software Engineer • 2022 Toyota Camry</div>
+                  <div class="testimonial-stars">★★★★★</div>
+                </div>
+              </div>
+            </div>
+            <div class="featured-visual">
+              <div class="featured-vehicle">
+                <div class="vehicle-icon">🚗</div>
+                <div class="vehicle-info">
+                  <div class="vehicle-model">Toyota Camry 2022</div>
+                  <div class="vehicle-miles">45,000 miles driven with openpilot</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Regular Testimonials Grid -->
+        <div class="testimonials-grid stagger-children">
+          <div class="card testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-content">"The installation was flawless and the training was exceptional. I went from being nervous about advanced tech to feeling completely confident. My wife now asks to drive my car!"</div>
+            <div class="testimonial-metrics">
+              <div class="metric-item">⚡ Professional installation</div>
+              <div class="metric-item">🎯 Expert training</div>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%2338bdf8'/%3E%3Ctext x='24' y='30' text-anchor='middle' fill='white' font-family='Inter' font-size='18' font-weight='600'%3EMK%3C/text%3E%3C/svg%3E" alt="Maria K." width="48" height="48">
+              </div>
+              <div>
+                <div class="testimonial-name">Maria K.</div>
+                <div class="testimonial-role">Marketing Director • Honda CR-V</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-content">"As someone who drives 200+ miles per week for work, openpilot has been a game-changer. Stop-and-go traffic used to exhaust me. Now I arrive fresh and ready to work."</div>
+            <div class="testimonial-metrics">
+              <div class="metric-item">🛣️ 200+ miles/week</div>
+              <div class="metric-item">⚡ Reduced fatigue</div>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23f59e0b'/%3E%3Ctext x='24' y='30' text-anchor='middle' fill='white' font-family='Inter' font-size='18' font-weight='600'%3ERA%3C/text%3E%3C/svg%3E" alt="Robert A." width="48" height="48">
+              </div>
+              <div>
+                <div class="testimonial-name">Robert A.</div>
+                <div class="testimonial-role">Sales Representative • Hyundai Tucson</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-content">"The attention to detail during installation was impressive. They explained everything and made sure I understood how to use all features safely. Best automotive investment I've made."</div>
+            <div class="testimonial-metrics">
+              <div class="metric-item">🔧 Detailed installation</div>
+              <div class="metric-item">🛡️ Safety focused</div>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%23ef4444'/%3E%3Ctext x='24' y='30' text-anchor='middle' fill='white' font-family='Inter' font-size='18' font-weight='600'%3EJC%3C/text%3E%3C/svg%3E" alt="Jennifer C." width="48" height="48">
+              </div>
+              <div>
+                <div class="testimonial-name">Jennifer C.</div>
+                <div class="testimonial-role">Teacher • Kia Telluride</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card testimonial">
+            <div class="testimonial-stars">★★★★★</div>
+            <div class="testimonial-content">"From deposit to drive-away was exactly 2 weeks as promised. The communication was excellent throughout. I could track the status of my harness order and installation slot."</div>
+            <div class="testimonial-metrics">
+              <div class="metric-item">⏰ On-time delivery</div>
+              <div class="metric-item">📱 Great communication</div>
+            </div>
+            <div class="testimonial-author">
+              <div class="testimonial-avatar">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='48' height='48' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='24' fill='%238b5cf6'/%3E%3Ctext x='24' y='30' text-anchor='middle' fill='white' font-family='Inter' font-size='18' font-weight='600'%3EDM%3C/text%3E%3C/svg%3E" alt="David M." width="48" height="48">
+              </div>
+              <div>
+                <div class="testimonial-name">David M.</div>
+                <div class="testimonial-role">IT Manager • Subaru Outback</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Proof Stats -->
+        <div class="social-proof-stats animate-on-scroll">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <div class="stat-number">150+</div>
+              <div class="stat-label">Happy customers</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">4.9★</div>
+              <div class="stat-label">Average rating</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">98%</div>
+              <div class="stat-label">Would recommend</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">2yrs</div>
+              <div class="stat-label">Average ownership</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Referral Program -->
+    <section class="section referral-section" id="referral">
+      <div class="container">
+        <div class="referral-card animate-on-scroll">
+          <div class="referral-content">
+            <div class="referral-badge">💰 Referral Program</div>
+            <h2 class="text-headline">Get $100 for every friend you refer</h2>
+            <p class="text-body-lg">Know someone who'd love openpilot? Refer them to us and you'll both receive $100 off. There's no limit — refer as many friends as you want.</p>
+            <div class="referral-stats">
+              <div class="referral-stat"><span class="referral-stat-value">$100</span><span class="referral-stat-label">You get</span></div>
+              <div class="referral-stat"><span class="referral-stat-value">$100</span><span class="referral-stat-label">They get</span></div>
+              <div class="referral-stat"><span class="referral-stat-value">∞</span><span class="referral-stat-label">No limit</span></div>
+            </div>
+            <a href="#contact" class="btn btn-primary btn-lg">Start Referring</a>
+          </div>
+          <div class="referral-visual">
+            <div class="referral-icon">🎁</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="faq">
+          <div class="faq-header animate-on-scroll"><h2 class="text-headline">Frequently asked questions</h2></div>
+          <details class="faq-item"><summary>What vehicles are supported?</summary><div class="faq-answer">We support 250+ vehicle models from Toyota, Honda, Hyundai, Kia, and many more. Check our <a href="supported-vehicles.html">supported vehicles page</a> for the full list.</div></details>
+          <details class="faq-item"><summary>How long does installation take?</summary><div class="faq-answer">Most installations take 2-4 hours. We'll give you a more accurate estimate when you book based on your specific vehicle.</div></details>
+          <details class="faq-item"><summary>Is this legal?</summary><div class="faq-answer">Yes. openpilot is a driver-assist system, not autonomous driving. You remain responsible for the vehicle at all times, just like with factory ADAS systems.</div></details>
+          <details class="faq-item"><summary>What's included in the $3,000?</summary><div class="faq-answer">Everything: the comma 3X device with openpilot pre-installed, your vehicle-specific harness, professional installation, calibration, testing, and a hands-on training session.</div></details>
+          <details class="faq-item"><summary>Why the 2-week lead time?</summary><div class="faq-answer">We need to order the correct harness for your specific vehicle. Each harness is vehicle-specific and takes time to arrive.</div></details>
+          <details class="faq-item"><summary>Do you offer financing?</summary><div class="faq-answer">Currently we require a $1,500 deposit upfront with the remaining $1,500 due at drop-off. We're exploring financing options for the future.</div></details>
+          <details class="faq-item"><summary>What if I sell my car?</summary><div class="faq-answer">The device can be transferred to another compatible vehicle. We offer re-installation services for a fee.</div></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact / Book -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="contact-header animate-on-scroll">
+          <h2 class="text-headline">Ready to get started?</h2>
+          <p class="text-body-lg">Choose how you'd like to connect with us</p>
+        </div>
+        <div class="contact-options stagger-children">
+          <div class="card contact-option">
+            <div class="contact-option-icon">📅</div>
+            <h3>Schedule a Call</h3>
+            <p>Book a 15-minute consultation to discuss your vehicle and answer any questions.</p>
+            <a href="https://calendly.com" target="_blank" rel="noopener" class="btn btn-primary">Book Consultation</a>
+          </div>
+          <div class="card contact-option">
+            <div class="contact-option-icon">📧</div>
+            <h3>Send a Message</h3>
+            <p>Prefer email? Send us your details and we'll get back within 24 hours.</p>
+            <a href="mailto:hello@smoothdriveassist.com" class="btn btn-secondary">Email Us</a>
+          </div>
+          <div class="card contact-option">
+            <div class="contact-option-icon">💬</div>
+            <h3>Quick Question?</h3>
+            <p>Check our FAQ or reach out directly — we're happy to help.</p>
+            <a href="#faq" class="btn btn-secondary">View FAQ</a>
+          </div>
+        </div>
+        <!-- Newsletter Signup -->
+        <div class="newsletter-section animate-on-scroll">
+          <div class="newsletter-card card">
+            <div class="newsletter-content">
+              <div class="newsletter-icon">📧</div>
+              <h3 class="text-title">Stay Updated</h3>
+              <p class="text-body">Get the latest openpilot updates, new vehicle support, and driving tips delivered to your inbox.</p>
+              <form id="newsletterForm" class="newsletter-form">
+                <div class="form-group">
+                  <label class="form-label sr-only" for="newsletterEmail">Email Address</label>
+                  <input type="email" id="newsletterEmail" name="email" class="form-input" placeholder="Enter your email" required>
+                </div>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+              </form>
+              <p class="newsletter-disclaimer text-caption">No spam, unsubscribe anytime. We respect your privacy.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-section animate-on-scroll">
+          <h3 class="text-title">Or fill out this form</h3>
+          <form class="contact-form card" action="mailto:hello@smoothdriveassist.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <div class="form-group"><label class="form-label" for="name">Name</label><input type="text" id="name" name="name" class="form-input" required></div>
+              <div class="form-group"><label class="form-label" for="email">Email</label><input type="email" id="email" name="email" class="form-input" required></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><label class="form-label" for="phone">Phone (optional)</label><input type="tel" id="phone" name="phone" class="form-input"></div>
+              <div class="form-group"><label class="form-label" for="vehicle">Vehicle (Year, Make, Model)</label><input type="text" id="vehicle" name="vehicle" class="form-input" placeholder="e.g. 2022 Toyota Camry" required></div>
+            </div>
+            <div class="form-group"><label class="form-label" for="message">Message</label><textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your interest in openpilot..."></textarea></div>
+            <div class="form-group form-checkbox">
+              <input type="checkbox" id="referral-check" name="referral">
+              <label for="referral-check">I was referred by an existing customer</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><span>Smooth Drive Assist</span></div>
+          <p>Professional openpilot installation in Austin, Texas. Making driving chill, one car at a time.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+            <a href="#" class="social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="social-link" aria-label="YouTube">▶</a>
+          </div>
+        </div>
+        <div><h4 class="footer-heading">Product</h4><div class="footer-links"><a href="#why-openpilot" class="footer-link">Why openpilot</a><a href="#demo" class="footer-link">Demo</a><a href="#compare" class="footer-link">Compare</a><a href="supported-vehicles.html" class="footer-link">Vehicles</a></div></div>
+        <div><h4 class="footer-heading">Company</h4><div class="footer-links"><a href="#how-it-works" class="footer-link">How It Works</a><a href="#pricing" class="footer-link">Pricing</a><a href="#testimonials" class="footer-link">Reviews</a><a href="#referral" class="footer-link">Referrals</a></div></div>
+        <div><h4 class="footer-heading">Support</h4><div class="footer-links"><a href="#faq" class="footer-link">FAQ</a><a href="mailto:hello@smoothdriveassist.com" class="footer-link">Contact</a><a href="privacy.html" class="footer-link">Privacy</a><a href="terms.html" class="footer-link">Terms</a></div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Smooth Drive Assist, LLC. All rights reserved.</span>
+        <span class="footer-disclaimer">Driver remains responsible at all times. openpilot is a driver assistance system.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script>
+    // Page Loader
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.body.classList.remove('loading');
+        document.getElementById('pageLoader').classList.add('hidden');
+      }, 800);
+    });
+
+    // Scroll Progress
+    const scrollProgress = document.getElementById('scrollProgress');
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const progress = (scrollTop / docHeight) * 100;
+      scrollProgress.style.width = progress + '%';
+    });
+
+    // Cookie Consent
+    const cookieBanner = document.getElementById('cookieBanner');
+    const cookieAccept = document.getElementById('cookieAccept');
+    const cookieDecline = document.getElementById('cookieDecline');
+    if (!localStorage.getItem('cookieConsent')) {
+      setTimeout(() => cookieBanner.classList.add('visible'), 2000);
+    }
+    cookieAccept.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'accepted');
+      cookieBanner.classList.remove('visible');
+    });
+    cookieDecline.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'declined');
+      cookieBanner.classList.remove('visible');
+    });
+
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const menuToggle = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        menuToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 500);
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Animated counters
+    const counters = document.querySelectorAll('[data-count]');
+    const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = parseInt(entry.target.dataset.count);
+          let current = 0;
+          const increment = target / 50;
+          const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+              entry.target.textContent = target + '+';
+              clearInterval(timer);
+            } else {
+              entry.target.textContent = Math.floor(current) + '+';
+            }
+          }, 30);
+          counterObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.5 });
+    counters.forEach(c => counterObserver.observe(c));
+
+    // Hero particles
+    const particles = document.getElementById('heroParticles');
+    for (let i = 0; i < 50; i++) {
+      const particle = document.createElement('div');
+      particle.className = 'particle';
+      particle.style.left = Math.random() * 100 + '%';
+      particle.style.top = Math.random() * 100 + '%';
+      particle.style.animationDelay = Math.random() * 5 + 's';
+      particle.style.animationDuration = (3 + Math.random() * 4) + 's';
+      particles.appendChild(particle);
+    }
+
+    // Scroll animations
+    const animateElements = document.querySelectorAll('.animate-on-scroll, .stagger-children');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    animateElements.forEach(el => observer.observe(el));
+
+    // Newsletter Form
+    const newsletterForm = document.getElementById('newsletterForm');
+    newsletterForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const email = this.querySelector('#newsletterEmail').value;
+
+      // Show success message
+      const formContent = this.innerHTML;
+      this.innerHTML = `
+        <div style="text-align: center; padding: var(--space-lg);">
+          <div style="font-size: 2rem; margin-bottom: var(--space-md);">✅</div>
+          <h3 style="margin-bottom: var(--space-sm);">Thanks for subscribing!</h3>
+          <p>You'll receive updates about new vehicle support and openpilot features.</p>
+        </div>
+      `;
+
+      // Reset form after 3 seconds
+      setTimeout(() => {
+        this.innerHTML = formContent;
+        this.reset();
+      }, 3000);
+
+      // Here you would typically send the email to your backend
+      console.log('Newsletter signup:', email);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href !== '#') {
+          e.preventDefault();
+          const target = document.querySelector(href);
+          if (target) {
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+  </script>
+</body>
+</html>

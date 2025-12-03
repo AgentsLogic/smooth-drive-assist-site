@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Supported Vehicles – Smooth Drive Assist</title>
+  <meta name="description" content="See which vehicles are compatible with openpilot driver-assist installation. 250+ supported models.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+          </svg>
+        </div>
+        <span>Smooth Drive Assist</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+        <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+        <a href="index.html#faq" class="nav-link">FAQ</a>
+        <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+      </nav>
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+    <a href="index.html#pricing" class="nav-link">Pricing</a>
+    <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+    <a href="index.html#faq" class="nav-link">FAQ</a>
+    <a href="index.html#contact" class="btn btn-primary btn-lg">Get Started</a>
+  </div>
+
+  <main id="main">
+    <section class="vehicles-hero">
+      <div class="container">
+        <h1 class="text-headline">Supported <span class="text-gradient">Vehicles</span></h1>
+        <p class="text-body-lg">We support 250+ vehicle models. Compatibility depends on make, model, year, and options. We always confirm your specific vehicle during booking.</p>
+        <p class="text-caption mt-lg">Last updated: November 2024</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="text-title mb-xl">Popular Brands</h2>
+        <div class="brands-grid">
+          <div class="card brand-card">Toyota</div>
+          <div class="card brand-card">Lexus</div>
+          <div class="card brand-card">Honda</div>
+          <div class="card brand-card">Acura</div>
+          <div class="card brand-card">Hyundai</div>
+          <div class="card brand-card">Kia</div>
+          <div class="card brand-card">Genesis</div>
+          <div class="card brand-card">Subaru</div>
+          <div class="card brand-card">Mazda</div>
+          <div class="card brand-card">Volkswagen</div>
+          <div class="card brand-card">Ford</div>
+          <div class="card brand-card">Chevrolet</div>
+          <div class="card brand-card">GMC</div>
+          <div class="card brand-card">Ram</div>
+          <div class="card brand-card">Nissan</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vehicle Compatibility Checker -->
+    <section class="section compatibility-checker">
+      <div class="container">
+        <div class="compatibility-header animate-on-scroll">
+          <h2 class="text-headline">Check Your Vehicle Compatibility</h2>
+          <p class="text-body-lg">Enter your vehicle details below to see if openpilot is compatible with your car.</p>
+        </div>
+        <div class="compatibility-tool animate-on-scroll">
+          <div class="compatibility-form card">
+            <form id="vehicleChecker" class="checker-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="make">Make</label>
+                  <select id="make" name="make" class="form-input" required>
+                    <option value="">Select Make</option>
+                    <option value="acura">Acura</option>
+                    <option value="chevrolet">Chevrolet</option>
+                    <option value="ford">Ford</option>
+                    <option value="genesis">Genesis</option>
+                    <option value="gmc">GMC</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="kia">Kia</option>
+                    <option value="lexus">Lexus</option>
+                    <option value="mazda">Mazda</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="ram">Ram</option>
+                    <option value="subaru">Subaru</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="volkswagen">Volkswagen</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="model">Model</label>
+                  <input type="text" id="model" name="model" class="form-input" placeholder="e.g. Camry, Accord, Model 3" required>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="year">Year</label>
+                  <select id="year" name="year" class="form-input" required>
+                    <option value="">Select Year</option>
+                    <script>
+                      const currentYear = new Date().getFullYear();
+                      for (let year = currentYear; year >= 2016; year--) {
+                        document.write(`<option value="${year}">${year}</option>`);
+                      }
+                    </script>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="trim">Trim (Optional)</label>
+                  <input type="text" id="trim" name="trim" class="form-input" placeholder="e.g. LE, EX, Limited">
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg">Check Compatibility</button>
+            </form>
+          </div>
+          <div id="compatibilityResult" class="compatibility-result" style="display: none;">
+            <div class="result-card card">
+              <div class="result-header">
+                <div class="result-icon">⏳</div>
+                <h3 id="resultTitle">Checking compatibility...</h3>
+              </div>
+              <div id="resultContent" class="result-content">
+                <p>Please wait while we verify your vehicle compatibility.</p>
+              </div>
+              <div id="resultActions" class="result-actions" style="display: none;">
+                <a href="index.html#contact" class="btn btn-primary">Book Installation</a>
+                <button type="button" id="checkAgainBtn" class="btn btn-secondary">Check Another Vehicle</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section features">
+      <div class="container">
+        <h2 class="text-title mb-xl">How we confirm your vehicle</h2>
+        <div class="features-grid" style="grid-template-columns: repeat(2, 1fr);">
+          <div class="card feature-card card-glow">
+            <div class="feature-icon">🔍</div>
+            <h3>Check Details</h3>
+            <p>We verify your make, model, year, and factory driver-assist options.</p>
+          </div>
+          <div class="card feature-card card-glow">
+            <div class="feature-icon">✓</div>
+            <h3>Verify Compatibility</h3>
+            <p>We confirm it works with our hardware and harnesses.</p>
+          </div>
+          <div class="card feature-card card-glow">
+            <div class="feature-icon">📦</div>
+            <h3>Order Harness</h3>
+            <p>We source the correct harness for your specific configuration.</p>
+          </div>
+          <div class="card feature-card card-glow">
+            <div class="feature-icon">🛡️</div>
+            <h3>No Risk</h3>
+            <p>If your vehicle isn't compatible, we won't accept your deposit.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="full-supported-vehicles">
+      <div class="container">
+        <h2 class="text-title mb-lg">Detailed Vehicle List</h2>
+        <p class="text-body-lg mb-2xl" style="color: var(--color-text-secondary);">Click any brand to see supported models and years.</p>
+
+        <div class="vehicle-accordion">
+
+          <details class="vehicle-brand">
+            <summary>Acura</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">ILX 2016–2018</span>
+              <span class="vehicle-model">RDX 2019–2022</span>
+            </div>
+          </details>
+
+          <details class="vehicle-brand">
+            <summary>Chevrolet</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Bolt EUV 2022–2023</span>
+              <span class="vehicle-model">Silverado 1500 2020–2021</span>
+              <span class="vehicle-model">Trailblazer 2021–2023</span>
+              <span class="vehicle-model">Volt 2017–2019</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Ford</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Bronco Sport 2021–2023</span>
+              <span class="vehicle-model">Escape 2020–2022</span>
+              <span class="vehicle-model">Explorer 2020–2023</span>
+              <span class="vehicle-model">F-150 2022–2023</span>
+              <span class="vehicle-model">Maverick 2022–2024</span>
+              <span class="vehicle-model">Mustang Mach-E 2021–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Genesis</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">G70 2018–2022</span>
+              <span class="vehicle-model">G80 2018–2023</span>
+              <span class="vehicle-model">GV60 2023</span>
+              <span class="vehicle-model">GV70 2022–2023</span>
+              <span class="vehicle-model">GV80 2021–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>GMC</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Sierra 1500 2020–2021</span>
+              <span class="vehicle-model">Acadia 2020–2022</span>
+            </div>
+          </details>
+
+          <details class="vehicle-brand">
+            <summary>Honda</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Accord 2018–2023</span>
+              <span class="vehicle-model">Civic 2017–2023</span>
+              <span class="vehicle-model">CR-V 2017–2023</span>
+              <span class="vehicle-model">HR-V 2023</span>
+              <span class="vehicle-model">Insight 2019–2022</span>
+              <span class="vehicle-model">Odyssey 2018–2023</span>
+              <span class="vehicle-model">Passport 2019–2023</span>
+              <span class="vehicle-model">Pilot 2019–2022</span>
+              <span class="vehicle-model">Ridgeline 2017–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Hyundai</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Elantra 2021–2023</span>
+              <span class="vehicle-model">Ioniq 5 2022–2023</span>
+              <span class="vehicle-model">Ioniq 6 2023</span>
+              <span class="vehicle-model">Kona 2020–2023</span>
+              <span class="vehicle-model">Palisade 2020–2023</span>
+              <span class="vehicle-model">Santa Fe 2019–2023</span>
+              <span class="vehicle-model">Sonata 2020–2023</span>
+              <span class="vehicle-model">Tucson 2021–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Kia</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Carnival 2022–2023</span>
+              <span class="vehicle-model">EV6 2022–2023</span>
+              <span class="vehicle-model">K5 2021–2023</span>
+              <span class="vehicle-model">Niro EV 2022–2023</span>
+              <span class="vehicle-model">Sorento 2021–2023</span>
+              <span class="vehicle-model">Sportage 2023</span>
+              <span class="vehicle-model">Stinger 2018–2022</span>
+              <span class="vehicle-model">Telluride 2020–2023</span>
+            </div>
+          </details>
+
+          <details class="vehicle-brand">
+            <summary>Lexus</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">ES 2019–2023</span>
+              <span class="vehicle-model">NX 2018–2023</span>
+              <span class="vehicle-model">RX 2020–2023</span>
+              <span class="vehicle-model">UX 2019–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Mazda</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">CX-5 2022–2023</span>
+              <span class="vehicle-model">CX-50 2023</span>
+              <span class="vehicle-model">CX-9 2021–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Nissan</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Altima 2019–2023</span>
+              <span class="vehicle-model">Leaf 2018–2023</span>
+              <span class="vehicle-model">Rogue 2021–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Ram</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">1500 2019–2024</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Subaru</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Ascent 2019–2023</span>
+              <span class="vehicle-model">Crosstrek 2018–2023</span>
+              <span class="vehicle-model">Forester 2019–2023</span>
+              <span class="vehicle-model">Impreza 2020–2023</span>
+              <span class="vehicle-model">Legacy 2020–2023</span>
+              <span class="vehicle-model">Outback 2020–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Toyota</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Camry 2018–2023</span>
+              <span class="vehicle-model">Corolla 2020–2023</span>
+              <span class="vehicle-model">Highlander 2020–2023</span>
+              <span class="vehicle-model">Prius 2021–2023</span>
+              <span class="vehicle-model">RAV4 2019–2023</span>
+              <span class="vehicle-model">Sienna 2021–2023</span>
+            </div>
+          </details>
+          <details class="vehicle-brand">
+            <summary>Volkswagen</summary>
+            <div class="vehicle-models">
+              <span class="vehicle-model">Atlas 2018–2023</span>
+              <span class="vehicle-model">ID.4 2021–2023</span>
+              <span class="vehicle-model">Jetta 2019–2023</span>
+              <span class="vehicle-model">Taos 2022–2024</span>
+              <span class="vehicle-model">Tiguan 2018–2024</span>
+            </div>
+          </details>
+        </div>
+
+        <div class="card card-glow" style="text-align: center; padding: var(--space-2xl);">
+          <h3 class="text-title mb-md">Don't see your car?</h3>
+          <p class="text-body mb-lg">This list covers many popular combinations, but new vehicles are added regularly. Send us your details and we'll check for you — no commitment required.</p>
+          <a href="index.html#contact" class="btn btn-primary">Check My Vehicle</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div><span>Smooth Drive Assist</span></div>
+          <p>Professional openpilot installation in Austin, Texas.</p>
+        </div>
+        <div><h4 class="footer-heading">Navigation</h4><div class="footer-links"><a href="index.html#how-it-works" class="footer-link">How It Works</a><a href="index.html#pricing" class="footer-link">Pricing</a><a href="supported-vehicles.html" class="footer-link">Vehicles</a><a href="index.html#faq" class="footer-link">FAQ</a></div></div>
+        <div><h4 class="footer-heading">Contact</h4><div class="footer-links"><a href="mailto:hello@smoothdriveassist.com" class="footer-link">hello@smoothdriveassist.com</a><span class="footer-link">Austin, Texas</span></div></div>
+        <div><h4 class="footer-heading">Legal</h4><div class="footer-links"><a href="privacy.html" class="footer-link">Privacy Policy</a><a href="terms.html" class="footer-link">Terms of Service</a></div></div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2024 Smooth Drive Assist, LLC. All rights reserved.</span>
+        <div class="footer-legal"><a href="privacy.html" class="footer-link">Privacy</a><a href="terms.html" class="footer-link">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 50);
+    });
+
+    // Mobile menu toggle
+    const menuToggleBtn = document.getElementById('menuToggle');
+    const mobileNav = document.getElementById('mobileNav');
+    menuToggleBtn.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      menuToggleBtn.setAttribute('aria-expanded', isOpen);
+    });
+    mobileNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        menuToggleBtn.setAttribute('aria-expanded', 'false');
+      });
+    });
+
+    // Back to top button
+    const backToTop = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      backToTop.classList.toggle('visible', window.scrollY > 500);
+    });
+    backToTop.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Vehicle Compatibility Checker
+    const vehicleChecker = document.getElementById('vehicleChecker');
+    const compatibilityResult = document.getElementById('compatibilityResult');
+    const resultTitle = document.getElementById('resultTitle');
+    const resultIcon = document.querySelector('.result-icon');
+    const resultContent = document.getElementById('resultContent');
+    const resultActions = document.getElementById('resultActions');
+    const checkAgainBtn = document.getElementById('checkAgainBtn');
+
+    // Sample vehicle database (in a real implementation, this would come from an API)
+    const supportedVehicles = {
+      'toyota': {
+        'camry': ['2018', '2019', '2020', '2021', '2022', '2023'],
+        'corolla': ['2020', '2021', '2022', '2023'],
+        'rav4': ['2019', '2020', '2021', '2022', '2023'],
+        'highlander': ['2020', '2021', '2022', '2023'],
+        'prius': ['2021', '2022', '2023'],
+        'sienna': ['2021', '2022', '2023']
+      },
+      'honda': {
+        'accord': ['2018', '2019', '2020', '2021', '2022', '2023'],
+        'civic': ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        'cr-v': ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        'odyssey': ['2018', '2019', '2020', '2021', '2022', '2023'],
+        'pilot': ['2019', '2020', '2021', '2022'],
+        'passport': ['2019', '2020', '2021', '2022', '2023'],
+        'ridgeline': ['2017', '2018', '2019', '2020', '2021', '2022', '2023'],
+        'insight': ['2019', '2020', '2021', '2022']
+      },
+      'hyundai': {
+        'sonata': ['2020', '2021', '2022', '2023'],
+        'tucson': ['2021', '2022', '2023'],
+        'santa fe': ['2019', '2020', '2021', '2022', '2023'],
+        'kona': ['2020', '2021', '2022', '2023'],
+        'palisade': ['2020', '2021', '2022', '2023'],
+        'elantra': ['2021', '2022', '2023'],
+        'ioniq 5': ['2022', '2023'],
+        'ioniq 6': ['2023']
+      },
+      'kia': {
+        'telluride': ['2020', '2021', '2022', '2023'],
+        'sorento': ['2021', '2022', '2023'],
+        'k5': ['2021', '2022', '2023'],
+        'sportage': ['2023'],
+        'carnival': ['2022', '2023'],
+        'ev6': ['2022', '2023'],
+        'niro ev': ['2022', '2023'],
+        'stinger': ['2018', '2019', '2020', '2021', '2022']
+      },
+      'lexus': {
+        'es': ['2019', '2020', '2021', '2022', '2023'],
+        'nx': ['2018', '2019', '2020', '2021', '2022', '2023'],
+        'rx': ['2020', '2021', '2022', '2023'],
+        'ux': ['2019', '2020', '2021', '2022', '2023']
+      },
+      'subaru': {
+        'forester': ['2019', '2020', '2021', '2022', '2023'],
+        'outback': ['2020', '2021', '2022', '2023'],
+        'crosstrek': ['2018', '2019', '2020', '2021', '2022', '2023'],
+        'ascent': ['2019', '2020', '2021', '2022', '2023'],
+        'legacy': ['2020', '2021', '2022', '2023'],
+        'impreza': ['2020', '2021', '2022', '2023']
+      },
+      'ford': {
+        'explorer': ['2020', '2021', '2022', '2023'],
+        'escape': ['2020', '2021', '2022'],
+        'f-150': ['2022', '2023'],
+        'mustang mach-e': ['2021', '2022', '2023'],
+        'bronco sport': ['2021', '2022', '2023'],
+        'maverick': ['2022', '2023', '2024']
+      },
+      'chevrolet': {
+        'trailblazer': ['2021', '2022', '2023'],
+        'bolt eu': ['2022', '2023'],
+        'silverado 1500': ['2020', '2021'],
+        'volt': ['2017', '2018', '2019']
+      },
+      'gmc': {
+        'acadia': ['2020', '2021', '2022'],
+        'sierra 1500': ['2020', '2021']
+      },
+      'mazda': {
+        'cx-5': ['2022', '2023'],
+        'cx-9': ['2021', '2022', '2023'],
+        'cx-50': ['2023']
+      },
+      'nissan': {
+        'altima': ['2019', '2020', '2021', '2022', '2023'],
+        'rogue': ['2021', '2022', '2023'],
+        'leaf': ['2018', '2019', '2020', '2021', '2022', '2023']
+      },
+      'ram': {
+        '1500': ['2019', '2020', '2021', '2022', '2023', '2024']
+      },
+      'genesis': {
+        'g80': ['2018', '2019', '2020', '2021', '2022', '2023'],
+        'g70': ['2018', '2019', '2020', '2021', '2022'],
+        'gv80': ['2021', '2022', '2023'],
+        'gv70': ['2022', '2023'],
+        'gv60': ['2023']
+      },
+      'volkswagen': {
+        'tiguan': ['2018', '2019', '2020', '2021', '2022', '2023', '2024'],
+        'atlas': ['2018', '2019', '2020', '2021', '2022', '2023'],
+        'id.4': ['2021', '2022', '2023'],
+        'jetta': ['2019', '2020', '2021', '2022', '2023'],
+        'taos': ['2022', '2023', '2024']
+      },
+      'acura': {
+        'ilx': ['2016', '2017', '2018'],
+        'rdx': ['2019', '2020', '2021', '2022']
+      }
+    };
+
+    function checkVehicleCompatibility(make, model, year) {
+      const makeKey = make.toLowerCase();
+      const modelKey = model.toLowerCase().replace(/[-\s]/g, ' ');
+
+      if (!supportedVehicles[makeKey]) {
+        return { compatible: false, reason: 'brand' };
+      }
+
+      if (!supportedVehicles[makeKey][modelKey]) {
+        return { compatible: false, reason: 'model' };
+      }
+
+      if (!supportedVehicles[makeKey][modelKey].includes(year)) {
+        return { compatible: false, reason: 'year' };
+      }
+
+      return { compatible: true };
+    }
+
+    vehicleChecker.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      const formData = new FormData(this);
+      const make = formData.get('make');
+      const model = formData.get('model');
+      const year = formData.get('year');
+
+      // Show loading state
+      compatibilityResult.style.display = 'block';
+      resultTitle.textContent = 'Checking compatibility...';
+      resultIcon.textContent = '⏳';
+      resultContent.innerHTML = '<p>Please wait while we verify your vehicle compatibility.</p>';
+      resultActions.style.display = 'none';
+
+      // Simulate API call delay
+      setTimeout(() => {
+        const result = checkVehicleCompatibility(make, model, year);
+
+        if (result.compatible) {
+          resultTitle.textContent = '🎉 Great news! Your vehicle is compatible!';
+          resultIcon.textContent = '✅';
+          resultContent.innerHTML = `
+            <p>Your ${year} ${make} ${model} is supported by openpilot. We can install the system right now!</p>
+            <p><strong>Next steps:</strong> Contact us to schedule your installation. We'll verify your specific configuration and get you on the road.</p>
+          `;
+          resultActions.style.display = 'flex';
+        } else {
+          let message = '';
+          if (result.reason === 'brand') {
+            message = `We don't currently support ${make} vehicles. However, we're constantly adding new brands. Send us your details and we'll let you know when support is available.`;
+          } else if (result.reason === 'model') {
+            message = `Your ${year} ${make} ${model} isn't in our current supported list. This could be due to specific configurations or trims. Contact us directly for a detailed compatibility check.`;
+          } else if (result.reason === 'year') {
+            message = `Your ${make} ${model} is supported, but not the ${year} model year. We support ${supportedVehicles[make.toLowerCase()][model.toLowerCase().replace(/[-\s]/g, ' ')].join(', ')} for this model.`;
+          }
+
+          resultTitle.textContent = 'Compatibility Check Complete';
+          resultIcon.textContent = 'ℹ️';
+          resultContent.innerHTML = `<p>${message}</p><p>Have questions? <a href="index.html#contact">Contact us</a> for personalized assistance.</p>`;
+          resultActions.style.display = 'flex';
+        }
+      }, 1500);
+    });
+
+    checkAgainBtn.addEventListener('click', function() {
+      compatibilityResult.style.display = 'none';
+      vehicleChecker.reset();
+      vehicleChecker.querySelector('input[name="model"]').focus();
+    });
+
+    // Scroll animations
+    const animateElements = document.querySelectorAll('.animate-on-scroll, .stagger-children');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    animateElements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
