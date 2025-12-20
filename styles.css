@@ -628,6 +628,65 @@ ul, ol {
   font-weight: 700;
 }
 
+/* ─────────────────────────────────────────────────────────────────────────────
+   Hero Section
+   ───────────────────────────────────────────────────────────────────────────── */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  padding: var(--header-height) var(--space-xl) var(--space-4xl);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+
+.hero-gradient-1 {
+  position: absolute;
+  top: -50%;
+  left: -25%;
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(ellipse, var(--color-accent-dim) 0%, transparent 70%);
+  opacity: 0.3;
+  filter: blur(60px);
+}
+
+.hero-gradient-2 {
+  position: absolute;
+  bottom: -30%;
+  right: -20%;
+  width: 60%;
+  height: 80%;
+  background: radial-gradient(ellipse, rgba(0, 204, 255, 0.15) 0%, transparent 70%);
+  opacity: 0.4;
+  filter: blur(60px);
+}
+
+.hero-gradient-3 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 40%;
+  height: 40%;
+  background: radial-gradient(ellipse, rgba(138, 43, 226, 0.1) 0%, transparent 70%);
+  opacity: 0.3;
+  filter: blur(40px);
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 1000px;
+  z-index: 1;
+}
+
 .hero h1 {
   margin-bottom: var(--space-lg);
 }
