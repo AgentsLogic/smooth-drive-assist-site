@@ -384,6 +384,11 @@ ul, ol {
   font-size: 1rem;
 }
 
+.btn-sm {
+  padding: var(--space-sm) var(--space-md);
+  font-size: 0.8rem;
+}
+
 .btn-glow {
   box-shadow: 0 0 30px var(--color-accent-glow);
   animation: glow 2s ease-in-out infinite alternate;
@@ -1675,6 +1680,37 @@ ul, ol {
   gap: var(--space-lg);
 }
 
+.footer-social {
+  display: flex;
+  gap: var(--space-md);
+  margin-top: var(--space-lg);
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  color: var(--color-text-secondary);
+  font-size: 1rem;
+  transition: all var(--transition-fast);
+}
+
+.social-link:hover {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-bg);
+  transform: translateY(-2px);
+}
+
+.footer-disclaimer {
+  opacity: 0.7;
+}
+
 /* ─────────────────────────────────────────────────────────────────────────────
    Animations
    ───────────────────────────────────────────────────────────────────────────── */
@@ -1738,6 +1774,8 @@ ul, ol {
 .stagger-children.visible > *:nth-child(2) { transition-delay: 100ms; }
 .stagger-children.visible > *:nth-child(3) { transition-delay: 200ms; }
 .stagger-children.visible > *:nth-child(4) { transition-delay: 300ms; }
+.stagger-children.visible > *:nth-child(5) { transition-delay: 400ms; }
+.stagger-children.visible > *:nth-child(6) { transition-delay: 500ms; }
 
 .stagger-children.visible > * {
   opacity: 1;
