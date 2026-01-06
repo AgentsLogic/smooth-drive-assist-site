@@ -722,13 +722,37 @@
     }
   </style>
   <script>
-    // Page Loader
-    window.addEventListener('load', () => {
-      setTimeout(() => {
+    // Page Loader - Diagnostic version
+    console.log('JS loaded at:', new Date().toISOString());
+    
+    // Track when DOM is ready
+    const domContentLoadedStart = performance.now();
+    
+    document.addEventListener('DOMContentLoaded', () => {
+      const domReadyTime = performance.now();
+      console.log('DOMContentLoaded fired at:', domReadyTime.toFixed(2) + 'ms (since load: ' + (domReadyTime - domContentLoadedStart).toFixed(2) + 'ms)');
+      
+      // Immediately hide loader without timeout - DOM is ready, no need to wait
+      document.body.classList.remove('loading');
+      document.getElementById('pageLoader').classList.add('hidden');
+      
+      const hideComplete = performance.now();
+      console.log('Loader hidden at:', hideComplete.toFixed(2) + 'ms (DOM ready to hide: ' + (hideComplete - domReadyTime).toFixed(2) + 'ms)');
+    });
+
+    // Fallback: hide loader after 5 seconds if DOMContentLoaded hasn't fired
+    // This handles edge cases where DOMContentLoaded might be blocked
+    setTimeout(() => {
+      const fallbackTime = performance.now();
+      console.log('Fallback triggered at:', fallbackTime.toFixed(2) + 'ms');
+      if (document.body.classList.contains('loading')) {
+        console.log('Fallback: DOMContentLoaded never fired, forcing loader hide');
         document.body.classList.remove('loading');
         document.getElementById('pageLoader').classList.add('hidden');
-      }, 800);
-    });
+      } else {
+        console.log('Fallback: Loader already hidden, no action needed');
+      }
+    }, 5000);
 
     // Scroll Progress
     const scrollProgress = document.getElementById('scrollProgress');
