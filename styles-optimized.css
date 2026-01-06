@@ -3,6 +3,9 @@
    Inspired by comma.ai, Tesla, and Linear
    ========================================================================== */
 
+/* Import Inter font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 /* ==========================================================================
    CRITICAL CSS - Above the fold styles for faster initial render
    ========================================================================== */
@@ -1930,8 +1933,6 @@ ul, ol {
 /* ==========================================================================
    PERFORMANCE OPTIMIZATIONS
    ========================================================================== */
-/* Import Inter font from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 /* GPU acceleration for animations */
 @media (prefers-reduced-motion: no-preference) {
