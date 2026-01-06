@@ -1,6 +1,6 @@
-# Smooth Drive Assist – Site Reference
+# Smoother Drive – Site Reference
 
-Quick reference for the Smooth Drive Assist marketing website.
+Quick reference for the Smoother Drive marketing website.
 
 ---
 
@@ -8,10 +8,10 @@ Quick reference for the Smooth Drive Assist marketing website.
 
 | Item | Value |
 |------|-------|
-| **Company** | Smooth Drive Assist, LLC |
+| **Company** | Smoother Drive, LLC |
 | **Location** | Austin, Texas |
-| **Domain** | smoothdriveassist.com |
-| **Email** | info@smoothdriveassist.com |
+| **Domain** | smootherdrive.com |
+| **Email** | hello@smootherdrive.com |
 
 ---
 
@@ -19,9 +19,9 @@ Quick reference for the Smooth Drive Assist marketing website.
 
 | Item | Price |
 |------|-------|
-| **Total install** | $3,000 |
-| **Deposit (to book)** | $1,500 |
-| **Balance (at drop-off)** | $1,500 |
+| **Total install** | $2,000 (Launch Special - was $3,000) |
+| **Deposit (to book)** | $1,000 |
+| **Balance (at drop-off)** | $1,000 |
 | **Support plan** | $100/month |
 | **Lead time** | Minimum 2 weeks from deposit |
 
@@ -30,13 +30,14 @@ Quick reference for the Smooth Drive Assist marketing website.
 ## Files
 
 ```
-smooth-drive-assist-site/
+smootherdrive-site/
 ├── index.html              # Main landing page
 ├── supported-vehicles.html # Compatibility / vehicle list
 ├── privacy.html            # Privacy Policy
 ├── terms.html              # Terms of Service
 ├── 404.html                # Custom 404 page
 ├── styles.css              # All styling
+├── styles-optimized.css    # Production-optimized CSS
 ├── favicon.svg             # Site icon
 ├── og-image.svg            # Open Graph social sharing image
 ├── sitemap.xml             # XML sitemap for SEO
@@ -49,7 +50,7 @@ smooth-drive-assist-site/
 ## Running Locally
 
 ```powershell
-cd smooth-drive-assist-site
+cd smootherdrive-site
 python -m http.server 3000
 ```
 
@@ -124,7 +125,7 @@ Then open: `http://localhost:3000/`
 
 ## Install Day Flow (for reference)
 
-1. Customer drops off vehicle, pays remaining $1,500
+1. Customer drops off vehicle, pays remaining $1,000
 2. We arrange Uber/ride home for customer
 3. Professional install + initial calibration
 4. 50–100 mile shakedown/test drive
@@ -135,7 +136,7 @@ Then open: `http://localhost:3000/`
 ## Quick Edits Cheat Sheet
 
 **Change price:**
-- Search for `$3,000` and `$1,500` in `index.html`
+- Search for `$2,000` and `$1,000` in `index.html`
 
 **Add FAQ item:**
 - Add new `<details>` block inside `.faq-list` in `index.html`
@@ -144,5 +145,5 @@ Then open: `http://localhost:3000/`
 - Add new `<details class="vehicle-brand">` in `supported-vehicles.html`
 
 **Change accent color:**
-- Edit `--accent` in `:root` of `styles.css`
+- Edit `--accent` in `:root` of `styles.css` or `styles-optimized.css`
 

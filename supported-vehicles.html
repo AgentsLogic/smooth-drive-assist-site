@@ -1,36 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Supported Vehicles – Smoother Drive</title>
   <meta name="description" content="See which vehicles are compatible with Smoother Drive driver-assist installation. 325+ supported models.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-optimized.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="canonical" href="https://smootherdrive.com/supported-vehicles.html">
+  <meta property="og:title" content="Supported Vehicles – Smoother Drive">
+  <meta property="og:description" content="See which vehicles are compatible with Smoother Drive driver-assist installation. 325+ supported models.">
+  <meta property="og:image" content="https://smootherdrive.com/og-image.svg">
+  <meta property="og:image:alt" content="Smoother Drive supported vehicles">
+  <meta property="og:url" content="https://smootherdrive.com/supported-vehicles.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Smoother Drive">
+  <meta property="og:locale" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Supported Vehicles – Smoother Drive">
+  <meta name="twitter:description" content="See which vehicles are compatible with Smoother Drive driver-assist installation. 325+ supported models.">
+  <meta name="twitter:image" content="https://smootherdrive.com/og-image.svg">
+  <meta name="twitter:image:alt" content="Smoother Drive supported vehicles">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="format-detection" content="telephone=no">
 </head>
 <body>
   <a href="#main" class="skip-link">Skip to main content</a>
   <header class="header" id="header">
     <div class="container header-inner">
-      <a href="/" class="logo">
+      <a href="/" class="logo" aria-label="Smoother Drive - Home">
         <div class="logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
           </svg>
         </div>
         <span>Smoother Drive</span>
       </a>
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="index.html#how-it-works" class="nav-link">How It Works</a>
         <a href="index.html#pricing" class="nav-link">Pricing</a>
-        <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+        <a href="supported-vehicles.html" class="nav-link" aria-current="page">Vehicles</a>
         <a href="index.html#faq" class="nav-link">FAQ</a>
         <a href="index.html#contact" class="btn btn-primary">Get Started</a>
       </nav>
-      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -84,11 +104,12 @@
         </div>
         <div class="compatibility-tool animate-on-scroll">
           <div class="compatibility-form card">
-            <form id="vehicleChecker" class="checker-form">
+            <form id="vehicleChecker" class="checker-form" aria-labelledby="vehicleCheckerTitle" novalidate>
+              <h3 id="vehicleCheckerTitle" class="sr-only">Vehicle Compatibility Checker</h3>
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="make">Make</label>
-                  <select id="make" name="make" class="form-input" required>
+                  <select id="make" name="make" class="form-input" required aria-required="true" aria-describedby="make-error">
                     <option value="">Select Make</option>
                     <option value="acura">Acura</option>
                     <option value="chevrolet">Chevrolet</option>
@@ -106,16 +127,18 @@
                     <option value="toyota">Toyota</option>
                     <option value="volkswagen">Volkswagen</option>
                   </select>
+                  <span class="error-message" id="make-error" aria-live="polite"></span>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="model">Model</label>
-                  <input type="text" id="model" name="model" class="form-input" placeholder="e.g. Camry, Accord, Model 3" required>
+                  <input type="text" id="model" name="model" class="form-input" placeholder="e.g. Camry, Accord, Model 3" required aria-required="true" aria-describedby="model-error" minlength="2">
+                  <span class="error-message" id="model-error" aria-live="polite"></span>
                 </div>
               </div>
               <div class="form-row">
                 <div class="form-group">
                   <label class="form-label" for="year">Year</label>
-                  <select id="year" name="year" class="form-input" required>
+                  <select id="year" name="year" class="form-input" required aria-required="true" aria-describedby="year-error">
                     <option value="">Select Year</option>
                     <script>
                       const currentYear = new Date().getFullYear();
@@ -124,13 +147,16 @@
                       }
                     </script>
                   </select>
+                  <span class="error-message" id="year-error" aria-live="polite"></span>
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="trim">Trim (Optional)</label>
-                  <input type="text" id="trim" name="trim" class="form-input" placeholder="e.g. LE, EX, Limited">
+                  <input type="text" id="trim" name="trim" class="form-input" placeholder="e.g. LE, EX, Limited" aria-describedby="trim-hint">
+                  <span class="hint" id="trim-hint">Leave blank if unsure</span>
                 </div>
               </div>
-              <button type="submit" class="btn btn-primary btn-lg">Check Compatibility</button>
+              <button type="submit" class="btn btn-primary btn-lg" id="checkCompatibilityBtn">Check Compatibility</button>
+              <div id="vehicleCheckerSuccess" class="form-success" aria-live="polite"></div>
             </form>
           </div>
           <div id="compatibilityResult" class="compatibility-result" style="display: none;">
@@ -368,6 +394,38 @@
 
   <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
+  <style>
+    /* Form validation styles */
+    .error-message {
+      color: #ff6b6b;
+      font-size: 0.8rem;
+      margin-top: 0.25rem;
+      display: none;
+    }
+    
+    .form-input:invalid:not(:focus):not(:placeholder-shown),
+    .form-textarea:invalid:not(:focus):not(:placeholder-shown) {
+      border-color: #ff6b6b;
+    }
+    
+    .form-input:valid:not(:placeholder-shown),
+    .form-textarea:valid:not(:placeholder-shown) {
+      border-color: #00ff88;
+    }
+    
+    .hint {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: 0.25rem;
+    }
+    
+    .form-success {
+      color: #00ff88;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      min-height: 1.2rem;
+    }
+  </style>
   <script>
     // Header scroll effect
     const header = document.getElementById('header');
@@ -406,6 +464,108 @@
     const resultContent = document.getElementById('resultContent');
     const resultActions = document.getElementById('resultActions');
     const checkAgainBtn = document.getElementById('checkAgainBtn');
+  
+    // Add form validation
+    if (vehicleChecker) {
+      vehicleChecker.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let isValid = true;
+  
+        // Validate make
+        const make = this.querySelector('#make');
+        const makeError = this.querySelector('#make-error');
+        if (!make.value) {
+          makeError.textContent = 'Please select a vehicle make';
+          makeError.style.display = 'block';
+          isValid = false;
+        } else {
+          makeError.style.display = 'none';
+        }
+  
+        // Validate model
+        const model = this.querySelector('#model');
+        const modelError = this.querySelector('#model-error');
+        if (!model.value.trim() || model.value.length < 2) {
+          modelError.textContent = 'Please enter a valid model name';
+          modelError.style.display = 'block';
+          isValid = false;
+        } else {
+          modelError.style.display = 'none';
+        }
+  
+        // Validate year
+        const year = this.querySelector('#year');
+        const yearError = this.querySelector('#year-error');
+        if (!year.value) {
+          yearError.textContent = 'Please select a year';
+          yearError.style.display = 'block';
+          isValid = false;
+        } else {
+          yearError.style.display = 'none';
+        }
+  
+        if (isValid) {
+          // Show loading state
+          const submitBtn = this.querySelector('#checkCompatibilityBtn');
+          const originalBtnText = submitBtn.textContent;
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Checking...';
+  
+          // Process the form
+          const formData = new FormData(this);
+          const make = formData.get('make');
+          const model = formData.get('model');
+          const year = formData.get('year');
+  
+          // Simulate API call delay
+          setTimeout(() => {
+            const result = checkVehicleCompatibility(make, model, year);
+            
+            // Show results
+            compatibilityResult.style.display = 'block';
+            
+            if (result.compatible) {
+              resultTitle.textContent = '🎉 Great news! Your vehicle is compatible!';
+              resultIcon.textContent = '✅';
+              resultContent.innerHTML = `
+                <p>Your ${year} ${make} ${model} is supported by Smoother Drive. We can install the system right now!</p>
+                <p><strong>Next steps:</strong> Contact us to schedule your installation. We'll verify your specific configuration and get you on the road.</p>
+              `;
+              resultActions.style.display = 'flex';
+            } else {
+              let message = '';
+              if (result.reason === 'brand') {
+                message = `We don't currently support ${make} vehicles. However, we're constantly adding new brands. Send us your details and we'll let you know when support is available.`;
+              } else if (result.reason === 'model') {
+                message = `Your ${year} ${make} ${model} isn't in our current supported list. This could be due to specific configurations or trims. Contact us directly for a detailed compatibility check.`;
+              } else if (result.reason === 'year') {
+                message = `Your ${make} ${model} is supported, but not the ${year} model year. We support ${supportedVehicles[make.toLowerCase()][model.toLowerCase().replace(/[-\s]/g, ' ')].join(', ')} for this model.`;
+              }
+  
+              resultTitle.textContent = 'Compatibility Check Complete';
+              resultIcon.textContent = 'ℹ️';
+              resultContent.innerHTML = `<p>${message}</p><p>Have questions? <a href="index.html#contact">Contact us</a> for personalized assistance.</p>`;
+              resultActions.style.display = 'flex';
+            }
+  
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+          }, 1500);
+        }
+      });
+  
+      // Real-time validation
+      const inputs = vehicleChecker.querySelectorAll('select, input');
+      inputs.forEach(input => {
+        input.addEventListener('change', () => {
+          const errorId = input.id + '-error';
+          const errorElement = document.getElementById(errorId);
+          if (errorElement) {
+            errorElement.style.display = 'none';
+          }
+        });
+      });
+    }
 
     // Sample vehicle database (in a real implementation, this would come from an API)
     const supportedVehicles = {

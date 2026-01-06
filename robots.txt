@@ -1,8 +1,8 @@
-# Smooth Drive Assist
-# https://smoothdriveassist.com
+# Smoother Drive
+# https://smootherdrive.com
 
 User-agent: *
 Allow: /
 
-Sitemap: https://smoothdriveassist.com/sitemap.xml
+Sitemap: https://smootherdrive.com/sitemap.xml
 

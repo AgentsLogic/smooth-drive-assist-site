@@ -1,35 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Smoother Drive — Professional Driver-Assist Installation in Austin</title>
   <meta name="description" content="Transform your daily commute with Smoother Drive — advanced driver-assist technology. Expert installation in Austin, Texas. Make driving chill.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-optimized.css">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="canonical" href="https://smootherdrive.com">
   <meta property="og:title" content="Smoother Drive — Make Driving Chill">
   <meta property="og:description" content="Professional driver-assist installation in Austin, Texas. Smoother Drive.">
   <meta property="og:image" content="https://smootherdrive.com/og-image.svg">
+  <meta property="og:image:alt" content="Smoother Drive logo">
   <meta property="og:url" content="https://smootherdrive.com">
   <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Smoother Drive">
+  <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Smoother Drive — Make Driving Chill">
+  <meta name="twitter:description" content="Professional driver-assist installation in Austin, Texas. Smoother Drive.">
+  <meta name="twitter:image" content="https://smootherdrive.com/og-image.svg">
+  <meta name="twitter:image:alt" content="Smoother Drive logo">
+  <meta name="theme-color" content="#000000">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+  <meta name="format-detection" content="telephone=no">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"LocalBusiness","name":"Smoother Drive","description":"Professional Smoother Drive installation services in Austin, Texas","url":"https://smootherdrive.com","email":"hello@smootherdrive.com","areaServed":"Austin, Texas","priceRange":"$$$"}
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Smoother Drive",
+    "description": "Professional Smoother Drive installation services in Austin, Texas",
+    "url": "https://smootherdrive.com",
+    "email": "hello@smootherdrive.com",
+    "areaServed": "Austin, Texas",
+    "priceRange": "$$$",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Austin",
+      "addressRegion": "TX",
+      "addressCountry": "US"
+    },
+    "openingHours": "Mo,Tu,We,Th,Fr 09:00-18:00",
+    "telephone": "+15125531337"
+  }
   </script>
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What vehicles are supported?","acceptedAnswer":{"@type":"Answer","text":"We support 325+ vehicle models from Toyota, Honda, Hyundai, Kia, and many more."}},{"@type":"Question","name":"How long does installation take?","acceptedAnswer":{"@type":"Answer","text":"Most installations take 2-4 hours depending on your specific vehicle."}},{"@type":"Question","name":"Is this legal?","acceptedAnswer":{"@type":"Answer","text":"Yes. Smoother Drive is a driver-assist system, not autonomous driving. You remain responsible for the vehicle at all times."}},{"@type":"Question","name":"What's included in the $3,000?","acceptedAnswer":{"@type":"Answer","text":"Everything: the Smoother Drive device with Smoother Drive pre-installed, your vehicle-specific harness, professional installation, calibration, testing, and training."}}]}
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What vehicles are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We support 325+ vehicle models from Toyota, Honda, Hyundai, Kia, and many more."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does installation take?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most installations take 2-4 hours depending on your specific vehicle."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is this legal?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Smoother Drive is a driver-assist system, not autonomous driving. You remain responsible for the vehicle at all times."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What's included in the $3,000?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Everything: the Smoother Drive device with Smoother Drive pre-installed, your vehicle-specific harness, professional installation, calibration, testing, and training."
+        }
+      }
+    ]
+  }
   </script>
 </head>
 <body class="loading">
   <!-- Launch Special Banner -->
-  <div class="promo-banner">
+  <div class="promo-banner" role="banner" aria-label="Launch Special">
     <div class="container">
-      <span class="promo-badge">🚀 LAUNCH SPECIAL</span>
+      <span class="promo-badge" aria-hidden="true">🚀 LAUNCH SPECIAL</span>
       <span class="promo-text"><strong>$1,000 OFF</strong> — Limited time only! Pay just <strong>$2,000</strong> (was $3,000)</span>
-      <a href="#pricing" class="promo-cta">Claim Offer →</a>
+      <a href="#pricing" class="promo-cta" aria-label="Claim Launch Special Offer">Claim Offer →</a>
     </div>
   </div>
   <!-- Page Loader -->
@@ -44,25 +112,26 @@
   <!-- Scroll Progress -->
   <div class="scroll-progress" id="scrollProgress"></div>
   <!-- Cookie Consent -->
-  <div class="cookie-banner" id="cookieBanner">
-    <p>We use cookies to improve your experience. By continuing, you agree to our <a href="privacy.html">Privacy Policy</a>.</p>
+  <div class="cookie-banner" id="cookieBanner" role="alertdialog" aria-labelledby="cookieBannerTitle" aria-describedby="cookieBannerDesc">
+    <h3 id="cookieBannerTitle" class="sr-only">Cookie Consent</h3>
+    <p id="cookieBannerDesc">We use cookies to improve your experience. By continuing, you agree to our <a href="privacy.html" aria-label="Read our Privacy Policy">Privacy Policy</a>.</p>
     <div class="cookie-buttons">
-      <button type="button" class="btn btn-secondary btn-sm" id="cookieDecline">Decline</button>
-      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept">Accept</button>
+      <button type="button" class="btn btn-secondary btn-sm" id="cookieDecline" aria-label="Decline cookies">Decline</button>
+      <button type="button" class="btn btn-primary btn-sm" id="cookieAccept" aria-label="Accept cookies">Accept</button>
     </div>
   </div>
   <a href="#main" class="skip-link">Skip to main content</a>
   <header class="header" id="header">
     <div class="container header-inner">
-      <a href="/" class="logo">
+      <a href="/" class="logo" aria-label="Smoother Drive - Home">
         <div class="logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
           </svg>
         </div>
         <span>Smoother Drive</span>
       </a>
-      <nav class="nav" id="nav">
+      <nav class="nav" id="nav" aria-label="Main navigation">
         <a href="#why-smoother-drive" class="nav-link">Why Smoother Drive</a>
         <a href="#how-it-works" class="nav-link">How It Works</a>
         <a href="#pricing" class="nav-link">Pricing</a>
@@ -70,7 +139,7 @@
         <a href="#faq" class="nav-link">FAQ</a>
         <a href="#contact" class="btn btn-primary">Get Started</a>
       </nav>
-      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
         <span></span><span></span><span></span>
       </button>
     </div>
@@ -551,21 +620,42 @@
 
         <div class="contact-form-section animate-on-scroll">
           <h3 class="text-title">Or fill out this form</h3>
-          <form class="contact-form card" action="mailto:hello@smootherdrive.com" method="post" enctype="text/plain">
+          <form class="contact-form card" action="mailto:hello@smootherdrive.com" method="post" enctype="text/plain" novalidate>
             <div class="form-row">
-              <div class="form-group"><label class="form-label" for="name">Name</label><input type="text" id="name" name="name" class="form-input" required></div>
-              <div class="form-group"><label class="form-label" for="email">Email</label><input type="email" id="email" name="email" class="form-input" required></div>
+              <div class="form-group">
+                <label class="form-label" for="name">Name</label>
+                <input type="text" id="name" name="name" class="form-input" required aria-required="true" minlength="2">
+                <span class="error-message" id="name-error" aria-live="polite"></span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="email">Email</label>
+                <input type="email" id="email" name="email" class="form-input" required aria-required="true" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                <span class="error-message" id="email-error" aria-live="polite"></span>
+              </div>
             </div>
             <div class="form-row">
-              <div class="form-group"><label class="form-label" for="phone">Phone (optional)</label><input type="tel" id="phone" name="phone" class="form-input"></div>
-              <div class="form-group"><label class="form-label" for="vehicle">Vehicle (Year, Make, Model)</label><input type="text" id="vehicle" name="vehicle" class="form-input" placeholder="e.g. 2022 Toyota Camry" required></div>
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone (optional)</label>
+                <input type="tel" id="phone" name="phone" class="form-input" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" aria-describedby="phone-hint">
+                <span class="hint" id="phone-hint">Format: 123-456-7890</span>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="vehicle">Vehicle (Year, Make, Model)</label>
+                <input type="text" id="vehicle" name="vehicle" class="form-input" required aria-required="true" placeholder="e.g. 2022 Toyota Camry" minlength="5">
+                <span class="error-message" id="vehicle-error" aria-live="polite"></span>
+              </div>
             </div>
-            <div class="form-group"><label class="form-label" for="message">Message</label><textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your interest in Smoother Drive..."></textarea></div>
+            <div class="form-group">
+              <label class="form-label" for="message">Message</label>
+              <textarea id="message" name="message" class="form-textarea" rows="4" placeholder="Tell us about your interest in Smoother Drive..." required aria-required="true" minlength="10"></textarea>
+              <span class="error-message" id="message-error" aria-live="polite"></span>
+            </div>
             <div class="form-group form-checkbox">
               <input type="checkbox" id="referral-check" name="referral">
               <label for="referral-check">I was referred by an existing customer</label>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+            <button type="submit" class="btn btn-primary btn-lg" id="submitBtn">Send Message</button>
+            <div id="form-success" class="form-success" aria-live="polite"></div>
           </form>
         </div>
       </div>
@@ -599,6 +689,38 @@
   <!-- Back to Top -->
   <button type="button" class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
+  <style>
+    /* Form validation styles */
+    .error-message {
+      color: #ff6b6b;
+      font-size: 0.8rem;
+      margin-top: 0.25rem;
+      display: none;
+    }
+    
+    .form-input:invalid:not(:focus):not(:placeholder-shown),
+    .form-textarea:invalid:not(:focus):not(:placeholder-shown) {
+      border-color: #ff6b6b;
+    }
+    
+    .form-input:valid:not(:placeholder-shown),
+    .form-textarea:valid:not(:placeholder-shown) {
+      border-color: #00ff88;
+    }
+    
+    .hint {
+      font-size: 0.75rem;
+      color: var(--color-text-muted);
+      margin-top: 0.25rem;
+    }
+    
+    .form-success {
+      color: #00ff88;
+      font-size: 0.9rem;
+      margin-top: 1rem;
+      min-height: 1.2rem;
+    }
+  </style>
   <script>
     // Page Loader
     window.addEventListener('load', () => {
@@ -710,31 +832,126 @@
     }, { threshold: 0.1 });
     animateElements.forEach(el => observer.observe(el));
 
+    // Form Validation
+    const contactForm = document.querySelector('.contact-form');
+    if (contactForm) {
+      contactForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        let isValid = true;
+
+        // Validate name
+        const name = this.querySelector('#name');
+        const nameError = this.querySelector('#name-error');
+        if (!name.value.trim() || name.value.length < 2) {
+          nameError.textContent = 'Please enter your name (minimum 2 characters)';
+          nameError.style.display = 'block';
+          isValid = false;
+        } else {
+          nameError.style.display = 'none';
+        }
+
+        // Validate email
+        const email = this.querySelector('#email');
+        const emailError = this.querySelector('#email-error');
+        const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
+        if (!emailRegex.test(email.value)) {
+          emailError.textContent = 'Please enter a valid email address';
+          emailError.style.display = 'block';
+          isValid = false;
+        } else {
+          emailError.style.display = 'none';
+        }
+
+        // Validate vehicle
+        const vehicle = this.querySelector('#vehicle');
+        const vehicleError = this.querySelector('#vehicle-error');
+        if (!vehicle.value.trim() || vehicle.value.length < 5) {
+          vehicleError.textContent = 'Please enter your vehicle details';
+          vehicleError.style.display = 'block';
+          isValid = false;
+        } else {
+          vehicleError.style.display = 'none';
+        }
+
+        // Validate message
+        const message = this.querySelector('#message');
+        const messageError = this.querySelector('#message-error');
+        if (!message.value.trim() || message.value.length < 10) {
+          messageError.textContent = 'Please enter a message (minimum 10 characters)';
+          messageError.style.display = 'block';
+          isValid = false;
+        } else {
+          messageError.style.display = 'none';
+        }
+
+        if (isValid) {
+          // Show success message
+          const submitBtn = this.querySelector('#submitBtn');
+          const originalBtnText = submitBtn.textContent;
+          submitBtn.disabled = true;
+          submitBtn.textContent = 'Sending...';
+
+          // Simulate form submission
+          setTimeout(() => {
+            const formSuccess = this.querySelector('#form-success');
+            formSuccess.textContent = '✅ Message sent successfully! We will contact you soon.';
+            this.reset();
+            submitBtn.textContent = originalBtnText;
+            submitBtn.disabled = false;
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              formSuccess.textContent = '';
+            }, 5000);
+          }, 1500);
+        }
+      });
+
+      // Real-time validation
+      const inputs = contactForm.querySelectorAll('input, textarea');
+      inputs.forEach(input => {
+        input.addEventListener('input', () => {
+          const errorId = input.id + '-error';
+          const errorElement = document.getElementById(errorId);
+          if (errorElement) {
+            errorElement.style.display = 'none';
+          }
+        });
+      });
+    }
+
     // Newsletter Form
     const newsletterForm = document.getElementById('newsletterForm');
-    newsletterForm.addEventListener('submit', function(e) {
-      e.preventDefault();
-      const email = this.querySelector('#newsletterEmail').value;
+    if (newsletterForm) {
+      newsletterForm.addEventListener('submit', function(e) {
+        e.preventDefault();
+        const email = this.querySelector('#newsletterEmail').value;
+        const emailRegex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 
-      // Show success message
-      const formContent = this.innerHTML;
-      this.innerHTML = `
-        <div style="text-align: center; padding: var(--space-lg);">
-          <div style="font-size: 2rem; margin-bottom: var(--space-md);">✅</div>
-          <h3 style="margin-bottom: var(--space-sm);">Thanks for subscribing!</h3>
-          <p>You'll receive updates about new vehicle support and Smoother Drive features.</p>
-        </div>
-      `;
+        if (!emailRegex.test(email)) {
+          alert('Please enter a valid email address');
+          return;
+        }
 
-      // Reset form after 3 seconds
-      setTimeout(() => {
-        this.innerHTML = formContent;
-        this.reset();
-      }, 3000);
+        // Show success message
+        const formContent = this.innerHTML;
+        this.innerHTML = `
+          <div style="text-align: center; padding: var(--space-lg);">
+            <div style="font-size: 2rem; margin-bottom: var(--space-md);">✅</div>
+            <h3 style="margin-bottom: var(--space-sm);">Thanks for subscribing!</h3>
+            <p>You'll receive updates about new vehicle support and Smoother Drive features.</p>
+          </div>
+        `;
 
-      // Here you would typically send the email to your backend
-      console.log('Newsletter signup:', email);
-    });
+        // Reset form after 3 seconds
+        setTimeout(() => {
+          this.innerHTML = formContent;
+          this.reset();
+        }, 3000);
+
+        console.log('Newsletter signup:', email);
+      });
+    }
 
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
