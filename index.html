@@ -92,14 +92,6 @@
   </script>
 </head>
 <body class="loading">
-  <!-- Launch Special Banner -->
-  <div class="promo-banner" role="banner" aria-label="Launch Special">
-    <div class="container">
-      <span class="promo-badge" aria-hidden="true">🚀 LAUNCH SPECIAL</span>
-      <span class="promo-text"><strong>$1,000 OFF</strong> — Limited time only! Pay just <strong>$2,000</strong> (was $3,000)</span>
-      <a href="#pricing" class="promo-cta" aria-label="Claim Launch Special Offer">Claim Offer →</a>
-    </div>
-  </div>
   <!-- Page Loader -->
   <div class="page-loader" id="pageLoader">
     <div class="loader-content">
@@ -121,36 +113,58 @@
     </div>
   </div>
   <a href="#main" class="skip-link">Skip to main content</a>
+
+  <!-- Main Header -->
   <header class="header" id="header">
-    <div class="container header-inner">
-      <a href="/" class="logo" aria-label="Smoother Drive - Home">
-        <div class="logo-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
-          </svg>
-        </div>
-        <span>Smoother Drive</span>
-      </a>
-      <nav class="nav" id="nav" aria-label="Main navigation">
-        <div class="nav-links">
-          <a href="#why-smoother-drive" class="nav-link">Why Smoother Drive</a>
+    <div class="container">
+      <div class="header-content">
+        <!-- Logo -->
+        <a href="/" class="logo" aria-label="Smoother Drive - Home">
+          <div class="logo-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <span class="logo-text">Smoother Drive</span>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="nav-desktop" id="nav" aria-label="Main navigation">
           <a href="#how-it-works" class="nav-link">How It Works</a>
           <a href="#pricing" class="nav-link">Pricing</a>
           <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
           <a href="#faq" class="nav-link">FAQ</a>
+        </nav>
+
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <div class="header-social">
+            <a href="https://twitter.com/smootherdrive" class="social-icon" aria-label="Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
+            <a href="https://instagram.com/smootherdrive" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
+            <a href="https://youtube.com/@smootherdrive" class="social-icon" aria-label="YouTube" target="_blank" rel="noopener noreferrer">▶</a>
+          </div>
+          <a href="#contact" class="btn btn-primary btn-header">Get Started</a>
         </div>
-        <div class="header-social">
-          <a href="https://twitter.com/smootherdrive" class="header-social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">𝕏</a>
-          <a href="https://instagram.com/smootherdrive" class="header-social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
-          <a href="https://youtube.com/@smootherdrive" class="header-social-link" aria-label="YouTube" target="_blank" rel="noopener noreferrer">▶</a>
-        </div>
-        <a href="#contact" class="btn btn-primary">Get Started</a>
-      </nav>
-      <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
-        <span></span><span></span><span></span>
-      </button>
+
+        <!-- Mobile Menu Toggle -->
+        <button type="button" class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </div>
   </header>
+
+  <!-- Promo Banner (below header) -->
+  <div class="promo-banner" role="banner" aria-label="Launch Special">
+    <div class="container">
+      <span class="promo-badge" aria-hidden="true">🚀 LAUNCH SPECIAL</span>
+      <span class="promo-text"><strong>$1,000 OFF</strong> — Limited time only! Pay just <strong>$2,000</strong> (was $3,000)</span>
+      <a href="#pricing" class="promo-cta" aria-label="Claim Launch Special Offer">Claim Offer →</a>
+    </div>
+  </div>
+
   <div class="mobile-nav" id="mobileNav">
     <a href="#why-smoother-drive" class="nav-link">Why Smoother Drive</a>
     <a href="#how-it-works" class="nav-link">How It Works</a>
