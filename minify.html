@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Asset Minifier</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #0a0a0a;
+      color: #fff;
+    }
+    .container {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 12px;
+      padding: 30px;
+    }
+    h1 {
+      color: #00ff88;
+      margin-top: 0;
+    }
+    textarea {
+      width: 100%;
+      min-height: 200px;
+      background: #000;
+      color: #00ff88;
+      border: 1px solid rgba(0,255,136,0.3);
+      border-radius: 8px;
+      padding: 15px;
+      font-family: 'Courier New', monospace;
+      font-size: 12px;
+      margin: 10px 0;
+    }
+    button {
+      background: #00ff88;
+      color: #000;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+      margin: 5px;
+    }
+    button:hover {
+      background: #00d470;
+    }
+    .stats {
+      margin-top: 20px;
+      padding: 15px;
+      background: rgba(0,255,136,0.1);
+      border-radius: 8px;
+      font-size: 14px;
+    }
+    .label {
+      font-weight: 600;
+      margin-top: 15px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🗜️ CSS/JS Minifier</h1>
+    <p>Paste your CSS or JavaScript code below to minify it:</p>
+    
+    <label class="label">Input Code:</label>
+    <textarea id="input" placeholder="Paste your CSS or JavaScript here..."></textarea>
+    
+    <div>
+      <button onclick="minifyCSS()">Minify CSS</button>
+      <button onclick="minifyJS()">Minify JavaScript</button>
+      <button onclick="copyOutput()">Copy Output</button>
+      <button onclick="downloadOutput()">Download</button>
+    </div>
+    
+    <label class="label">Minified Output:</label>
+    <textarea id="output" readonly></textarea>
+    
+    <div class="stats" id="stats"></div>
+  </div>
+
+  <script>
+    function minifyCSS() {
+      const input = document.getElementById('input').value;
+      const output = document.getElementById('output');
+      
+      // Basic CSS minification
+      let minified = input
+        // Remove comments
+        .replace(/\/\*[\s\S]*?\*\//g, '')
+        // Remove whitespace
+        .replace(/\s+/g, ' ')
+        // Remove spaces around special characters
+        .replace(/\s*([{}:;,>+~])\s*/g, '$1')
+        // Remove trailing semicolons
+        .replace(/;}/g, '}')
+        .trim();
+      
+      output.value = minified;
+      showStats(input, minified, 'CSS');
+    }
+    
+    function minifyJS() {
+      const input = document.getElementById('input').value;
+      const output = document.getElementById('output');
+      
+      // Basic JS minification (simple version)
+      let minified = input
+        // Remove single-line comments
+        .replace(/\/\/.*$/gm, '')
+        // Remove multi-line comments
+        .replace(/\/\*[\s\S]*?\*\//g, '')
+        // Remove extra whitespace
+        .replace(/\s+/g, ' ')
+        // Remove spaces around operators
+        .replace(/\s*([=+\-*/<>!&|,;{}()[\]])\s*/g, '$1')
+        .trim();
+      
+      output.value = minified;
+      showStats(input, minified, 'JavaScript');
+    }
+    
+    function showStats(original, minified, type) {
+      const originalSize = new Blob([original]).size;
+      const minifiedSize = new Blob([minified]).size;
+      const savings = ((1 - minifiedSize / originalSize) * 100).toFixed(1);
+      
+      document.getElementById('stats').innerHTML = `
+        <strong>${type} Minification Results:</strong><br>
+        Original: ${(originalSize / 1024).toFixed(2)} KB<br>
+        Minified: ${(minifiedSize / 1024).toFixed(2)} KB<br>
+        Savings: ${savings}% (${((originalSize - minifiedSize) / 1024).toFixed(2)} KB)
+      `;
+    }
+    
+    function copyOutput() {
+      const output = document.getElementById('output');
+      output.select();
+      document.execCommand('copy');
+      alert('Copied to clipboard!');
+    }
+    
+    function downloadOutput() {
+      const output = document.getElementById('output').value;
+      const blob = new Blob([output], { type: 'text/plain' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'minified.txt';
+      a.click();
+      URL.revokeObjectURL(url);
+    }
+    
+    // Load file button
+    const loadBtn = document.createElement('button');
+    loadBtn.textContent = 'Load File';
+    loadBtn.onclick = function() {
+      const input = document.createElement('input');
+      input.type = 'file';
+      input.accept = '.css,.js';
+      input.onchange = function(e) {
+        const file = e.target.files[0];
+        const reader = new FileReader();
+        reader.onload = function(e) {
+          document.getElementById('input').value = e.target.result;
+        };
+        reader.readAsText(file);
+      };
+      input.click();
+    };
+    document.querySelector('.container > div').prepend(loadBtn);
+  </script>
+</body>
+</html>
+
