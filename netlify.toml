@@ -1,0 +1,88 @@
+# Netlify Configuration File
+# This file tells Netlify how to build and deploy your site
+
+[build]
+  # No build command needed - we're deploying static files
+  command = ""
+  
+  # Publish the root directory
+  publish = "."
+
+# Redirect rules for better SEO and user experience
+[[redirects]]
+  # Redirect www to non-www (if you add a custom domain)
+  from = "https://www.yourdomain.com/*"
+  to = "https://yourdomain.com/:splat"
+  status = 301
+  force = true
+
+# Headers for better performance and security
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Enable GZIP compression
+    Content-Encoding = "gzip"
+    
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Cache static assets for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    # Cache HTML for 1 hour
+    Cache-Control = "public, max-age=3600, must-revalidate"
+
+[[headers]]
+  for = "/*.css"
+  [headers.values]
+    # Cache CSS for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.js"
+  [headers.values]
+    # Cache JavaScript for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    # Cache images for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.jpg"
+  [headers.values]
+    # Cache images for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.webp"
+  [headers.values]
+    # Cache images for 1 year
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# 404 page (optional - you can create a custom 404.html later)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Environment variables (if needed in the future)
+[build.environment]
+  NODE_VERSION = "18"
+
+# Plugin configuration (optional - for future enhancements)
+[[plugins]]
+  package = "@netlify/plugin-lighthouse"
+  
+  # Lighthouse plugin will run performance tests on each deploy
+  [plugins.inputs]
+    output_path = "reports/lighthouse.html"
+
