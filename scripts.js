@@ -178,9 +178,9 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   // Form submission handling
-  const bookingForm = document.querySelector('.booking-form');
-  if (bookingForm) {
-    bookingForm.addEventListener('submit', function(e) {
+  const simpleBookingForm = document.querySelector('.booking-form');
+  if (simpleBookingForm) {
+    simpleBookingForm.addEventListener('submit', function(e) {
       // Basic form validation
       const name = document.getElementById('name').value.trim();
       const email = document.getElementById('email').value.trim();
