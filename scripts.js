@@ -549,6 +549,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Form submission with loading state
     bookingForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
       // Validate all fields before submit
       let isValid = true;
       requiredFields.forEach(field => {
@@ -559,7 +561,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
 
       if (!isValid) {
-        e.preventDefault();
         return;
       }
 
@@ -585,8 +586,33 @@ document.addEventListener('DOMContentLoaded', function() {
         fbq('track', 'Lead');
       }
 
-      // Note: For mailto: forms, we can't show success message
-      // In production, replace with actual form submission to a backend
+      // Submit via Netlify Forms
+      var formData = new FormData(bookingForm);
+      fetch('/', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams(formData).toString()
+      })
+      .then(function(response) {
+        if (response.ok) {
+          // Show success message
+          if (formSuccess) {
+            bookingForm.style.display = 'none';
+            formSuccess.classList.remove('hidden');
+          }
+        } else {
+          throw new Error('Form submission failed');
+        }
+      })
+      .catch(function() {
+        // Re-enable form on error
+        if (btnText && btnLoader) {
+          btnText.classList.remove('hidden');
+          btnLoader.classList.add('hidden');
+          submitBtn.disabled = false;
+        }
+        alert('Sorry, there was an error submitting the form. Please try again or email hello@smootherdrive.com directly.');
+      });
     });
 
     // Initialize progress
