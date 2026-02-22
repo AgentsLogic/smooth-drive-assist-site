@@ -224,7 +224,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const staggerChildrenElements = document.querySelectorAll('.stagger-children');
   if (staggerChildrenElements.length > 0) {
     staggerChildrenElements.forEach(parent => {
-      const children = parent.querySelectorAll('> *');
+      const children = Array.from(parent.children);
       children.forEach((child, index) => {
         child.style.transitionDelay = `${index * 100}ms`;
       });
