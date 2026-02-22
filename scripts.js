@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
       }
     });
-  });
+  }
 
   // Animate elements on scroll
   const animateOnScrollElements = document.querySelectorAll('.animate-on-scroll');
