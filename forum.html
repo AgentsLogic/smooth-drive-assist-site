@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smoother Drive Community Forum — OpenPilot Owners in Austin TX</title>
+  <meta name="description" content="Join the Smoother Drive community forum. Ask questions, share installation experiences, get tips from other OpenPilot users in Austin, TX and beyond.">
+  <meta name="keywords" content="openpilot forum, smoother drive community, driver assist forum, comma ai owners, austin driver assist community">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://smootherdrive.com/forum.html">
+  <meta property="og:title" content="Smoother Drive Community Forum — OpenPilot Owners">
+  <meta property="og:description" content="Connect with other Smoother Drive owners. Ask questions, share tips, and get help from the community.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://smootherdrive.com/forum.html">
+  <link rel="stylesheet" href="styles-optimized.css?v=3">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .forum-hero{padding:8rem 1.5rem 4rem;text-align:center;background:linear-gradient(135deg,#000 0%,#0a0a1a 50%,#000 100%)}
+    .forum-hero h1{font-size:clamp(2rem,6vw,3.5rem);font-weight:700;margin:0 0 1rem}
+    .forum-hero p{color:#aaa;max-width:600px;margin:0 auto 2rem;font-size:1.1rem}
+    .forum-layout{display:grid;grid-template-columns:1fr 280px;gap:2rem;align-items:start}
+    .forum-categories{display:flex;flex-direction:column;gap:1rem;margin-bottom:2rem}
+    .forum-cat{background:#0d0d1a;border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:1.5rem;display:flex;align-items:center;gap:1rem;cursor:pointer;transition:border-color 0.2s,transform 0.2s;text-decoration:none}
+    .forum-cat:hover{border-color:rgba(0,255,136,0.4);transform:translateX(4px)}
+    .forum-cat-icon{font-size:2rem;flex-shrink:0;width:56px;height:56px;background:rgba(0,255,136,0.08);border-radius:0.75rem;display:flex;align-items:center;justify-content:center}
+    .forum-cat-info{flex:1}
+    .forum-cat-info h3{font-size:1rem;font-weight:700;color:#fff;margin:0 0 0.25rem}
+    .forum-cat-info p{font-size:0.85rem;color:#777;margin:0}
+    .forum-cat-stats{text-align:right;font-size:0.8rem;color:#555;flex-shrink:0}
+    .forum-cat-stats strong{display:block;color:#ccc;font-size:1rem}
+    .forum-threads{display:flex;flex-direction:column;gap:0.75rem}
+    .forum-thread{background:#0d0d1a;border:1px solid rgba(255,255,255,0.06);border-radius:0.75rem;padding:1.25rem;transition:border-color 0.2s;cursor:pointer}
+    .forum-thread:hover{border-color:rgba(0,255,136,0.3)}
+    .thread-header{display:flex;align-items:flex-start;gap:1rem;margin-bottom:0.5rem}
+    .thread-avatar{width:40px;height:40px;border-radius:50%;background:linear-gradient(135deg,#00ff88,#0088ff);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.9rem;color:#000;flex-shrink:0}
+    .thread-title{font-size:0.95rem;font-weight:600;color:#fff;margin:0 0 0.25rem}
+    .thread-meta{font-size:0.8rem;color:#666}
+    .thread-tag{display:inline-block;background:rgba(99,102,241,0.15);color:#a5b4fc;border-radius:999px;font-size:0.7rem;font-weight:600;padding:0.1rem 0.5rem;margin-right:0.5rem;text-transform:uppercase}
+    .thread-tag.solved{background:rgba(0,255,136,0.15);color:#00ff88}
+    .thread-tag.hot{background:rgba(255,100,0,0.15);color:#ff6400}
+    .thread-stats{display:flex;gap:1rem;margin-top:0.5rem;font-size:0.8rem;color:#555}
+    .forum-sidebar{background:#0d0d1a;border:1px solid rgba(255,255,255,0.08);border-radius:1rem;padding:2rem;position:sticky;top:6rem}
+    .sidebar-stat{display:flex;justify-content:space-between;padding:0.75rem 0;border-bottom:1px solid rgba(255,255,255,0.05);font-size:0.9rem}
+    .sidebar-stat .val{color:#00ff88;font-weight:700}
+    .forum-cta-box{background:linear-gradient(135deg,rgba(0,255,136,0.08),rgba(0,136,255,0.08));border:1px solid rgba(0,255,136,0.2);border-radius:1rem;padding:1.5rem;margin-bottom:2rem;text-align:center}
+    .forum-cta-box h3{font-size:1rem;font-weight:700;margin:0 0 0.5rem}
+    .forum-cta-box p{font-size:0.85rem;color:#999;margin:0 0 1rem}
+    .section-label{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.1em;color:#00ff88;margin:2rem 0 1rem}
+    @media(max-width:768px){.forum-layout{grid-template-columns:1fr}.forum-cat{flex-wrap:wrap}.forum-cat-stats{display:none}}
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to main content</a>
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="/" class="logo" aria-label="Smoother Drive - Home">
+        <div class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+        </div>
+        <span class="logo-text">Smoother Drive</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <a href="index.html#how-it-works" class="nav-link">How It Works</a>
+        <a href="index.html#pricing" class="nav-link">Pricing</a>
+        <a href="supported-vehicles.html" class="nav-link">Vehicles</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="forum.html" class="nav-link" aria-current="page">Forum</a>
+        <a href="index.html#contact" class="btn btn-primary">Get Started</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <div class="forum-hero">
+      <div class="container">
+        <div class="hero-badge">💬 Community Hub</div>
+        <h1>Smoother Drive <span class="text-gradient">Community</span></h1>
+        <p>Ask questions, share your experience, help other owners, and stay up to date with the latest OpenPilot news — right here in our forum.</p>
+        <a href="index.html#contact" class="btn btn-primary btn-lg">Get Your Install → Join the Community</a>
+      </div>
+    </div>
+
+
+    <section class="section" style="padding-top:2rem">
+      <div class="container">
+        <div class="forum-layout">
+          <div>
+            <p class="section-label">📂 Forum Categories</p>
+            <div class="forum-categories">
+              <a href="#" class="forum-cat"><div class="forum-cat-icon">🔧</div><div class="forum-cat-info"><h3>Installation Help</h3><p>Questions about the install process, harnesses, mounting, and setup.</p></div><div class="forum-cat-stats"><strong>142</strong>posts</div></a>
+              <a href="#" class="forum-cat"><div class="forum-cat-icon">🚗</div><div class="forum-cat-info"><h3>Vehicle Compatibility</h3><p>Is your car supported? Share compatibility info and edge cases.</p></div><div class="forum-cat-stats"><strong>89</strong>posts</div></a>
+              <a href="#" class="forum-cat"><div class="forum-cat-icon">⚙️</div><div class="forum-cat-info"><h3>Settings &amp; Tuning</h3><p>Optimize your Smoother Drive experience with custom settings and profiles.</p></div><div class="forum-cat-stats"><strong>67</strong>posts</div></a>
+              <a href="#" class="forum-cat"><div class="forum-cat-icon">🐛</div><div class="forum-cat-info"><h3>Troubleshooting</h3><p>Something not working right? Get help from the community and our team.</p></div><div class="forum-cat-stats"><strong>54</strong>posts</div></a>
+              <a href="#" class="forum-cat"><div class="forum-cat-icon">🆕</div><div class="forum-cat-info"><h3>Updates &amp; Changelog</h3><p>Latest OpenPilot software updates, new features, and what changed.</p></div><div class="forum-cat-stats"><strong>33</strong>posts</div></a>
+              <a href="#" class="forum-cat"><div class="forum-cat-icon">💬</div><div class="forum-cat-info"><h3>General Discussion</h3><p>Anything and everything about driving, technology, and Smoother Drive.</p></div><div class="forum-cat-stats"><strong>211</strong>posts</div></a>
+            </div>
+            <p class="section-label">🔥 Recent Discussions</p>
+            <div class="forum-threads">
+              <div class="forum-thread">
+                <div class="thread-header"><div class="thread-avatar">JM</div><div><div class="thread-title"><span class="thread-tag solved">Solved</span>Does Smoother Drive work on a 2022 Hyundai Tucson with factory ADAS already installed?</div><div class="thread-meta">James M. · 2 hours ago · Installation Help</div></div></div>
+                <div class="thread-stats"><span>💬 12 replies</span><span>👁️ 248 views</span><span>✅ Solved by team</span></div>
+              </div>
+              <div class="forum-thread">
+                <div class="thread-header"><div class="thread-avatar">SR</div><div><div class="thread-title"><span class="thread-tag hot">Hot</span>OpenPilot 0.11 just dropped — who's updated? Share your experience!</div><div class="thread-meta">Sarah R. · 5 hours ago · Updates &amp; Changelog</div></div></div>
+                <div class="thread-stats"><span>💬 34 replies</span><span>👁️ 891 views</span><span>🔥 Trending</span></div>
+              </div>
+              <div class="forum-thread">
+                <div class="thread-header"><div class="thread-avatar">MC</div><div><div class="thread-title">My 6-month review after Smoother Drive installation on Honda Accord 2020</div><div class="thread-meta">Mike C. · 1 day ago · General Discussion</div></div></div>
+                <div class="thread-stats"><span>💬 8 replies</span><span>👁️ 412 views</span></div>
+              </div>
+              <div class="forum-thread">
+                <div class="thread-header"><div class="thread-avatar">AL</div><div><div class="thread-title">Best follow distance settings for Austin highway driving?</div><div class="thread-meta">Alex L. · 2 days ago · Settings &amp; Tuning</div></div></div>
+                <div class="thread-stats"><span>💬 19 replies</span><span>👁️ 567 views</span></div>
+              </div>
+              <div class="forum-thread">
+                <div class="thread-header"><div class="thread-avatar">KT</div><div><div class="thread-title"><span class="thread-tag solved">Solved</span>Device keeps disconnecting after software update — fixed!</div><div class="thread-meta">Karen T. · 3 days ago · Troubleshooting</div></div></div>
+                <div class="thread-stats"><span>💬 6 replies</span><span>👁️ 188 views</span></div>
+              </div>
+            </div>
+            <div class="forum-post-cta">
+              <h3>Want to post or reply?</h3>
+              <p>Full forum coming soon. For now, reach us directly and we'll post your question.</p>
+              <a href="mailto:hello@smootherdrive.com?subject=Forum Question" class="btn btn-primary">Email Your Question</a>
+              <a href="https://discord.gg/comma" target="_blank" rel="noopener" class="btn btn-secondary">Join OpenPilot Discord</a>
+            </div>
+          </div>
+          <aside class="forum-sidebar">
+            <div class="forum-cta-box">
+              <h3>🚗 Not installed yet?</h3>
+              <p>Join 500+ Austin drivers who already drive smarter.</p>
+              <a href="index.html#contact" class="btn btn-primary forum-book-btn">Book for $2,000</a>
+            </div>
+            <p class="section-label" style="margin-top:0">Community Stats</p>
+            <div class="sidebar-stat"><span>Members</span><span class="val">500+</span></div>
+            <div class="sidebar-stat"><span>Posts</span><span class="val">596</span></div>
+            <div class="sidebar-stat"><span>Topics</span><span class="val">84</span></div>
+            <div class="sidebar-stat"><span>Online Now</span><span class="val">12</span></div>
+            <p class="section-label">Quick Links</p>
+            <a href="supported-vehicles.html" class="sidebar-link">🚘 Vehicle Compatibility</a>
+            <a href="blog.html" class="sidebar-link">📝 Read the Blog</a>
+            <a href="https://discord.gg/comma" target="_blank" rel="noopener" class="sidebar-link">💬 OpenPilot Discord</a>
+            <a href="index.html#faq" class="sidebar-link">❓ FAQ</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <a href="/" class="logo"><div class="logo-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg></div><span class="logo-text">Smoother Drive</span></a>
+          <p class="footer-tagline">Best Aftermarket Driver Assist System in Austin, TX</p>
+        </div>
+        <div class="footer-links">
+          <a href="index.html" class="footer-link">Home</a>
+          <a href="blog.html" class="footer-link">Blog</a>
+          <a href="forum.html" class="footer-link">Forum</a>
+          <a href="supported-vehicles.html" class="footer-link">Vehicles</a>
+          <a href="privacy.html" class="footer-link">Privacy Policy</a>
+          <a href="terms.html" class="footer-link">Terms of Service</a>
+        </div>
+        <div class="footer-legal">
+          <p class="footer-copyright">© <span id="currentYear"></span> Smoother Drive. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById('currentYear').textContent = new Date().getFullYear();</script>
+</body>
+</html>
