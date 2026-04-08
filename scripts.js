@@ -456,14 +456,14 @@ document.addEventListener('DOMContentLoaded', function() {
     function updateCalculator() {
       const years = parseInt(timeRangeSelect.value);
       const months = years * 12;
-      const smootherCost = 2000;
-      const teslaUpfront = 8000;
+      const smootherCost = 3000;
+      const teslaUsedMin = 21500; // minimum used Tesla capable of FSD as of 2026
       const teslaMonthly = 99;
-      const teslaTotalCost = teslaUpfront + (teslaMonthly * months);
+      const teslaTotalCost = teslaUsedMin + (teslaMonthly * months);
       const savings = teslaTotalCost - smootherCost;
 
       teslaCostElement.textContent = '$' + teslaTotalCost.toLocaleString();
-      teslaBreakdownElement.textContent = `$${teslaUpfront.toLocaleString()} upfront + $${teslaMonthly}/mo × ${months} months`;
+      teslaBreakdownElement.textContent = `Min. used Tesla (~$${teslaUsedMin.toLocaleString()}) + $${teslaMonthly}/mo × ${months} months`;
       savingsValueElement.textContent = '$' + savings.toLocaleString();
     }
 

@@ -22,9 +22,9 @@ We sell two ways:
 
 Driver-assist technology is one of the hottest categories in automotive right now. The problem is access:
 
-- Tesla FSD = **$8,000 upfront + $99/month**
-- Factory ADAS packages = **$3,000–5,000 on new cars only**
-- Smoother Drive = **$3,000. One time. On the car you already drive.**
+- **Tesla FSD** — as of early 2026, Tesla no longer sells FSD as a standalone add-on. To get it, you have to buy a new Tesla (starting around $40,000) or find a capable used one (still $20,000–35,000+), then pay $99/month on top of that.
+- **Factory ADAS packages** — only available when buying a brand new car. Usually a $3,000–5,000 option you cannot add later.
+- **Smoother Drive** — $3,000. One time. On the car you already drive.
 
 There is no franchise or install chain doing this at scale. We are building that company — the Tint World of driver assist.
 
