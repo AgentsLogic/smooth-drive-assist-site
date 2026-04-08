@@ -1,182 +1,254 @@
-# Smoother Drive — Full Business Plan
+﻿# Smoother Drive -- Full Business Plan
+*Updated April 2026*
 
 ---
 
 ## Executive Summary
 
-Smoother Drive is building the premier brand for affordable, supervised driver-assist technology. We source high-quality OpenPilot-compatible hardware from Alibaba — including units with built-in navigation ($700–900/unit) — rebrand them under the Smoother Drive name, flash open-source OpenPilot software, and professionally install them in customers' vehicles. We launch in Austin, TX, bootstrapping out of the founder's garage with guerrilla marketing and PPC advertising.
+Smoother Drive is the premier aftermarket brand for AI-powered driver-assist technology. We sell and install comma 4-based OpenPilot systems -- the #1 rated aftermarket ADAS platform (Consumer Reports) -- either shipped directly to DIY customers or professionally installed by our certified team across major Texas markets.
 
-- **Year 1 Goal:** 200 installs at $2,000 = **$400K revenue**
-- **Year 3 Goal:** Expand to 50 franchises nationwide via $25K fees + 6% royalties, targeting **$5M+ system-wide revenue**
-- **Startup Needs:** $10K seed round
-- **Margins:** ~55–65% on hardware installs, plus recurring revenue from optional subscription
-- **Market:** Booming ADAS aftermarket — $500B+ and growing 20% YoY
+We launch in Austin, TX bootstrapping from the founder's garage, and scale to Houston, Dallas, Fort Worth, San Antonio, and Corpus Christi via a commissioned sales team in Year 1, followed by franchise expansion nationwide in Year 2-3.
+
+| Metric | Target |
+|--------|--------|
+| Year 1 Revenue | $528K+ (200 units blended) |
+| Year 3 Revenue | $5M+ system-wide (franchise) |
+| Seed Round | $10K for 10% equity |
+| Gross Margin | 55-65% (professional install) |
+| Market | US ADAS aftermarket -- $500B+, growing 20% YoY |
 
 ---
 
 ## Market Opportunity
 
-- **US automotive aftermarket:** $500B+, with ADAS/CVT growing **20% YoY** (SEMA)
-- **Competitor pricing gap:** Leading OEM driver-assist subscriptions charge **$100+/month** with mandatory fees just to use the system. Smoother Drive has **no required monthly fee** — you buy it, you own it.
-- **Austin, TX:** Tech hub, 1M+ registered vehicles, heavy traffic congestion — perfect for guerrilla sign marketing: *"Traffic Sucks? Smoother Drive $2,000!"*
-- **No direct franchise competitors** in this space; modeled after car audio/electronics install chains (e.g., Cleveland Soundwave: $500K Year 1 sales)
-- **Consumer sentiment:** Consumer Reports rates OpenPilot above most OEM driver-assist systems
+- **US automotive aftermarket:** $500B+, with ADAS growing **20% YoY** (SEMA 2025)
+- **The gap we fill:** Tesla FSD = $8,000 upfront + $99/month. Factory ADAS = $3,000-5,000 on new cars only. Smoother Drive = **$3,000 one-time, works on 325+ existing vehicles, no subscription.**
+- **Texas alone:** 22M+ registered vehicles, 5 of the 10 fastest-growing US cities -- our backyard
+- **No franchise competitor** exists in this space; modeled after Tint World and Cleveland Soundwave
+- **Consumer Reports** rates OpenPilot above most OEM driver-assist systems
 
 ---
 
-## Products & Services
+## Products and Services
 
-### Smoother Drive Device (Rebranded Hardware)
-- Alibaba-sourced OpenPilot-compatible units with **built-in navigation**: **$700–900/unit** (volume pricing at $700 when ordering 2+)
-- Rebranded under Smoother Drive with custom packaging and branding
-- Rigorously tested before customer deployment
+### Tier 1 -- System + Harness (DIY): $2,100 (Launch Sale -- was $3,000)
 
-### Installation Service
-- **2–4 hour** professional installation with vehicle-specific harness (sold separately with markup)
-- **Price:** $2,000 installed — or shipped to customer + harness at additional cost
-- Harnesses marked up and sold as add-on per vehicle model
+For customers who want to self-install.
 
-### What's Included (No Hidden Fees)
-- Smoother Drive device with OpenPilot pre-installed
-- Supervised assisted driving: lane centering, adaptive cruise control, navigation
-- OTA software updates (free, forever)
-- **No required monthly subscription** — unlike competitors charging $100+/month
+| Included | Details |
+|----------|---------|
+| comma 4 device | Industry-leading ADAS hardware |
+| Vehicle-specific wiring harness | Plug-and-play for 325+ models |
+| Step-by-step installation guide | Written + video walkthrough |
+| 1-year hardware warranty | Full coverage |
+| 30-day money-back guarantee | No questions asked |
+| OTA software updates | Free, forever |
 
-### Optional Premium Module — $80/month
-- **Wi-Fi connectivity** for the vehicle and system
-- **Additional camera module** for enhanced coverage
-- **Premium support** with priority response
-- Recurring revenue stream for the business
+Payment: PayPal -- ships within 3-5 business days. COGS: ~$950. Gross before commission: ~$1,150.
+
+### Tier 2 -- System + Professional Install: $3,000 (Most Popular)
+
+Full-service installation in Austin, Houston, Dallas, Fort Worth, San Antonio, and Corpus Christi.
+
+| Included | Details |
+|----------|---------|
+| comma 4 device | Industry-leading ADAS hardware |
+| Vehicle-specific wiring harness | Included |
+| Professional installation | By our certified team |
+| Hands-on driving training session | 30 minutes |
+| Comprehensive system calibration | Verified before handoff |
+| 1-year hardware warranty | Full coverage |
+| 30-day money-back guarantee | No questions asked |
+
+Payment: PayPal full payment or deposit + balance at install. COGS: ~$1,080. Gross before commission: ~$1,920.
+
+### Tier 3 -- Monthly Support Plan: $100/month (Optional)
+
+Recurring revenue stream. Priority support, software update assistance, periodic hardware check-ups. Cancel anytime. No contract.
 
 ### Legal Framework
-- Ironclad disclaimers: **Driver is 100% responsible at all times — supervised assist only, not autonomous**
-- Warranty void acknowledgment signed by customer
-- Open-source terms indemnify installers
+
+Driver is 100% responsible at all times -- supervised assist only, not autonomous. Customer signs acknowledgment before install or shipment. Open-source license terms protect the installer. LLC + liability insurance shields personal assets.
+
+---
+
+## Sales Structure and Commissions
+
+Every unit sold is attributed to a sales rep and a sales manager.
+
+| Role | Rate | Per DIY ($2,100) | Per Install ($3,000) |
+|------|------|------------------|----------------------|
+| Sales Rep | 15% | $315 | $450 |
+| Sales Manager override | 5% | $105 | $150 |
+| Total commission cost | 20% | $420 | $600 |
+
+### Net Margin After Commissions
+
+| Tier | Price | COGS | Commissions | Net Profit | Margin |
+|------|-------|------|-------------|-----------|--------|
+| DIY | $2,100 | $950 | $420 | ~$730 | ~35% |
+| Pro Install | $3,000 | $1,080 | $600 | ~$1,320 | ~44% |
+
+Net figures are before allocated overhead (~$150-200 per unit at scale).
+
+### Sales Team Structure
+
+Sales Reps close inbound and outbound leads, coordinate scheduling, and work on 1099 commission-only contracts to start. Sales Managers oversee 3-5 reps, handle escalations, and earn a 5% override on all team revenue. Year 1 plan: 1-2 reps in Austin, expand to 1 rep per city as install capacity scales.
 
 ---
 
 ## Operations
 
-### Phase 1: Bootstrap (Now)
-- **Founder installs all systems personally** out of home garage in Austin, TX
-- Lean operations — no rent, no employees, maximum margin
-- Build reputation, refine process, collect testimonials
+### Phase 1 -- Bootstrap (Now)
 
-### Phase 2: Formalize
-- Form LLC
-- Hire **certified mechanics** to handle installations
-- Secure a dedicated shop space as revenue allows
+Founder installs all systems personally in Austin out of home garage. Lean ops -- minimal overhead, maximum learning. Build testimonials, refine install process, launch site and PPC campaigns.
 
-### Phase 3: Scale & Franchise (Year 2+)
-- **Franchise Disclosure Document (FDD):** $20–40K legal setup (Texas exempt notice: $25)
-- **Franchise Fee:** $25K (covers training, territory rights, operations manual)
-- **Total Franchise Investment:** $250–400K per shop (including buildout and tools)
-- **Royalties:** 6% of revenue
-- **Ad Fund:** 2% of revenue
-- **Scale:** 5 Texas shops in Year 2, nationwide expansion in Year 3
+### Phase 2 -- Formalize (Month 3-6)
+
+Form LLC (Texas). Hire first 1099 sales rep. Hire 1 certified installer for overflow jobs. Expand to Houston and Dallas with contract installers.
+
+### Phase 3 -- Scale and Franchise (Year 2+)
+
+| Item | Details |
+|------|---------|
+| Franchise fee | $25,000 per territory |
+| Total franchise investment | $50K-150K (garage/mobile launch) |
+| Full shop build-out | $250K-400K (optional) |
+| Royalties | 6% of gross revenue |
+| Ad fund | 2% of gross revenue |
+| FDD setup | ~$20-40K legal; TX requires $25 exempt notice only |
+| Year 2 goal | 5 TX franchises |
+| Year 3 goal | 25+ franchises nationwide |
 
 ### Hardware Sourcing
-- Source top-selling Alibaba units with navigation capability
-- Also purchase one official comma 3 unit for benchmark testing
-- Test multiple Alibaba models side-by-side to select the best for rebranding
-- Volume pricing: $700/unit at 2+ quantity
 
-### Risk Mitigation
-- Hardware QA via pilot testing program (multiple units from different suppliers)
-- Liability insurance
-- LLC structure shields personal assets
+Primary: Official comma 4 units (~$799 MSRP; volume pricing negotiable). Alternative: Alibaba OpenPilot-compatible units tested side-by-side; used if quality matches at lower COGS. Vehicle-specific harnesses sourced from comma.ai or compatible suppliers.
 
 ---
 
-## Marketing & Sales
+## Marketing and Sales
 
-### Guerrilla Marketing
-- **3×3 ft roadside signs** on high-traffic corridors: Mopac, I-35, Lamar
-- Sign variations:
-  - *"Traffic Sucks? Smoother Drive — $2,000 Installed!"*
-  - *"Driver Assist for YOUR Car — No Monthly Fee — Smoother Drive"*
-  - *"Hands-Free Highway Bliss — Smoother Drive — $2K — Call Us!"*
-- Rotate sign locations to avoid code enforcement
+### Guerrilla Marketing (Low Cost, High ROI)
 
-### Digital Marketing (PPC)
-- Google Ads and social media PPC campaigns: **$500–1,000/mo**
-- X (Twitter) and Reddit ads targeting driver-assist enthusiasts
-- Social media content: install videos, before/after demos, testimonials
+3x3 ft roadside signs on high-traffic Texas corridors: Mopac, I-35, I-10, I-45, Loop 410.
 
-### Business Cards & Local Presence
-- Professional business cards for networking, car meets, and local events
-- Partnerships with local auto shops for referral commissions
+Sign copy:
+- "Traffic Sucks. Smoother Drive -- $3,000 Installed. smootherdrive.com"
+- "Driver Assist for YOUR Car -- No Monthly Fee -- smootherdrive.com"
+- "Install It Yourself -- $2,100 Shipped -- smootherdrive.com"
 
-### Year 1 Target
-- **17 installs/month** driven by signs, PPC, and word of mouth
+### Digital Marketing
+
+Google Ads targeting "driver assist installation [city]", "openpilot installer", "comma 4 install". Facebook/Instagram targeting vehicle owners aged 25-55, household income $75K+. YouTube install demo videos and commute testimonials. Budget: $500-1,000/month scaling with revenue.
+
+### SEO and AI Search
+
+Weekly blog articles on vehicles, installs, and OpenPilot updates. Community forum for long-tail SEO. Schema.org LocalBusiness markup for all target cities. Google Business Profile per market.
+
+### Referral Program
+
+Existing customers: $500 cash per successful referral. Local auto shops: $200 per referral for shop partnerships.
 
 ---
 
 ## Revenue Streams
 
-| Stream | Revenue | Notes |
-|--------|---------|-------|
-| Device + Installation | $2,000/install | Core business |
-| Shipped Device + Harness | $1,200–1,500 | For remote/DIY customers |
-| Harness Sales (markup) | $50–150 each | Per vehicle model |
-| Optional Premium Module | $80/month/subscriber | Wi-Fi, cameras, premium support |
-| Franchise Fees | $25K per franchise | Year 2+ |
-| Franchise Royalties | 6% of franchisee revenue | Recurring |
+| Stream | Price | Notes |
+|--------|-------|-------|
+| DIY System + Harness | $2,100 | Ships nationwide |
+| Professional Install | $3,000 | TX markets, expanding |
+| Monthly Support Plan | $100/mo | Optional, any customer |
+| Franchise Fees | $25K per territory | Year 2+ |
+| Franchise Royalties | 6% of revenue | Recurring |
+| Referral / Partner Program | Varies | Auto shops, car clubs |
 
 ---
 
-## Financial Projections (Conservative)
+## Financial Projections
 
-### Startup Costs: $10,000 (Seed Round)
+### Startup Costs -- $10,000 Seed Round
+
 | Item | Cost |
 |------|------|
 | LLC Formation | $300 |
-| Liability Insurance | $500 |
-| Roadside Signs (advertising) | $500 |
-| PPC / Digital Ad Budget | $500 |
-| Business Cards & Branding | $200 |
-| Computer + AI Credits (operations) | $1,000 |
-| Founder Operating Budget (focus time) | $1,500 |
-| Prototype Units — 1× comma 3 official ($500) + top Alibaba units for testing ($3,000) | $3,500 |
-| Harnesses for test vehicles | $500 |
-| Miscellaneous / Contingency | $1,500 |
-| **Total** | **$10,000** |
+| Liability Insurance (Year 1) | $1,200 |
+| Roadside Signs (10 signs, 5 markets) | $1,000 |
+| PPC / Digital Ad Budget (3 months) | $1,500 |
+| Business Cards and Branding | $200 |
+| Computer + AI Credits | $1,000 |
+| Founder Operating Budget | $1,500 |
+| Hardware (comma 4 + test units + harnesses) | $2,800 |
+| Miscellaneous / Contingency | $500 |
+| Total | $10,000 |
+
+### Unit Economics -- Professional Install
+
+| Line Item | Amount |
+|-----------|--------|
+| Sale price | $3,000 |
+| COGS (device + harness + labor) | -$1,080 |
+| Sales rep commission (15%) | -$450 |
+| Manager override (5%) | -$150 |
+| Overhead allocation | -$175 |
+| Net profit per install | ~$1,145 (~38% net margin) |
 
 ### Break-Even
-- **4 installs per month** (at $2,000 each with ~$900 COGS)
 
-### Year 1 Projections
-- 200 installs × $2,000 = **$400K revenue**
-- Gross profit per install: ~$1,100 = **$220K gross profit**
-- Additional revenue from harness markup, shipped units, and subscriptions
-- **ROI:** 20–40x on $10K seed
+Monthly fixed overhead: ~$1,500-2,000. Contribution per pro install after COGS and commission: ~$1,320. Break-even: 2 professional installs per month.
 
-### Franchise Revenue Model (Year 2–3)
+### Year 1 Projections (Conservative)
+
+| Metric | DIY Units | Pro Installs | Total |
+|--------|-----------|-------------|-------|
+| Units sold | 80 | 120 | 200 |
+| Revenue | $168,000 | $360,000 | $528,000 |
+| COGS | $76,000 | $129,600 | $205,600 |
+| Commissions (20%) | $33,600 | $72,000 | $105,600 |
+| Gross Profit | $58,400 | $158,400 | $216,800 |
+| Overhead (est.) | -- | -- | -$48,000 |
+| Net Profit | -- | -- | ~$168,800 |
+| ROI on $10K seed | -- | -- | ~17x |
+
+### Year 2-3 Projections (With Franchises)
+
 | Source | Year 2 | Year 3 |
 |--------|--------|--------|
-| Franchise Fees (5–50 shops) | $125K–$1.25M | $1.25M+ |
-| Royalties (6%) | Scales with installs | $1M+ |
-| Premium Module Subscriptions | Recurring | Growing |
+| Company-operated installs | $600K | $900K |
+| Franchise fees (5-25 shops) | $125K-625K | $625K+ |
+| Royalties (6%) | Growing | $300K+ |
+| Monthly support subscriptions | $50K | $150K |
+| Total system revenue | ~$1.5M | ~$5M+ |
 
 ---
 
-## Franchise Model (Inspired by Tint World / Midas)
+## Franchise Model
 
-- **Fee:** $25K per franchise (covers training, territory, ops manual)
-- **Total Franchise Investment:** $250–400K (shop, tools, inventory)
-- **Support:** Centralized hardware sourcing, marketing co-op, annual conferences
-- **Scale:** 5 TX shops Year 2 → nationwide Year 3 (low regulatory barriers outside 14 states)
+Modeled after Tint World and Midas -- low-cost, mobile-friendly franchise units that do not require a full commercial shop to start.
+
+| Item | Details |
+|------|---------|
+| Franchise fee | $25,000 |
+| Territory | Exclusive by city/metro |
+| Minimum investment | $50K-150K (garage/mobile launch) |
+| Full shop build-out | $250K-400K (optional) |
+| Royalties | 6% of gross revenue |
+| Ad fund | 2% of gross revenue |
+| Training | 1-week intensive at Austin HQ |
+| Support | Centralized sourcing, marketing co-op, ops manual |
+| Legal | FDD required in 14 states; TX requires $25 exempt notice |
 
 ---
 
-## Team & Funding Ask
+## Team and Funding Ask
 
-- **Founder:** Solo founder — performing all installations personally during bootstrap phase
-- **Seeking:** **$10,000 seed round for 10% equity** — or $1,000 for 1% equity (up to 10% maximum this round), preserving room for future funding rounds
-- **Use of Funds:** LLC formation, insurance, prototype hardware (1× comma 3 + top Alibaba units), signs, PPC budget, business cards, computer/AI credits, founder operating budget, harnesses
-- **Exit Strategy:** Acquisition by auto aftermarket chain (e.g., Driven Brands) or PE rollup
+Founder is the solo operator during bootstrap -- installing, marketing, and running all operations. Year 1 hires include 1-2 commission-only sales reps (1099) and 1 part-time installer.
+
+Seeking: $10,000 seed round for 10% equity -- or $1,000 for 1% equity (up to 10% max this round), preserving room for future funding rounds.
+
+Use of funds: LLC formation, insurance, prototype hardware, roadside signs, PPC budget, and founder operating runway.
+
+Exit strategy: Acquisition by auto aftermarket chain (Driven Brands, Midas, Tint World) or PE rollup at 3-5x revenue.
 
 ---
 
-**Smoother Drive — the smoothest supervised driving experience, for the car you already own.**
-
+**Smoother Drive -- the best aftermarket driver assist system, for the car you already own.**
