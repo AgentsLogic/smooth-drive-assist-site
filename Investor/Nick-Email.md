@@ -48,13 +48,15 @@ The $10K gets us operational and stocked. After the first 9 installs, the busine
 
 **Your deal:**
 
-This is a preferred revenue share — clean and simple, no equity headaches:
+This is a Revenue Participation Agreement — a fixed-term deal with defined payments and a hard end date. No equity, no board seat, no complexity.
 
-1. From month one, you receive **20% of monthly net profit** until your full $10,000 is returned. At 2 installs/week that happens in roughly **6–8 weeks**.
-2. After that you continue at **10% of monthly net profit through month 24** — projected total payout of **$30,000+ on your $10,000** over two years.
-3. At month 24 there's a clean exit — you take your earnings and walk, or we renegotiate if you want to stay in.
+1. **Phase 1 — Get your money back first:** From month one you receive **20% of monthly net profit** until your full $10,000 is returned. At our projected pace that's roughly **6–8 weeks**.
+2. **Phase 2 — Profit share:** After that you receive **10% of monthly net profit for the rest of the 24-month term** — projected total payout of **$30,000+ on your $10,000**.
+3. **Month 24 — It's done:** The agreement expires automatically. Full stop. No renewal, no negotiation, no further obligation on either side.
 
-No board seat. No lock-up. No waiting for an acquisition. You see cash within the first couple months.
+One more thing worth mentioning: if we want to close it out early (say the business takes off and we want to clean up the cap structure), we have the right to make you a one-time **$5,000 buyout payment** after Month 12 to terminate the agreement. You'd walk away with everything paid to that point plus the $5,000. That's our call, not yours — but it's there so you know there's always a clear exit for both of us.
+
+No board seat. No voting rights. No lock-up waiting for an acquisition. Cash in your pocket starting week one.
 
 ---
 
