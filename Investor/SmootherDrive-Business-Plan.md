@@ -13,8 +13,8 @@ We launch in Austin, TX from the founder's home base, scale across Texas via a c
 
 | Metric | Target |
 |--------|--------|
-| Year 1 Net Profit | ~$168,800 (~17× ROI on $10K seed) |
-| Year 1 Revenue | ~$528,000 (200 units) |
+| Year 1 Net Profit | ~$200,000 (~20× ROI on $10K seed) |
+| Year 1 Revenue | ~$552,000 (200 units + support) |
 | Year 3 Revenue | $5M+ system-wide (with franchises) |
 | Net Margin per Pro Install | ~38% after all costs and commissions |
 | Break-Even | 2 professional installs per month |
@@ -226,12 +226,12 @@ Full Texas metro coverage. Recurring support subscriber base generates $3,000–
 | Revenue | $168,000 | $360,000 | $24,000 | **$552,000** |
 | COGS (hardware, labor, shipping) | −$67,600 | −$115,200 | — | −$182,800 |
 | Commissions (20%) | −$33,600 | −$72,000 | — | −$105,600 |
-| Gross Profit | $66,800 | $172,800 | $24,000 | **$263,600** |
+| Variable Overhead (per-unit: gas, misc) | −$9,600 | −$18,000 | — | −$27,600 |
 | Fixed Overhead (12 months @ $1,750/mo) | — | — | — | −$21,000 |
-| **Net Profit** | — | — | — | **~$242,600** |
-| **ROI on $10K seed** | — | — | — | **~24×** |
+| **Net Profit** | — | — | — | **~$215,000** |
+| **ROI on $10K seed** | — | — | — | **~20×** |
 
-> *Note: These are conservative projections assuming we average less than 2 installs/week. Even at 1 install/week for the entire year we generate ~$59,500 net — nearly 6× the seed investment.*
+> *Note: Conservative projections at under 2 installs/week average. At just 1 install/week the entire year, net profit is still ~$55,000 — more than 5× the seed investment back.*
 
 ### Year 2–3 Projections (Company Operations + Franchise)
 
@@ -279,7 +279,7 @@ This is structured as a **preferred revenue share**, not traditional equity, giv
 
 **Why this works for the investor:**
 - Cash returns start immediately — not locked up for years
-- 3× projected return in 24 months without waiting for an acquisition
+- 3× projected return in 24 months without waiting for an acquisition (based on 20% share of ~$200K Year 1 net + 10% through Year 2)
 - Clean exit path built in; no board seats, no drag rights, no complexity
 - Upside: if we hit Year 2 franchise projections, the investor's share grows with us
 

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smoother Drive — The Technology Is Real & Proven</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#fff;color:#111;line-height:1.6}
+  .page{max-width:900px;margin:0 auto;padding:0 2rem 4rem}
+  nav{display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;border-bottom:1px solid #eee;font-size:0.85rem;color:#777;margin-bottom:0.5rem}
+  nav strong{color:#111;font-size:1rem}
+
+  /* COVER */
+  .cover{background:linear-gradient(135deg,#0a0a0a 0%,#0d1f14 50%,#0a0a0a 100%);color:#fff;padding:4rem 3rem 3.5rem;text-align:center;border-radius:0 0 2rem 2rem;margin-bottom:3rem}
+  .badge{display:inline-block;background:rgba(0,255,136,0.12);border:1px solid rgba(0,255,136,0.3);color:#00ff88;font-size:0.8rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:0.35rem 1rem;border-radius:999px;margin-bottom:1.5rem}
+  .cover h1{font-size:clamp(1.75rem,5vw,2.75rem);font-weight:800;line-height:1.15;margin-bottom:0.75rem}
+  .cover h1 span{color:#00ff88}
+  .cover p{font-size:1rem;color:rgba(255,255,255,0.65);max-width:580px;margin:0 auto}
+  .hero-stats{display:flex;justify-content:center;gap:2.5rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
+  .hstat .val{display:block;font-size:2rem;font-weight:800;color:#00ff88}
+  .hstat .lbl{font-size:0.75rem;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.07em}
+
+  /* SECTION */
+  .section{margin-bottom:3rem}
+  .section-label{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem}
+  .section-num{width:32px;height:32px;background:#00ff88;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.85rem;flex-shrink:0}
+  .section-title{font-size:1.4rem;font-weight:800}
+  p{color:#444;margin-bottom:0.75rem}
+  strong{color:#111}
+  a{color:#00aa55;text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* STAT CARDS */
+  .stat-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:1.25rem 0}
+  .stat-card{border:1.5px solid #e8e8e8;border-radius:1rem;padding:1.25rem;text-align:center}
+  .stat-card.green{border-color:#00cc6a;background:#f0fff6}
+  .stat-card .big{font-size:2rem;font-weight:800;color:#00aa55;display:block;line-height:1.1}
+  .stat-card .desc{font-size:0.82rem;color:#666;margin-top:0.35rem}
+
+  /* VIDEO CARDS */
+  .video-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem;margin:1.25rem 0}
+  .video-card{border:1.5px solid #e8e8e8;border-radius:1rem;overflow:hidden;transition:transform 0.2s,box-shadow 0.2s}
+  .video-card:hover{transform:translateY(-4px);box-shadow:0 8px 30px rgba(0,200,100,0.15)}
+  .video-thumb{background:#0a0a0a;height:150px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
+  .video-thumb .play{width:52px;height:52px;background:#ff0000;border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .video-thumb .play svg{width:20px;height:20px;fill:#fff;margin-left:4px}
+  .video-info{padding:1rem}
+  .video-info .channel{font-size:0.75rem;color:#00aa55;font-weight:700;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:0.25rem}
+  .video-info h4{font-size:0.9rem;font-weight:700;margin-bottom:0.35rem;line-height:1.3}
+  .video-info .meta{font-size:0.78rem;color:#999}
+  .video-card a{color:inherit}
+
+  /* QUOTE CARDS */
+  .quotes{display:grid;gap:1rem;margin:1.25rem 0}
+  .quote{background:#fafff8;border-left:4px solid #00cc6a;border-radius:0 0.75rem 0.75rem 0;padding:1rem 1.25rem}
+  .quote p{color:#333;font-style:italic;margin-bottom:0.4rem;font-size:0.95rem}
+  .quote .source{font-size:0.8rem;color:#888;font-style:normal}
+
+  /* PRESS */
+  .press-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem;margin:1.25rem 0}
+  .press-card{border:1.5px solid #e8e8e8;border-radius:0.875rem;padding:1.1rem}
+  .press-card .outlet{font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:#00aa55;margin-bottom:0.3rem}
+  .press-card h4{font-size:0.9rem;font-weight:700;margin-bottom:0.35rem;line-height:1.3}
+  .press-card .year{font-size:0.78rem;color:#aaa}
+
+  /* GITHUB BAR */
+  .github-bar{background:#0d1117;color:#fff;border-radius:1rem;padding:1.5rem 2rem;display:flex;align-items:center;gap:2rem;flex-wrap:wrap;margin:1.25rem 0}
+  .github-bar svg{flex-shrink:0;width:32px;height:32px;fill:#fff;opacity:0.8}
+  .github-bar .gh-stats{display:flex;gap:2rem;flex-wrap:wrap}
+  .gh-stat .gval{display:block;font-size:1.5rem;font-weight:800;color:#00ff88}
+  .gh-stat .glbl{font-size:0.75rem;color:rgba(255,255,255,0.45);text-transform:uppercase;letter-spacing:0.06em}
+
+  /* CR BOX */
+  .cr-box{background:linear-gradient(135deg,#00aa55,#007744);color:#fff;border-radius:1.25rem;padding:2rem;margin:1.25rem 0}
+  .cr-box h3{font-size:1.4rem;font-weight:800;margin-bottom:0.5rem}
+  .cr-box p{color:rgba(255,255,255,0.85);margin-bottom:0}
+  .cr-box a{color:#fff;font-weight:700;text-decoration:underline}
+
+  /* FOOTER */
+  .footer{text-align:center;padding:2rem;margin-top:3rem;border-top:1px solid #eee;color:#999;font-size:0.85rem}
+
+  @media(max-width:640px){
+    .hero-stats{gap:1.5rem}
+    .github-bar{flex-direction:column;gap:1rem}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+  <nav>
+    <strong>Smoother Drive</strong>
+    <span>Technology Proof Document &mdash; April 2026 &mdash; Confidential</span>
+  </nav>
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="badge">Proof It Works &mdash; Third-Party Verified</div>
+    <h1>The Technology Is <span>Real, Proven,</span><br>and People Love It</h1>
+    <p>Before you write a check, read this. Every claim below links to an independent source — Consumer Reports tests, major YouTube channels, real user reviews, and public data. We sell nothing we can't prove.</p>
+    <div class="hero-stats">
+      <div class="hstat"><span class="val">300M+</span><span class="lbl">Miles driven on OpenPilot</span></div>
+      <div class="hstat"><span class="val">20,000+</span><span class="lbl">Active users worldwide</span></div>
+      <div class="hstat"><span class="val">60,500+</span><span class="lbl">GitHub stars</span></div>
+      <div class="hstat"><span class="val">#1</span><span class="lbl">Consumer Reports rating</span></div>
+    </div>
+  </div>
+
+  <!-- SECTION 1: CONSUMER REPORTS -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">1</div>
+      <div class="section-title">Consumer Reports — Ranked #1</div>
+    </div>
+    <p>Consumer Reports is the gold standard of independent product testing in the US. In their Active Driving Assistance Systems study, they tested <strong>18 systems</strong> from every major automaker — Tesla, GM, Ford, Honda, Volvo, and more. The only aftermarket system they included was OpenPilot running on a comma device.</p>
+    <p><strong>OpenPilot came in #1.</strong> It beat Tesla Autopilot, GM Super Cruise, Ford Co-Pilot 360, Honda Sensing, and every factory system on the market.</p>
+    <div class="cr-box">
+      <h3>🏆 Consumer Reports: OpenPilot Ranked #1 Driver Assistance System</h3>
+      <p>OpenPilot <strong>outscored Tesla Autopilot</strong> as the only aftermarket entrant tested across 18 factory systems — rated on capability, performance, and driver monitoring.</p>
+      <p style="margin-top:0.75rem"><a href="https://www.thedrive.com/news/37833/consumer-reports-ranks-this-aftermarket-driver-assistance-kit-above-tesla-autopilot-cadillac-super-cruise" target="_blank">→ The Drive: "Consumer Reports Ranks This Aftermarket Kit Above Tesla Autopilot"</a></p>
+      <p style="margin-top:0.5rem"><a href="https://data.consumerreports.org/wp-content/uploads/2020/11/consumer-reports-active-driving-assistance-systems-november-16-2020.pdf" target="_blank">→ Download the full Consumer Reports study (PDF)</a></p>
+    </div>
+  </div>
+
+  <!-- SECTION 2: BY THE NUMBERS -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">2</div>
+      <div class="section-title">The Numbers Don't Lie</div>
+    </div>
+    <p>These figures come directly from <a href="https://comma.ai/openpilot" target="_blank">comma.ai's public stats page</a> and the <a href="https://github.com/commaai/openpilot" target="_blank">OpenPilot GitHub repository</a> — independently verifiable in seconds.</p>
+    <div class="stat-grid">
+      <div class="stat-card green"><span class="big">300M+</span><div class="desc">Miles driven on OpenPilot by real users on public roads</div></div>
+      <div class="stat-card green"><span class="big">56%</span><div class="desc">Of all miles are driven with the system actively engaged — people actually use it</div></div>
+      <div class="stat-card green"><span class="big">20,000+</span><div class="desc">Active users around the world right now</div></div>
+      <div class="stat-card"><span class="big">325+</span><div class="desc">Compatible vehicle makes and models — Honda, Toyota, Ford, GM, Hyundai, VW, and more</div></div>
+      <div class="stat-card"><span class="big">v0.11</span><div class="desc">Latest release — March 2026. Actively maintained with regular updates and a new AI model</div></div>
+      <div class="stat-card"><span class="big">62</span><div class="desc">Software releases to date. A decade of serious, real-world engineering</div></div>
+    </div>
+    <div class="github-bar">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+      <div>
+        <div style="font-size:0.85rem;color:rgba(255,255,255,0.6);margin-bottom:0.5rem;">OpenPilot on GitHub — <a href="https://github.com/commaai/openpilot" target="_blank" style="color:#00ff88;">github.com/commaai/openpilot</a></div>
+        <div class="gh-stats">
+          <div class="gh-stat"><span class="gval">60,500+</span><span class="glbl">⭐ Stars</span></div>
+          <div class="gh-stat"><span class="gval">10,800+</span><span class="glbl">Forks</span></div>
+          <div class="gh-stat"><span class="gval">430+</span><span class="glbl">Contributors</span></div>
+          <div class="gh-stat"><span class="gval">62</span><span class="glbl">Releases</span></div>
+        </div>
+      </div>
+    </div>
+    <p style="font-size:0.82rem;color:#888;">60,000+ GitHub stars puts OpenPilot in the top 0.1% of all software repositories on the planet. For reference, that's more stars than Python's official Django framework.</p>
+  </div>
+
+
+  <!-- SECTION 3: YOUTUBE REVIEWS -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">3</div>
+      <div class="section-title">Major YouTube Reviews — Real Installs, Real Results</div>
+    </div>
+    <p>These are independent creators with no financial relationship to comma.ai or Smoother Drive. They bought or borrowed the device, installed it in a real car, and drove it on real roads.</p>
+    <div class="video-grid">
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=xdmxM-v4KQg" target="_blank">
+          <div class="video-thumb"><div class="play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+          <div class="video-info">
+            <div class="channel">Linus Tech Tips — 15M+ subscribers</div>
+            <h4>"I Upgraded My Car With Open-Source AUTOPILOT and it's AMAZING"</h4>
+            <div class="meta">Toyota Corolla install + real highway test · "in the same class of self-driving as a base Tesla"</div>
+          </div>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://www.youtube.com/watch?v=tqOAs6WwcSM" target="_blank">
+          <div class="video-thumb"><div class="play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+          <div class="video-info">
+            <div class="channel">Transport Evolved</div>
+            <h4>"We Install and Test Comma AI's System In The REAL WORLD!"</h4>
+            <div class="meta">14,700 views · 1,100 likes · Full install walkthrough + road test</div>
+          </div>
+        </a>
+      </div>
+      <div class="video-card">
+        <a href="https://www.transportevolved.com/2025/12/04/the-comma-4-is-here-should-you-get-one/" target="_blank">
+          <div class="video-thumb"><div class="play"><svg viewBox="0 0 24 24"><polygon points="5,3 19,12 5,21"/></svg></div></div>
+          <div class="video-info">
+            <div class="channel">Transport Evolved — December 2025</div>
+            <h4>"The Comma 4 Is Here. Should You Get One?"</h4>
+            <div class="meta">Comma 4 first look — host owns one personally · "Very stable, very reliable, very usable."</div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <p style="font-size:0.85rem;color:#888;margin-top:0.5rem;">Search YouTube for "comma ai review" or "openpilot review" — hundreds of independent user videos exist across every supported vehicle.</p>
+  </div>
+
+  <!-- SECTION 4: REAL USER QUOTES -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">4</div>
+      <div class="section-title">What Real Drivers Say</div>
+    </div>
+    <p>Unsolicited quotes from public forums — Reddit, Quora, and vehicle owner communities. No one paid for these opinions.</p>
+    <div class="quotes">
+      <div class="quote">
+        <p>"On highways, it is insanely good — leaps and bounds better than any stock option that comes with your car. I can safely say that OpenPilot is as good as Tesla's AutoPilot."</p>
+        <div class="source">— Quora · 93 upvotes · <a href="https://www.quora.com/Anyone-wants-to-share-their-experience-with-open-pilot-by-comma-ai" target="_blank">View source →</a></div>
+      </div>
+      <div class="quote">
+        <p>"It's way better than [Tesla] AP. I'm using Comma 3 for my Model 3 HW4."</p>
+        <div class="source">— Reddit r/Comma_ai · <a href="https://www.reddit.com/r/Comma_ai/comments/1o0th61/tesla_owners_incoming/" target="_blank">View source →</a></div>
+      </div>
+      <div class="quote">
+        <p>"Worth every penny. I drive about 2 hours per day (60 miles) in LA traffic and this does all the stop and go. I've logged about 17,000 miles with it."</p>
+        <div class="source">— PriusChat forum · <a href="https://priuschat.com/threads/anyone-here-have-the-open-pilot-comma-ai.212930/page-2" target="_blank">View source →</a></div>
+      </div>
+      <div class="quote">
+        <p>"The Comma 3X takes your car's existing adaptive cruise control and lane keeping and basically puts them on steroids. I spent months testing something that lets you drive for hours without even thinking about it."</p>
+        <div class="source">— CabinLiving.ca independent review · <a href="https://cabinliving.ca/comma-3x-review-i-didnt-drive-to-the-cabin-the-car-did/" target="_blank">View source →</a></div>
+      </div>
+      <div class="quote">
+        <p>"I prefer comma ai to Tesla autopilot. I have it installed on a Prius. Would love it installed on my Tesla as well."</p>
+        <div class="source">— Reddit r/Comma_ai · <a href="https://www.reddit.com/r/Comma_ai/comments/1o0th61/tesla_owners_incoming/" target="_blank">View source →</a></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 5: PRESS -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">5</div>
+      <div class="section-title">Press Coverage</div>
+    </div>
+    <div class="press-grid">
+      <div class="press-card">
+        <div class="outlet">The Drive</div>
+        <h4><a href="https://www.thedrive.com/news/37833/consumer-reports-ranks-this-aftermarket-driver-assistance-kit-above-tesla-autopilot-cadillac-super-cruise" target="_blank">"Consumer Reports Ranks This Aftermarket Kit Above Tesla Autopilot &amp; Cadillac Super Cruise"</a></h4>
+        <div class="year">Automotive media · Consumer Reports study coverage</div>
+      </div>
+      <div class="press-card">
+        <div class="outlet">TechTimes — CES 2026</div>
+        <h4><a href="https://www.techtimes.com/articles/313828/20260107/commaai-showcases-more-practical-path-driver-assistance-ces.htm" target="_blank">"Comma.ai Showcases a More Practical Path to Driver Assistance at CES"</a></h4>
+        <div class="year">January 2026</div>
+      </div>
+      <div class="press-card">
+        <div class="outlet">WebProNews — 2026</div>
+        <h4><a href="https://www.webpronews.com/the-rebel-in-the-driveway-how-comma-ai-is-open-sourcing-the-fight-for-your-cars-brain/" target="_blank">"How Comma.ai Is Open-Sourcing the Fight for Your Car's Brain"</a></h4>
+        <div class="year">Deep dive feature · January 2026</div>
+      </div>
+      <div class="press-card">
+        <div class="outlet">TechCrunch</div>
+        <h4><a href="https://techcrunch.com/2016/08/03/comma-ai-open-sources-the-data-it-used-for-its-first-successful-driverless-trips/" target="_blank">"Comma.ai Open-Sources Data From Its First Successful Driverless Trips"</a></h4>
+        <div class="year">TechCrunch · ongoing coverage</div>
+      </div>
+      <div class="press-card">
+        <div class="outlet">comma.ai Official</div>
+        <h4><a href="https://comma.ai/openpilot" target="_blank">300M+ miles · 20,000+ active users · v0.11 — March 2026</a></h4>
+        <div class="year">Live public stats — comma.ai/openpilot</div>
+      </div>
+      <div class="press-card">
+        <div class="outlet">GitHub</div>
+        <h4><a href="https://github.com/commaai/openpilot" target="_blank">60,500+ stars · 430+ contributors · last updated April 2026</a></h4>
+        <div class="year">github.com/commaai/openpilot</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CLOSING -->
+  <div style="background:linear-gradient(135deg,#0a0a0a,#0d1f14);color:#fff;border-radius:1.25rem;padding:2.5rem;text-align:center;margin:2rem 0;">
+    <h2 style="font-size:1.75rem;font-weight:800;margin-bottom:0.5rem;">The Bottom Line</h2>
+    <p style="color:rgba(255,255,255,0.65);max-width:560px;margin:0 auto 1.5rem;">This technology has been tested independently, reviewed publicly, and driven 300 million miles by real people on real roads. Smoother Drive doesn't sell promises. We sell a product Consumer Reports ranked #1, that Linus Tech Tips called amazing, and that 20,000+ drivers use every single day.</p>
+    <a href="mailto:claimman@mail.com" style="display:inline-block;background:#00cc6a;color:#000;font-weight:700;padding:0.85rem 2.5rem;border-radius:999px;text-decoration:none;font-size:1rem;">📧 &nbsp;claimman@mail.com</a><br><br>
+    <a href="https://smootherdrive.netlify.app" style="font-size:0.9rem;color:#00aa55;">smootherdrive.netlify.app</a>
+  </div>
+
+  <div class="footer">
+    <p><strong>Smoother Drive</strong> &mdash; Austin, TX &mdash; April 2026 &mdash; Confidential</p>
+    <p style="margin-top:0.25rem;">All third-party links are for verification only. Smoother Drive has no affiliation with Consumer Reports, the YouTube creators, or any publication cited above.</p>
+  </div>
+
+</div>
+</body>
+</html>
