@@ -12,7 +12,7 @@ Appreciate you taking the time to hear me out. Here's everything you need to mak
 
 ---
 
-**The product in one sentence:** We professionally install the comma 4 — an AI driver-assist device rated #1 by Consumer Reports above Tesla — into people's existing cars. $3,000 installed. Done in 45 minutes. No ongoing fees for the customer.
+**The product in one sentence:** We install the comma 4 — an AI driver-assist device rated #1 by Consumer Reports above Tesla — into people's existing cars. $2,100 shipped as a DIY kit or $3,000 professionally installed, start to finish in under 90 minutes. No ongoing fees for the customer.
 
 ---
 

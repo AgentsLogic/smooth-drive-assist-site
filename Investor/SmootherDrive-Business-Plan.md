@@ -34,7 +34,7 @@ We launch in Austin, TX from the founder's home base, scale across Texas via a c
 
 ## Products and Services
 
-### Tier 1 — System + Harness (DIY): $2,100 *(Launch Sale — was $3,000)*
+### Tier 1 — System + Harness (DIY): $2,100
 
 For customers who prefer to self-install. Device and harness ship directly to their door.
 
