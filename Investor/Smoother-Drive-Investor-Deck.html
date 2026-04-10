@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smoother Drive — Investor Deck 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{font-family:'Inter',sans-serif;background:#fff;color:#111;line-height:1.6}
+  .page{max-width:900px;margin:0 auto;padding:0 2rem 4rem}
+
+  /* COVER */
+  .cover{background:linear-gradient(135deg,#0a0a0a 0%,#0d1f14 50%,#0a0a0a 100%);color:#fff;padding:5rem 3rem 4rem;text-align:center;border-radius:0 0 2rem 2rem;margin-bottom:3rem}
+  .cover-logo{display:inline-flex;align-items:center;gap:0.75rem;margin-bottom:2rem}
+  .cover-logo svg{width:36px;height:36px;color:#00ff88}
+  .cover-logo span{font-size:1.4rem;font-weight:700;letter-spacing:-0.02em}
+  .cover h1{font-size:clamp(2rem,6vw,3.5rem);font-weight:800;line-height:1.1;margin-bottom:1rem}
+  .cover h1 span{color:#00ff88}
+  .cover p{font-size:1.1rem;color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto 2rem}
+  .cover-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
+  .stat{text-align:center}
+  .stat-val{display:block;font-size:2rem;font-weight:800;color:#00ff88}
+  .stat-label{font-size:0.8rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em}
+  .badge{display:inline-block;background:rgba(0,255,136,0.12);border:1px solid rgba(0,255,136,0.3);color:#00ff88;font-size:0.8rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:0.35rem 1rem;border-radius:999px;margin-bottom:1.5rem}
+
+  /* SECTIONS */
+  .section{margin-bottom:3rem}
+  .section-label{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem}
+  .section-num{width:32px;height:32px;background:#00ff88;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.85rem;flex-shrink:0}
+  .section-title{font-size:1.5rem;font-weight:800}
+  p{color:#444;margin-bottom:0.75rem}
+  strong{color:#111}
+
+  /* DEVICE SHOWCASE */
+  .device-showcase{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
+  .device-img-wrap{border-radius:1rem;overflow:hidden;background:#f5f5f5;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
+  .device-img-wrap img{width:100%;height:100%;object-fit:cover}
+  .device-specs{background:#0a0a0a;color:#fff;border-radius:1rem;padding:1.5rem}
+  .device-specs h3{color:#00ff88;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem}
+  .spec-row{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:0.9rem}
+  .spec-row:last-child{border:none}
+  .spec-key{color:rgba(255,255,255,0.5)}
+  .spec-val{color:#fff;font-weight:500}
+
+  /* TABLES */
+  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.9rem}
+  th{background:#0a0a0a;color:#fff;padding:0.75rem 1rem;text-align:left;font-weight:600}
+  th:first-child{border-radius:0.5rem 0 0 0}
+  th:last-child{border-radius:0 0.5rem 0 0}
+  td{padding:0.7rem 1rem;border-bottom:1px solid #f0f0f0}
+  tr:last-child td{border:none}
+  tr:hover td{background:#fafff8}
+  .highlight-row td{font-weight:700;color:#0a8a4a}
+  .green{color:#0a8a4a;font-weight:700}
+
+  /* CARDS */
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0}
+  .card{border:1.5px solid #e8e8e8;border-radius:1rem;padding:1.25rem}
+  .card-icon{font-size:1.75rem;margin-bottom:0.5rem}
+  .card h4{font-size:0.95rem;font-weight:700;margin-bottom:0.25rem}
+  .card p{font-size:0.85rem;color:#666;margin:0}
+  .card.featured{border-color:#00cc6a;background:#f0fff6}
+
+  /* TIMELINE */
+  .timeline{border-left:3px solid #00ff88;padding-left:1.5rem;margin:1.25rem 0;display:flex;flex-direction:column;gap:1.25rem}
+  .tl-item{position:relative}
+  .tl-item::before{content:'';position:absolute;left:-1.95rem;top:0.35rem;width:12px;height:12px;border-radius:50%;background:#00ff88}
+  .tl-month{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#00aa55;margin-bottom:0.2rem}
+  .tl-item h4{font-size:1rem;font-weight:700}
+  .tl-item p{font-size:0.9rem;color:#555;margin:0}
+
+  /* CALLOUT */
+  .callout{background:linear-gradient(135deg,#0a0a0a,#0d1f14);color:#fff;border-radius:1.25rem;padding:2.5rem;text-align:center;margin:2rem 0}
+  .callout h2{font-size:2rem;font-weight:800;margin-bottom:0.5rem}
+  .callout h2 span{color:#00ff88}
+  .callout p{color:rgba(255,255,255,0.6);max-width:540px;margin:0 auto 1.5rem}
+  .callout-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
+  .callout-stat{background:rgba(255,255,255,0.05);border:1px solid rgba(0,255,136,0.2);border-radius:0.75rem;padding:1rem}
+  .callout-stat .val{font-size:1.75rem;font-weight:800;color:#00ff88;display:block}
+  .callout-stat .lbl{font-size:0.75rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.06em}
+
+  /* COMPARISON */
+  .compare-table th.us{background:#00aa55;color:#fff}
+  .compare-table td.us{background:#f0fff6;font-weight:600;color:#0a6632}
+
+  /* FOOTER */
+  .footer{text-align:center;padding:2rem;margin-top:3rem;border-top:1px solid #eee;color:#999;font-size:0.85rem}
+
+  /* PRINT */
+  @media print{
+    .cover{border-radius:0}
+    body{font-size:12px}
+    .page{padding:0 1rem}
+  }
+  @media(max-width:640px){
+    .cover-stats{gap:1.5rem}
+    .device-showcase{grid-template-columns:1fr}
+    .callout-grid{grid-template-columns:1fr}
+    .cards{grid-template-columns:1fr}
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- NAV -->
+  <nav style="display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;margin-bottom:0.5rem;border-bottom:1px solid #eee;font-size:0.85rem;color:#777;">
+    <strong style="color:#111;font-size:1rem;">Smoother Drive</strong>
+    <span>Investor Deck &mdash; April 2026 &mdash; Confidential</span>
+  </nav>
+
+  <!-- COVER -->
+  <div class="cover">
+    <div class="cover-logo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+      <span>Smoother Drive</span>
+    </div>
+    <div class="badge">Confidential · Investor Brief · 2026</div>
+    <h1>The <span>Driver Assist</span> Install Business<br>Nobody Has Built Yet</h1>
+    <p>We bring professional AI driver-assist to 325+ cars people already own. No new car. No monthly fees. Just a one-time install — and a business model that prints from day one.</p>
+    <div class="cover-stats">
+      <div class="stat"><span class="stat-val">$3,000</span><span class="stat-label">Pro Install Price</span></div>
+      <div class="stat"><span class="stat-val">~38%</span><span class="stat-label">Net Margin</span></div>
+      <div class="stat"><span class="stat-val">2</span><span class="stat-label">Installs to Break Even</span></div>
+      <div class="stat"><span class="stat-val">~17×</span><span class="stat-label">Year 1 ROI Projection</span></div>
+    </div>
+  </div>
+
+
+  <!-- SECTION 1: THE PRODUCT -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">1</div>
+      <div class="section-title">The Product — What We Actually Sell</div>
+    </div>
+    <p>We install <strong>comma 4</strong> — an AI-powered driver assist device — into customers' existing vehicles. The comma 4 runs <strong>OpenPilot</strong>, an open-source system used by 50,000+ drivers worldwide that provides hands-free lane keeping, adaptive cruise, and automated lane changes on highways.</p>
+    <p>Think of it as a Tesla Autopilot-level upgrade for the car you already own — installed in about 30 minutes, completely reversible, and covered by a 30-day money-back guarantee.</p>
+
+    <div class="device-showcase">
+      <div>
+        <div class="device-img-wrap">
+          <img src="https://blog.comma.ai/img/comma-four/commafour_windshield_cover.jpg" alt="comma 4 installed on windshield">
+        </div>
+        <p style="font-size:0.78rem;color:#999;text-align:center;margin-top:0.5rem;">comma 4 — windshield-mounted, fits 325+ vehicles</p>
+      </div>
+      <div class="device-specs">
+        <h3>comma 4 — Key Specs</h3>
+        <div class="spec-row"><span class="spec-key">Processor</span><span class="spec-val">Qualcomm Snapdragon 845</span></div>
+        <div class="spec-row"><span class="spec-key">Cameras</span><span class="spec-val">Dual-cam 360° + narrow far-vision</span></div>
+        <div class="spec-row"><span class="spec-key">Storage</span><span class="spec-val">128 GB built-in / 10 hrs footage</span></div>
+        <div class="spec-row"><span class="spec-key">Connectivity</span><span class="spec-val">LTE + Wi-Fi, OTA updates</span></div>
+        <div class="spec-row"><span class="spec-key">Display</span><span class="spec-val">1.9" OLED, 300 PPI</span></div>
+        <div class="spec-row"><span class="spec-key">Compatible cars</span><span class="spec-val">325+ makes &amp; models</span></div>
+        <div class="spec-row"><span class="spec-key">Software</span><span class="spec-val">OpenPilot (open-source, free)</span></div>
+        <div class="spec-row"><span class="spec-key">Rated by</span><span class="spec-val">Consumer Reports — #1 driver assist</span></div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h4>DIY Kit — $2,100</h4>
+        <p>Device + harness shipped to customer. Step-by-step guide included. 30-day money-back guarantee.</p>
+      </div>
+      <div class="card featured">
+        <div class="card-icon">⭐</div>
+        <h4>Pro Install — $3,000</h4>
+        <p>We travel to the customer. Install, calibrate, and train in under an hour. Available in Austin, Houston, Dallas, San Antonio &amp; more.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔁</div>
+        <h4>Support Plan — $100/mo</h4>
+        <p>Recurring revenue. Priority support, OTA updates, remote diagnostics, and feature guidance.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2: THE MONEY -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">2</div>
+      <div class="section-title">How We Make Money — Unit Economics</div>
+    </div>
+    <p>Every install is profitable from day one. Here's the exact math per transaction, fully loaded with all commissions and costs:</p>
+
+    <table>
+      <thead><tr><th>Line Item</th><th>DIY — $2,100</th><th>Pro Install — $3,000</th></tr></thead>
+      <tbody>
+        <tr><td>Sale Price</td><td>$2,100</td><td>$3,000</td></tr>
+        <tr><td>Hardware (comma 4 device)</td><td>−$750</td><td>−$750</td></tr>
+        <tr><td>Vehicle Harness</td><td>−$70</td><td>−$70</td></tr>
+        <tr><td>Shipping / Fulfillment</td><td>−$25</td><td>—</td></tr>
+        <tr><td>Tech Labor (install + calibration)</td><td>—</td><td>−$140</td></tr>
+        <tr><td>Overhead / Misc</td><td>−$120</td><td>−$150</td></tr>
+        <tr><td>Sales Rep Commission (15%)</td><td>−$315</td><td>−$450</td></tr>
+        <tr><td>Manager Override (5%)</td><td>−$105</td><td>−$150</td></tr>
+        <tr class="highlight-row"><td><strong>Net Profit per Install</strong></td><td class="green">~$715 &nbsp;(34%)</td><td class="green">~$1,145 &nbsp;(38%)</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;color:#888;">* Hardware sourced through comma.ai. Harness cost varies $50–$90 by vehicle make.</p>
+  </div>
+
+
+
+  <!-- SECTION 3: WHY NOW / MARKET -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">3</div>
+      <div class="section-title">Why Now — The Market Opportunity</div>
+    </div>
+    <p>The average American car is <strong>12.6 years old</strong>. Millions of people drive vehicles with zero driver assistance. Meanwhile, factory driver-assist packages on new cars cost <strong>$8,000–$12,000+</strong> — and require buying an entirely new vehicle. We give them the same technology for a fraction of the cost, installed in their driveway.</p>
+    <p>OpenPilot has been tested by real drivers for <strong>over 100 million miles</strong>. Consumer Reports ranked it <strong>#1 among all driver assistance systems</strong> — including Tesla Autopilot. The technology is proven. The market is untapped. Nobody is out there installing this professionally at scale.</p>
+
+    <table class="compare-table">
+      <thead><tr><th>Option</th><th class="us">Smoother Drive</th><th>New Car w/ FSD</th><th>Tesla Model 3</th></tr></thead>
+      <tbody>
+        <tr><td>Upfront Cost</td><td class="us">$2,100–$3,000</td><td>$45,000+</td><td>$40,000+</td></tr>
+        <tr><td>Monthly Fee</td><td class="us">$0 (optional $100)</td><td>$0</td><td>$99/mo (FSD sub)</td></tr>
+        <tr><td>Works on your current car</td><td class="us">✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
+        <tr><td>Reversible / Resellable</td><td class="us">✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
+        <tr><td>Rated #1 by Consumer Reports</td><td class="us">✅ OpenPilot</td><td>Varies</td><td>⚠️ Ranked below</td></tr>
+        <tr><td>Available in 325+ vehicles</td><td class="us">✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- SECTION 4: MARKETING -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">4</div>
+      <div class="section-title">How We'll Get Customers — Guerrilla Marketing</div>
+    </div>
+    <p>We don't need a big ad budget. We get customers the same way every successful local service business does — by being <strong>everywhere our customers already are</strong>. Here's our full marketing playbook:</p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">🔍</div>
+        <h4>SEO + AI Search</h4>
+        <p>Keyword-optimized site, blog, forum. Targeting "aftermarket driver assist" and long-tail car-specific searches.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📱</div>
+        <h4>Social Media</h4>
+        <p>Short-form install videos on TikTok, YouTube Shorts, Instagram Reels. Before/after demos convert extremely well.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎥</div>
+        <h4>YouTube / Rumble</h4>
+        <p>Long-form review and install content. Builds trust, drives organic traffic, establishes authority in the niche.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📍</div>
+        <h4>Signs &amp; Stickers</h4>
+        <p>Mobile advertising — vehicles with our sticker become rolling billboards. Yard signs in neighborhoods we've served.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <h4>Meetups &amp; Networking</h4>
+        <p>Host and attend local car meetups, tech meetups, EV owner groups. Demonstrate the system live — closes on the spot.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🎯</div>
+        <h4>PPC &amp; Retargeting</h4>
+        <p>Low-cost Google/Facebook ads targeting car-owner demographics. Retarget site visitors with install videos.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- SECTION 5: FINANCIAL PROJECTIONS -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">5</div>
+      <div class="section-title">Financial Projections — 3-Year Outlook</div>
+    </div>
+    <p>Conservative projections based on <strong>2 pro installs/week</strong> in Year 1, scaling with additional sales reps and service cities. Monthly support subscriptions add a compounding recurring revenue layer.</p>
+
+    <table>
+      <thead><tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+      <tbody>
+        <tr><td>Pro Installs (units)</td><td>100</td><td>250</td><td>600</td></tr>
+        <tr><td>DIY Kits Sold</td><td>100</td><td>200</td><td>400</td></tr>
+        <tr><td>Support Subscribers (avg)</td><td>40</td><td>150</td><td>400</td></tr>
+        <tr><td>Gross Revenue</td><td>~$513,000</td><td>~$1,170,000</td><td>~$2,640,000</td></tr>
+        <tr><td>Total COGS + Commissions</td><td>~$343,000</td><td>~$756,000</td><td>~$1,668,000</td></tr>
+        <tr class="highlight-row"><td><strong>Net Profit</strong></td><td class="green">~$170,000</td><td class="green">~$414,000</td><td class="green">~$972,000</td></tr>
+        <tr><td>Net Margin</td><td>33%</td><td>35%</td><td>37%</td></tr>
+      </tbody>
+    </table>
+    <p style="font-size:0.85rem;color:#888;">* Support plan revenue calculated at $100/mo × average subscriber count. Projections are conservative — no franchise revenue included.</p>
+  </div>
+
+  <!-- CALLOUT: INVESTOR RETURNS -->
+  <div class="callout">
+    <h2>Your <span>$10,000</span> Investment</h2>
+    <p>Here's exactly what happens to your money and how you get it back — plus much more.</p>
+    <div class="callout-grid">
+      <div class="callout-stat"><span class="val">9 days</span><span class="lbl">To recoup $10K at launch pace (2 installs/wk)</span></div>
+      <div class="callout-stat"><span class="val">~17×</span><span class="lbl">Projected Year 1 ROI on $10K seed</span></div>
+      <div class="callout-stat"><span class="val">$100K+</span><span class="lbl">Investor's share target by Month 18</span></div>
+    </div>
+  </div>
+
+  <!-- SECTION 6: USE OF FUNDS -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">6</div>
+      <div class="section-title">Use of Funds — Where Your $10K Goes</div>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">📦</div>
+        <h4>Initial Inventory — $5,000</h4>
+        <p>5 comma 4 units + harnesses pre-stocked. Ready to install from day one. No waiting for orders to ship.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌐</div>
+        <h4>Marketing Launch — $2,500</h4>
+        <p>PPC campaigns, branded vehicle wrap, signage, business cards, and first 3 months of social content creation.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">⚙️</div>
+        <h4>Ops Setup — $1,500</h4>
+        <p>LLC formation, insurance, tools, install kit, scheduling software, and CRM for customer management.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🛡️</div>
+        <h4>Cash Reserve — $1,000</h4>
+        <p>Working capital buffer for returns, refunds, and unexpected early-stage costs.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 7: GROWTH ROADMAP -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">7</div>
+      <div class="section-title">Growth Roadmap</div>
+    </div>
+
+    <div class="timeline">
+      <div class="tl-item">
+        <div class="tl-month">Month 1–2 — Launch</div>
+        <h4>Go live. First 10 installs.</h4>
+        <p>Site live, PayPal active, first sales reps onboarded. Targeting Austin metro. First installs generate social proof and reviews.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-month">Month 3–6 — Traction</div>
+        <h4>Expand to Houston, Dallas. Hit 40+ installs/mo.</h4>
+        <p>SEO traffic growing. YouTube channel launching. First batch of support subscribers. Hire 2nd tech installer.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-month">Month 7–12 — Scale</div>
+        <h4>100+ installs, $170K+ net profit.</h4>
+        <p>Full Texas coverage. Recurring support revenue hits $4,000+/mo. Investor return payments begin.</p>
+      </div>
+      <div class="tl-item">
+        <div class="tl-month">Year 2 — Franchise / License</div>
+        <h4>License the model. Open new markets.</h4>
+        <p>Franchise-ready playbook. License fee income. Potential for national operator network. System-wide revenue surpasses $1M.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- SECTION 8: WHY US -->
+  <div class="section">
+    <div class="section-label">
+      <div class="section-num">8</div>
+      <div class="section-title">Why Smoother Drive Wins</div>
+    </div>
+    <div class="cards">
+      <div class="card featured">
+        <div class="card-icon">🏁</div>
+        <h4>First Mover</h4>
+        <p>No established national competitor. The install service market for OpenPilot is wide open.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">💡</div>
+        <h4>Zero R&amp;D Risk</h4>
+        <p>We sell and install proven, open-source technology. No product development. No patents needed.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">📈</div>
+        <h4>Asset-Light</h4>
+        <p>No warehouse, no retail location. Operate from any city with a truck and a toolkit.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🔒</div>
+        <h4>Recurring Revenue</h4>
+        <p>Every install is a potential $100/mo subscriber — compounding MRR from month one.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">🌎</div>
+        <h4>Scalable Model</h4>
+        <p>Franchise or license the playbook. Each new city is a new revenue stream with minimal capital.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">✅</div>
+        <h4>Consumer Reports #1</h4>
+        <p>We sell a product independently ranked as the best driver assist system on the market. The product sells itself.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- FINAL CALLOUT / CTA -->
+  <div class="callout">
+    <div class="badge">Ready to Move</div>
+    <h2>Let's Build This <span>Together</span></h2>
+    <p>We're raising a single $10,000 seed investment to launch operations, stock initial inventory, and generate our first $170,000 in net profit. The window to be first is now.</p>
+    <div class="callout-grid">
+      <div class="callout-stat"><span class="val">$10K</span><span class="lbl">Total raise — one investor</span></div>
+      <div class="callout-stat"><span class="val">2 installs</span><span class="lbl">To break even on total investment</span></div>
+      <div class="callout-stat"><span class="val">Month 12</span><span class="lbl">Target full investor return + profit share</span></div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="section" style="text-align:center;padding:2rem 0;">
+    <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:0.5rem;">Ready to talk?</h3>
+    <p style="color:#666;margin-bottom:1.5rem;">Reach out to schedule a live demo of the system installed in a real vehicle.</p>
+    <a href="mailto:claimman@mail.com" style="display:inline-block;background:#00cc6a;color:#000;font-weight:700;font-size:1rem;padding:0.85rem 2.5rem;border-radius:999px;text-decoration:none;letter-spacing:0.02em;">📧 &nbsp;claimman@mail.com</a>
+    <br><br>
+    <a href="https://smootherdrive.netlify.app" style="font-size:0.9rem;color:#00aa55;text-decoration:none;">smootherdrive.netlify.app</a>
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    <p><strong>Smoother Drive</strong> &mdash; Austin, TX &mdash; April 2026</p>
+    <p style="margin-top:0.25rem;">This document is confidential and intended solely for the named recipient. All financial projections are forward-looking estimates and not guarantees of future performance.</p>
+  </div>
+
+</div><!-- end .page -->
+</body>
+</html>
