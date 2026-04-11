@@ -50,13 +50,24 @@ The $10K gets us operational and stocked. After the first 9 installs, the busine
 
 This is a Revenue Participation Agreement — not equity, no board seat, no complexity.
 
-1. **Phase 1 — Get your money back first:** You receive **10% of monthly net profit** until your full $10,000 is returned. At our projected pace (~$17K/month net in Year 1) that's roughly **5–6 months**.
-2. **Phase 2 — Ongoing profit share:** After that you receive **5% of monthly net profit on an ongoing basis** — no set expiration. As we scale into Houston, Dallas, and beyond, your 5% grows with the revenue.
-3. **The exit:** After Month 24, we have the right to close the whole deal with a single **$20,000 buyout payment**. You walk away clean. Done.
+1. **Phase 1 — Get your money back first:** You receive **10% of monthly net profit** until your full $10,000 is returned. At our projected pace that's roughly **5–6 months**.
+2. **Phase 2 — Ongoing profit share:** After that you receive **5% of monthly net profit, ongoing.** No hard expiration. As we scale into Houston, Dallas, San Antonio and beyond, your 5% check grows every month with us.
+3. **The exit:** After **Month 36 (Year 3)**, we have the right to close the whole deal with a single **$20,000 buyout payment**. One check, everything done, nothing owed after that.
 
-Projected total payout by the time we exercise the buyout: **~$46,000 on a $10,000 investment** — roughly 4.6× your money back.
+Here's what the projected payout looks like over 3 years:
 
-No board seat. No voting rights. No waiting on an acquisition. Your money comes back first, then you ride 5% of a growing business until we write you a $20K check to close it out.
+| Period | What You Receive |
+|--------|-----------------|
+| Months 1–6 (Phase 1) | $10,000 returned |
+| Months 7–18 (Year 1 remainder) | ~$6,000 |
+| Months 19–30 (Year 2) | ~$22,500 |
+| Months 31–36 (Year 3 first half) | ~$17,500 |
+| Month 36+ buyout | $20,000 |
+| **Total** | **~$76,000 on a $10,000 investment** |
+
+That's roughly **7.6× your money back.** And those are conservative numbers — they don't include franchise royalties or the fact that Year 3 could be significantly larger.
+
+No board seat. No voting rights. No waiting on an acquisition. Your money comes back first, then you ride 5% of a growing business for 3 years, then we write you a $20K check and it's over.
 
 ---
 

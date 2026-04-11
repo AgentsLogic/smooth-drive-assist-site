@@ -280,29 +280,32 @@ This is a **Revenue Participation Agreement**, not equity. The investor receives
 
 **Company Buyout Right:**
 
-At any point after **Month 24**, the company holds the **unilateral right** to terminate the entire agreement with a single **$20,000 buyout payment**. Once paid, all obligations under the agreement cease permanently. The investor cannot refuse or delay this buyout once triggered.
+At any point after **Month 36**, the company holds the **unilateral right** to terminate the entire agreement with a single **$20,000 buyout payment**. Once paid, all obligations under the agreement cease permanently. The investor cannot refuse or delay this buyout once triggered.
 
 **Projected investor payout over time:**
 
 | Period | Payments | Running Total |
 |--------|----------|---------------|
 | Months 1–6 (Phase 1) | $10,000 returned | $10,000 |
-| Months 7–24 (Phase 2, 18 mo × ~$900/mo) | ~$16,000 | ~$26,000 |
-| Buyout exercised at Month 24+ | $20,000 | **~$46,000 total** |
+| Months 7–18 (Phase 2, Year 1 remainder) | ~$6,000 | ~$16,000 |
+| Months 19–30 (Phase 2, Year 2) | ~$22,500 | ~$38,500 |
+| Months 31–36 (Phase 2, Year 3 first half) | ~$17,500 | ~$56,000 |
+| Buyout exercised at Month 36+ | $20,000 | **~$76,000 total** |
 
-> *Phase 2 estimate based on 5% of ~$17,500/month average net profit. Actual payments may be higher as business scales.*
+> *Phase 2 estimates based on 5% of projected net: Year 1 ~$215K, Year 2 ~$450K, Year 3 ~$700K (conservative company operations, excluding franchise upside). Actual payments will likely be higher as the business scales.*
 
 **Why this works for the investor:**
-- Gets original $10K back first — principal never at risk once Phase 1 completes
-- 5% ongoing share means payments grow as the business grows
-- $20,000 final buyout is a clean, guaranteed lump-sum exit
-- No equity complexity, no lock-up, no waiting for an acquisition
+- Gets original $10K back first — principal is the first priority
+- 5% grows every month as revenue scales — Year 3 payments alone dwarf Year 1
+- 3-year runway means the investor benefits from the full growth arc, not just the slow start
+- $20,000 final buyout is a defined, guaranteed lump-sum exit — no waiting for an acquisition
+- No equity complexity, no cap table, no drag-along rights
 
 **Company Protection Summary:**
-- Investor has no ownership, no voting rights, no claim on assets
-- Company controls when to exercise the buyout (any time after Month 24)
-- Total maximum cost is knowable and finite
-- No equity dilution at any point — founder retains 100%
+- Investor has no ownership, no voting rights, no claim on company assets
+- Company controls when to exercise the buyout (any time after Month 36)
+- Founder retains 100% equity throughout — zero dilution
+- By Month 36 the business will be generating enough net profit to fund the $20K buyout from a single month's cash flow
 
 **Exit / Acquisition:** Target acquisition by an auto aftermarket chain (Driven Brands, Midas, Tint World) or private equity rollup at 3–5× revenue in Year 3–5. Any acquisition event triggers immediate full settlement and termination of the agreement.
 
