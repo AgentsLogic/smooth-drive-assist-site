@@ -87,9 +87,9 @@ Every unit sold is attributed to a sales rep and a sales manager. All reps work 
 
 | Role | Rate | Per DIY ($2,100) | Per Pro Install ($3,000) |
 |------|------|------------------|--------------------------|
-| Sales Rep | 15% | $315 | $450 |
+| Sales Rep | 10% | $210 | $300 |
 | Sales Manager override | 5% | $105 | $150 |
-| **Total commission cost** | **20%** | **$420** | **$600** |
+| **Total commission cost** | **15%** | **$315** | **$450** |
 
 ### Unit Economics — Net Profit Per Sale
 
@@ -103,7 +103,7 @@ No overhead. No storefront. Shipping is free. Direct costs are device, harness, 
 | Tech labor (install + calibration) | — | −$100 |
 | **Net Profit** | **$980 (88% markup)** | **$1,780 (146% markup)** |
 
-Every sale is profitable from day one. Commission-only sales reps (15% rep + 5% manager) are used selectively on rep-sourced leads — direct and website sales keep 100% of the markup above.
+Every sale is profitable from day one. Commission-only sales reps (10% rep + 5% manager) are used selectively on rep-sourced leads — direct and website sales keep 100% of the markup above.
 
 ### Sales Team Structure
 
