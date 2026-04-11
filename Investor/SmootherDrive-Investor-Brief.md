@@ -32,10 +32,10 @@ There is no franchise or install chain doing this at scale. We are building that
 
 ## How We Make Money
 
-| Product | Price | Our Cost | Profit Per Sale |
+| Product | Price | Our Cost (COGS) | Profit Per Sale (after commissions) |
 |---------|-------|----------|----------------|
-| DIY Kit (shipped) | $2,100 | ~$950 | **~$730** |
-| Professional Install | $3,000 | ~$1,280 | **~$1,145** |
+| DIY Kit (shipped) | $2,100 | ~$1,270 | **~$410** |
+| Professional Install | $3,000 | ~$1,375 | **~$1,025** |
 | Monthly Support Plan | $100/mo | ~$10 | **~$90/mo** |
 
 Sales reps earn 15% commission. Sales managers earn a 5% override on their team's sales. Both are already baked into the profit numbers above. We break even at **2 installs per month.** Everything after that is pure profit.
@@ -50,8 +50,8 @@ Sales reps earn 15% commission. Sales managers earn a 5% override on their team'
 | Professional installs | 120 | $360,000 |
 | **Total** | **200** | **$528,000** |
 
-**Projected net profit after all costs: ~$168,000**
-**That is a ~17x return on the $10,000 investment in Year 1.**
+**Projected net profit after all costs: ~$160,000**
+**That is a ~16x return on the $10,000 investment in Year 1.**
 
 These are conservative numbers. They do not include subscription revenue, referral fees, or future franchise income.
 
@@ -116,7 +116,7 @@ You can also invest smaller: **$1,000 for 1%**, up to 10% total this round.
 
 **Month 6:** 10–15 installs per month. Business is profitable and cash-flow positive.
 
-**Year 1:** ~$168,000 net profit projected. Your 10% = **$16,800 back on a $10,000 investment.**
+**Year 1:** ~$160,000 net profit projected. Your 10% = **$16,000 back on a $10,000 investment.**
 
 **Year 2:** Franchise fees kick in at $25,000 per territory. Revenue scales without proportional cost increase. Your 10% compounds.
 
@@ -127,7 +127,7 @@ You can also invest smaller: **$1,000 for 1%**, up to 10% total this round.
 ## Why This Works
 
 - **Zero storefront needed to start** — founder installs from home garage, no rent
-- **35–44% net margin** per unit after all costs and sales commissions
+- **~34% net margin** per pro install after all costs and sales commissions
 - **Proven technology** — OpenPilot has 300M+ real-world miles. Consumer Reports ranks it above most factory systems
 - **No subscription required** — we beat every competitor on total cost of ownership
 - **Scalable model** — franchises like a car audio or window tint chain, same playbook
@@ -137,7 +137,7 @@ You can also invest smaller: **$1,000 for 1%**, up to 10% total this round.
 
 ## The Ask
 
-> **$10,000. 10% equity. ~17x Year 1 ROI projection. Buyout option at 3x after 18 months.**
+> **$10,000. 10% equity. ~16x Year 1 ROI projection. Buyout option at 3x after 18 months.**
 
 This is a ground-floor opportunity in a category with no established franchise player. We are building that player — starting in Texas, expanding nationwide.
 

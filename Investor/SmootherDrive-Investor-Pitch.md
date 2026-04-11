@@ -2,7 +2,7 @@
 
 ---
 
-## Invest $1,000 for 1% Equity in a $400K Year 1 Driver-Assist Company
+## Invest $1,000 for 1% Equity in a $552K Year 1 Driver-Assist Company
 
 *Minimum $1,000 (1%) — up to $10,000 (10%) this round. Future rounds preserved.*
 
@@ -16,16 +16,16 @@ Leading OEM driver-assist systems cost **$8,000–$12,000+** and lock customers 
 
 ### The Solution
 
-**Smoother Drive** — a supervised driver-assist platform powered by OpenPilot (open-source, Consumer Reports top-rated), installed on premium rebranded hardware with **built-in navigation**. Professional installs for **$2,000**. No required monthly fee. Branded, franchisable, proven technology trained on **300M+ miles** of real-world driving data.
+**Smoother Drive** — a supervised driver-assist platform powered by OpenPilot (open-source, Consumer Reports top-rated), installed on official comma.ai hardware (comma 4, ~$1,000/unit). Pro installs for **$3,000** all-in. DIY kit ships for **$2,100**. No required monthly fee. Branded, franchisable, proven technology trained on **300M+ miles** of real-world driving data.
 
-**Optional:** $80/month premium module — Wi-Fi for the car, additional cameras, and priority support.
+**Optional:** $100/month support plan — priority support, OTA update alerts, and dedicated tech line.
 
 ---
 
 ### Traction Plan
 
-- **Launch:** Austin, TX — guerrilla signs on Mopac & I-35 + PPC ads (*"Traffic Sucks? Smoother Drive — $2,000!"*)
-- **Year 1:** 200 installs = **$400K revenue**, bootstrapped from founder's garage
+- **Launch:** Austin, TX — guerrilla signs on Mopac & I-35 + PPC ads (*"Traffic Sucks? Smoother Drive — $3,000 installed!"*)
+- **Year 1:** 200 units = **~$552K revenue**, bootstrapped from founder's garage
 - **Year 2:** LLC, certified mechanics, dedicated shop
 - **Year 3:** Franchise to 50 shops nationwide = **$5M+ system-wide revenue**
 
@@ -45,13 +45,13 @@ Leading OEM driver-assist systems cost **$8,000–$12,000+** and lock customers 
 | Metric | Amount |
 |--------|--------|
 | Startup Cost | $10,000 seed round |
-| Install Price | $2,000 |
-| Hardware COGS | ~$700–900/unit |
-| Gross Profit per Install | ~$1,100 |
-| Year 1 Revenue | $400K |
-| Year 1 Gross Profit | $220K+ |
-| Additional Revenue | Harness markup, shipping, $80/mo subscriptions |
-| ROI on Seed | **20–40x Year 1** |
+| Pro Install Price | $3,000 · DIY Kit $2,100 |
+| Hardware COGS (comma 4) | ~$1,000/unit + $110–$140 harness |
+| Net Profit per Pro Install | ~$1,025 (34% fully-loaded) |
+| Year 1 Revenue | ~$552K |
+| Year 1 Net Profit | ~$160K |
+| Additional Revenue | Support plans ($100/mo), future franchise fees |
+| ROI on Seed | **~16x Year 1** |
 
 ---
 
@@ -60,7 +60,7 @@ Leading OEM driver-assist systems cost **$8,000–$12,000+** and lock customers 
 | Item | Amount |
 |------|--------|
 | LLC Formation + Insurance | $800 |
-| Prototype Units (1× comma 3 + top Alibaba units w/ nav) | $3,500 |
+| Initial inventory (5× comma 4 units + harnesses) | $5,000 |
 | Roadside Signs (advertising) | $500 |
 | PPC / Digital Ad Budget | $500 |
 | Business Cards & Branding | $200 |
@@ -92,7 +92,7 @@ Future funding rounds preserved for growth-stage capital.
 
 ### Revenue Streams
 
-1. **Device + Installation** — $2,000 per install (core)
+1. **Device + Installation** — $3,000 per install (core)
 2. **Shipped Device + Harness** — for remote/DIY customers
 3. **Harness Sales** — marked up per vehicle model
 4. **Premium Module** — $80/month (Wi-Fi, cameras, premium support)

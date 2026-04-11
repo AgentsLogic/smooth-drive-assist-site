@@ -6,9 +6,9 @@
 
 ## Overview
 
-Smoother Drive — a rebranded, supervised driver-assist platform using OpenPilot on Alibaba-sourced hardware with built-in navigation — is **highly feasible** in the booming $500B+ US auto aftermarket. ADAS calibration alone is a $1.2B market today, projected to reach $3B by 2030 (12.8% CAGR per KPMG).
+Smoother Drive — a professional driver-assist installation platform using OpenPilot on official comma.ai hardware (comma 4) — is **highly feasible** in the booming $500B+ US auto aftermarket. ADAS calibration alone is a $1.2B market today, projected to reach $3B by 2030 (12.8% CAGR per KPMG).
 
-**Strengths:** Low barriers to entry ($10K startup), 55–65% margins on installs, recurring revenue via optional $80/mo premium module, viral guerrilla marketing potential in Austin, and no required monthly subscription (unlike competitors charging $100+/month).
+**Strengths:** Low barriers to entry ($10K startup), ~34% fully-loaded net margin per pro install (59% gross before commissions), recurring revenue via optional support plans, viral guerrilla marketing potential in Austin, and no required monthly subscription (unlike competitors charging $100+/month).
 
 **Challenges:** Hardware sourcing quality, liability exposure, and franchising regulations across states.
 
@@ -18,19 +18,18 @@ Smoother Drive — a rebranded, supervised driver-assist platform using OpenPilo
 
 ## Key Risks & Barriers
 
-### 1. Hardware Quality / Failure — HIGH RISK
+### 1. Hardware Quality / Failure — LOW RISK
 
-- Top-selling Alibaba units with navigation ($700–900) match official comma hardware per community reviews
-- Reddit reports **occasional issues (1–2% failure rate after 1 year)** on cheaper clones
-- No lawsuits found against sellers — Alibaba actively fights counterfeits
-- Smoother Drive will benchmark against an official comma 3 unit during testing phase
+- Official comma 4 device (~$1,000/unit) sourced directly from comma.ai — no clone quality concerns
+- Manufactured to comma.ai's own specifications; community-tested across 300M+ miles
+- No known hardware defect lawsuits against comma.ai hardware
+- comma.ai offers direct warranty support on official hardware
 
 **Mitigation:**
 
-- Purchase 1× official comma 3 + multiple top Alibaba units for side-by-side testing
-- Supplier audits and quality benchmarks before committing to a rebranding partner
-- 1-year warranty with $100/unit reserve fund
-- Acceptable threshold: failure rate under 5%
+- Purchase units directly from comma.ai shop (shop.comma.ai)
+- 1-year warranty with $100/unit reserve fund for any edge-case failures
+- Acceptable threshold: failure rate under 2% (official hardware performs well below this)
 
 ### 2. Liability / Legal — MEDIUM-HIGH RISK
 
@@ -64,14 +63,14 @@ Smoother Drive — a rebranded, supervised driver-assist platform using OpenPilo
 
 ### 4. Supply Chain / Scale — LOW RISK
 
-- Alibaba supply chain is reliable and established
-- Navigation-equipped units available at $700/unit in volume (2+)
-- Flashing OpenPilot onto hardware is free (open-source)
+- Official comma 4 devices sourced directly from comma.ai (~$1,000/unit)
+- comma.ai is a funded, established company with a proven distribution channel
+- OpenPilot software is free and open-source — no licensing cost
 - Franchise misclassification suits are rare when structured properly
 
 **Mitigation:**
 
-- Centralized hardware sourcing with tested supplier relationships
+- Order directly from shop.comma.ai — no third-party supplier dependency
 - Standardized training manuals and installation procedures
 
 ### 5. Market / Execution — LOW-MEDIUM RISK
@@ -84,7 +83,7 @@ Smoother Drive — a rebranded, supervised driver-assist platform using OpenPilo
 
 - Bootstrap from garage — zero overhead during Phase 1
 - Founder performs all installs personally until revenue supports hiring
-- ~$1,100 gross profit per install provides strong cushion
+- ~$1,025 net profit per install (fully loaded) provides strong cushion
 
 ---
 
@@ -128,8 +127,8 @@ Smoother Drive — a rebranded, supervised driver-assist platform using OpenPilo
 
 ### Supply Chain & Import
 
-- **25% US tariffs** on Chinese electronics — already factored into $700–900/unit pricing
-- Diversify to alternative suppliers if tariffs increase further
+- Hardware sourced directly from comma.ai (US company) — no import tariff exposure
+- comma.ai hardware is manufactured and distributed domestically through their own store
 - FDA/NHTSA certifications not required for Level 2 systems
 - EMI testing recommended ($500 lab cost)
 
