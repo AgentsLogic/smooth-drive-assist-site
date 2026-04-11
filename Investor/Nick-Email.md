@@ -28,7 +28,7 @@ The market is wide open. Nobody is doing this professionally at scale. That's th
 | Hardware + harness | −$1,125 |
 | Labor + overhead | −$250 |
 | Sales commission (20% total) | −$600 |
-| **Net profit per pro install** | **~$1,025 (34%)** |
+| **Net profit per pro install** | **~$1,025 (52% markup)** |
 
 Break-even is 2 installs a month to cover all fixed overhead. At 2 installs a week — which is conservative — we're generating about $8,000/month net within the first few months.
 

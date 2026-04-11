@@ -47,7 +47,7 @@ Leading OEM driver-assist systems cost **$8,000–$12,000+** and lock customers 
 | Startup Cost | $10,000 seed round |
 | Pro Install Price | $3,000 · DIY Kit $2,100 |
 | Hardware COGS (comma 4) | ~$1,000/unit + $110–$140 harness |
-| Net Profit per Pro Install | ~$1,025 (34% fully-loaded) |
+| Net Profit per Pro Install | ~$1,025 (52% markup, fully-loaded) |
 | Year 1 Revenue | ~$552K |
 | Year 1 Net Profit | ~$160K |
 | Additional Revenue | Support plans ($100/mo), future franchise fees |

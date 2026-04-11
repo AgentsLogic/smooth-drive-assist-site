@@ -127,7 +127,7 @@ You can also invest smaller: **$1,000 for 1%**, up to 10% total this round.
 ## Why This Works
 
 - **Zero storefront needed to start** — founder installs from home garage, no rent
-- **~34% net margin** per pro install after all costs and sales commissions
+- **~52% net markup** per pro install after all costs and sales commissions
 - **Proven technology** — OpenPilot has 300M+ real-world miles. Consumer Reports ranks it above most factory systems
 - **No subscription required** — we beat every competitor on total cost of ownership
 - **Scalable model** — franchises like a car audio or window tint chain, same playbook

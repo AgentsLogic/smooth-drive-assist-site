@@ -16,7 +16,7 @@ We launch in Austin, TX from the founder's home base, scale across Texas via a c
 | Year 1 Net Profit | ~$160,000 (~16× ROI on $10K seed) |
 | Year 1 Revenue | ~$552,000 (200 units + support) |
 | Year 3 Revenue | $5M+ system-wide (with franchises) |
-| Net Margin per Pro Install | ~34% after all costs and commissions |
+| Net Markup per Pro Install | ~52% after all costs and commissions |
 | Break-Even | 2 professional installs per month (covers overhead) |
 | Seed Ask | $10,000 |
 
@@ -105,7 +105,7 @@ All figures fully loaded: hardware, labor, shipping, commissions, and per-unit o
 | Per-unit overhead | −$120 | −$150 |
 | Sales Rep commission (15%) | −$315 | −$450 |
 | Manager override (5%) | −$105 | −$150 |
-| **Net Profit** | **~$410 (20%)** | **~$1,025 (34%)** |
+| **Net Profit** | **~$410 (24% markup)** | **~$1,025 (52% markup)** |
 
 These are the numbers we run the business on. Everything else flows from here.
 
