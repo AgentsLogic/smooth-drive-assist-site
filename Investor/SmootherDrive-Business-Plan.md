@@ -13,11 +13,11 @@ We launch in Austin, TX from the founder's home base, scale across Texas via a c
 
 | Metric | Target |
 |--------|--------|
-| Year 1 Net Profit | ~$200,000 (~20× ROI on $10K seed) |
+| Year 1 Net Profit | ~$160,000 (~16× ROI on $10K seed) |
 | Year 1 Revenue | ~$552,000 (200 units + support) |
 | Year 3 Revenue | $5M+ system-wide (with franchises) |
-| Net Margin per Pro Install | ~38% after all costs and commissions |
-| Break-Even | 2 professional installs per month |
+| Net Margin per Pro Install | ~34% after all costs and commissions |
+| Break-Even | 2 professional installs per month (covers overhead) |
 | Seed Ask | $10,000 |
 
 ---
@@ -98,14 +98,14 @@ All figures fully loaded: hardware, labor, shipping, commissions, and per-unit o
 | Line Item | DIY — $2,100 | Pro Install — $3,000 |
 |-----------|-------------|----------------------|
 | Sale Price | $2,100 | $3,000 |
-| comma 4 device | −$750 | −$750 |
-| Vehicle harness | −$70 | −$70 |
+| comma 4 device | −$1,000 | −$1,000 |
+| Vehicle harness | −$125 | −$125 |
 | Shipping/fulfillment | −$25 | — |
-| Tech labor (install + calibration) | — | −$140 |
+| Tech labor (install + calibration) | — | −$100 |
 | Per-unit overhead | −$120 | −$150 |
 | Sales Rep commission (15%) | −$315 | −$450 |
 | Manager override (5%) | −$105 | −$150 |
-| **Net Profit** | **~$715 (34%)** | **~$1,145 (38%)** |
+| **Net Profit** | **~$410 (20%)** | **~$1,025 (34%)** |
 
 These are the numbers we run the business on. Everything else flows from here.
 
@@ -148,7 +148,7 @@ Full Texas metro coverage. Recurring support subscriber base generates $3,000–
 
 **Secondary:** Compatible OpenPilot hardware from vetted suppliers, tested side-by-side with official units. Only used if quality is identical and COGS is meaningfully lower.
 
-**Harnesses:** Sourced from comma.ai or compatible suppliers. Vehicle-specific. Cost: $50–$90 depending on make/model.
+**Harnesses:** Sourced from comma.ai or compatible suppliers. Vehicle-specific. Cost: $110–$140 depending on make/model.
 
 ---
 
@@ -216,20 +216,20 @@ Full Texas metro coverage. Recurring support subscriber base generates $3,000–
 ### Break-Even Analysis
 
 - Monthly fixed overhead: ~$1,500–$2,000 (insurance, ads, misc)
-- Net profit per pro install: **~$1,145**
-- **Break-even: 2 professional installs per month** — that's less than one per week
+- Net profit per pro install: **~$1,025**
+- **Break-even: 2 professional installs per month** covers all fixed overhead — that's less than one per week
 
 ### Year 1 Projections (Conservative — 200 Units)
 
 | Metric | DIY (80 units) | Pro Install (120 units) | Support (avg 20 subs) | Total |
 |--------|---------------|------------------------|----------------------|-------|
 | Revenue | $168,000 | $360,000 | $24,000 | **$552,000** |
-| COGS (hardware, labor, shipping) | −$67,600 | −$115,200 | — | −$182,800 |
+| COGS (hardware, labor, shipping) | −$92,000 | −$147,000 | — | −$239,000 |
 | Commissions (20%) | −$33,600 | −$72,000 | — | −$105,600 |
 | Variable Overhead (per-unit: gas, misc) | −$9,600 | −$18,000 | — | −$27,600 |
 | Fixed Overhead (12 months @ $1,750/mo) | — | — | — | −$21,000 |
-| **Net Profit** | — | — | — | **~$215,000** |
-| **ROI on $10K seed** | — | — | — | **~20×** |
+| **Net Profit** | — | — | — | **~$160,000** |
+| **ROI on $10K seed** | — | — | — | **~16×** |
 
 > *Note: Conservative projections at under 2 installs/week average. At just 1 install/week the entire year, net profit is still ~$55,000 — more than 5× the seed investment back.*
 

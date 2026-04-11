@@ -25,12 +25,12 @@ The market is wide open. Nobody is doing this professionally at scale. That's th
 | Line Item | Amount |
 | --- | --- |
 | Sale price | $3,000 |
-| Hardware + harness | −$820 |
-| Labor + overhead | −$290 |
+| Hardware + harness | −$1,125 |
+| Labor + overhead | −$250 |
 | Sales commission (20% total) | −$600 |
-| **Net profit per pro install** | **~$1,145 (38%)** |
+| **Net profit per pro install** | **~$1,025 (34%)** |
 
-Break-even is 2 installs a month. At 2 installs a week — which is conservative — we're generating about $9,000/month net within the first few months.
+Break-even is 2 installs a month to cover all fixed overhead. At 2 installs a week — which is conservative — we're generating about $8,000/month net within the first few months.
 
 ---
 
@@ -54,7 +54,7 @@ I wanted to make sure this was genuinely good for you, not just good enough to g
 
 Here's how it works:
 
-**Phase 1:** From day one, you receive **10% of monthly net profit** until your full $10,000 is back in your pocket. At our projected run rate that's about 5–6 months.
+**Phase 1:** From day one, you receive **10% of monthly net profit** until your full $10,000 is back in your pocket. At our projected run rate that's about 7–8 months.
 
 **Phase 2:** After that, you receive **5% of monthly net profit on an ongoing basis** — no expiration, no cutoff. As we expand into Houston, Dallas, San Antonio and more cities, your 5% grows with the revenue. You're riding the whole scale-up.
 
@@ -64,14 +64,14 @@ Here's what that looks like projected out:
 
 | Period | Your Take |
 | --- | --- |
-| Months 1–6 (Phase 1) | $10,000 returned |
-| Months 7–18 (Year 1 tail) | ~$6,000 |
-| Months 19–30 (Year 2) | ~$22,500 |
-| Months 31–36 (Year 3 first half) | ~$17,500 |
+| Months 1–8 (Phase 1) | $10,000 returned |
+| Months 9–12 (Year 1 tail) | ~$2,700 |
+| Months 13–24 (Year 2) | ~$18,000 |
+| Months 25–36 (Year 3) | ~$41,000 |
 | Month 36+ buyout | $20,000 |
-| **Total** | **~$76,000 on a $10,000 investment** |
+| **Total** | **~$90,000 on a $10,000 investment** |
 
-That's 7.6× your money back on conservative numbers — numbers that don't include what happens when we open franchises in Year 2 and beyond, which is where this gets really interesting.
+That's 9× your money back on conservative numbers — numbers that don't include what happens when we open franchises in Year 2 and beyond, which is where this gets really interesting.
 
 No equity. No board seat. No waiting on an acquisition. You get your money back first, then you ride the growth for 3 years, then I write you a check and we're square.
 
