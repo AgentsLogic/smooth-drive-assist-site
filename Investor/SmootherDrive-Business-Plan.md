@@ -271,31 +271,40 @@ Modeled after Tint World and Midas — low-cost, mobile-friendly units. No brick
 
 **Investor Return Structure — Revenue Participation Agreement (RPA)**
 
-This is a **fixed-term Revenue Participation Agreement**, not equity. The investor receives defined cash payments for a defined period, after which the agreement terminates automatically. There are no board seats, no voting rights, no ongoing ownership stake, and no ability to extend the agreement beyond its term.
+This is a **Revenue Participation Agreement**, not equity. The investor receives a defined percentage of monthly net profit in two phases. There are no board seats, no voting rights, and no ownership stake at any point.
 
 **Payment Schedule:**
 
-1. **Phase 1 — Principal Recovery (Month 1 until $10K returned):** Investor receives **20% of monthly net profit** each month until the original $10,000 investment is returned in full. At projected pace this takes 6–8 weeks.
-2. **Phase 2 — Profit Share (Remainder of 24-month term):** Investor receives **10% of monthly net profit** for the balance of the 24-month agreement term. Projected total payout: **$30,000+ over the full term.**
-3. **Month 24 — Automatic Termination:** The Revenue Participation Agreement expires automatically at the end of month 24. All obligations to the investor cease. No renewal, no renegotiation, no further payments.
+1. **Phase 1 — Principal Recovery (Month 1 until $10K returned):** Investor receives **10% of monthly net profit** each month until the original $10,000 investment is returned in full. At projected pace (~$17,000/month net in Year 1) this takes approximately **5–6 months**.
+2. **Phase 2 — Ongoing Profit Share:** After principal is returned, investor receives **5% of monthly net profit** on an ongoing basis with no set expiration. Payments continue each month until the company exercises its buyout right.
 
-**Company Buyout Right (Early Exit Option):**
+**Company Buyout Right:**
 
-At any point after Month 12, the company holds the **unilateral right** to terminate the agreement early by making a one-time buyout payment to the investor of **$5,000**, regardless of how much has already been paid. This allows the company to close out the agreement cleanly if business conditions change. The investor cannot refuse this buyout once triggered.
+At any point after **Month 24**, the company holds the **unilateral right** to terminate the entire agreement with a single **$20,000 buyout payment**. Once paid, all obligations under the agreement cease permanently. The investor cannot refuse or delay this buyout once triggered.
+
+**Projected investor payout over time:**
+
+| Period | Payments | Running Total |
+|--------|----------|---------------|
+| Months 1–6 (Phase 1) | $10,000 returned | $10,000 |
+| Months 7–24 (Phase 2, 18 mo × ~$900/mo) | ~$16,000 | ~$26,000 |
+| Buyout exercised at Month 24+ | $20,000 | **~$46,000 total** |
+
+> *Phase 2 estimate based on 5% of ~$17,500/month average net profit. Actual payments may be higher as business scales.*
 
 **Why this works for the investor:**
-- Cash starts flowing within weeks — no waiting years for an exit
-- Projected 3× return ($30K+) on a $10K investment over 24 months
-- Defined, predictable payments — not tied to a speculative acquisition
-- Clean, simple — no legal complexity, no equity cap table, no drag-along clauses
+- Gets original $10K back first — principal never at risk once Phase 1 completes
+- 5% ongoing share means payments grow as the business grows
+- $20,000 final buyout is a clean, guaranteed lump-sum exit
+- No equity complexity, no lock-up, no waiting for an acquisition
 
 **Company Protection Summary:**
-- Agreement has a hard 24-month expiration — it ends, period
-- Company can buy out investor at any time after Month 12 for $5,000 flat
 - Investor has no ownership, no voting rights, no claim on assets
-- No dilution of founder equity at any point
+- Company controls when to exercise the buyout (any time after Month 24)
+- Total maximum cost is knowable and finite
+- No equity dilution at any point — founder retains 100%
 
-**Exit / Acquisition:** Target acquisition by an auto aftermarket chain (Driven Brands, Midas, Tint World) or private equity rollup at 3–5× revenue in Year 3–5. Any acquisition triggers full agreement settlement and termination.
+**Exit / Acquisition:** Target acquisition by an auto aftermarket chain (Driven Brands, Midas, Tint World) or private equity rollup at 3–5× revenue in Year 3–5. Any acquisition event triggers immediate full settlement and termination of the agreement.
 
 ---
 

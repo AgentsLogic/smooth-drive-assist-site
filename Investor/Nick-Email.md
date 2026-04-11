@@ -48,15 +48,15 @@ The $10K gets us operational and stocked. After the first 9 installs, the busine
 
 **Your deal:**
 
-This is a Revenue Participation Agreement — a fixed-term deal with defined payments and a hard end date. No equity, no board seat, no complexity.
+This is a Revenue Participation Agreement — not equity, no board seat, no complexity.
 
-1. **Phase 1 — Get your money back first:** From month one you receive **20% of monthly net profit** until your full $10,000 is returned. At our projected pace that's roughly **6–8 weeks**.
-2. **Phase 2 — Profit share:** After that you receive **10% of monthly net profit for the rest of the 24-month term** — projected total payout of **$30,000+ on your $10,000**.
-3. **Month 24 — It's done:** The agreement expires automatically. Full stop. No renewal, no negotiation, no further obligation on either side.
+1. **Phase 1 — Get your money back first:** You receive **10% of monthly net profit** until your full $10,000 is returned. At our projected pace (~$17K/month net in Year 1) that's roughly **5–6 months**.
+2. **Phase 2 — Ongoing profit share:** After that you receive **5% of monthly net profit on an ongoing basis** — no set expiration. As we scale into Houston, Dallas, and beyond, your 5% grows with the revenue.
+3. **The exit:** After Month 24, we have the right to close the whole deal with a single **$20,000 buyout payment**. You walk away clean. Done.
 
-One more thing worth mentioning: if we want to close it out early (say the business takes off and we want to clean up the cap structure), we have the right to make you a one-time **$5,000 buyout payment** after Month 12 to terminate the agreement. You'd walk away with everything paid to that point plus the $5,000. That's our call, not yours — but it's there so you know there's always a clear exit for both of us.
+Projected total payout by the time we exercise the buyout: **~$46,000 on a $10,000 investment** — roughly 4.6× your money back.
 
-No board seat. No voting rights. No lock-up waiting for an acquisition. Cash in your pocket starting week one.
+No board seat. No voting rights. No waiting on an acquisition. Your money comes back first, then you ride 5% of a growing business until we write you a $20K check to close it out.
 
 ---
 
