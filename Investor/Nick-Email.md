@@ -1,87 +1,93 @@
-# Email to Nick — Follow-Up (He's Been Briefed, Wants More Detail)
+# Email to Nick — Rewrite (Personal, Detailed, Deal-Focused)
 
 ---
 
-**Subject:** Re: Smoother Drive — Full Breakdown Before You Decide
+**Subject:** Re: Smoother Drive — Here's Everything, Including the Numbers I've Been Working On
 
 ---
 
 Hey Nick,
 
-Appreciate you taking the time to hear me out. Here's everything you need to make a decision — I'll keep it straight and skip the sales pitch since you already know what we're doing.
+So I've spent the last few days really digging into the numbers on this thing — not just putting together a pitch, but genuinely trying to structure a deal that makes as much sense for you as it does for me. I think I got there. Here's the full picture.
 
 ---
 
-**The product in one sentence:** We install the comma 4 — an AI driver-assist device rated #1 by Consumer Reports above Tesla — into people's existing cars. $2,100 shipped as a DIY kit or $3,000 professionally installed, start to finish in under 90 minutes. No ongoing fees for the customer.
+**Quick recap on what we're doing:**
+
+We professionally install AI driver-assist systems into people's existing cars. The hardware is the comma 4 — the same system Consumer Reports ranked #1, above Tesla Autopilot. $3,000 gets it installed in their driveway in under 90 minutes. $2,100 and we ship it to them as a DIY kit. No subscription, no ongoing fees, fully reversible.
+
+The market is wide open. Nobody is doing this professionally at scale. That's the whole play.
 
 ---
 
-**Here's the exact math on every install:**
+**The math on every install:**
 
-- Sale price: $3,000
-- Hardware (comma 4 device): −$750
-- Vehicle wiring harness: −$70
-- Installer labor: −$140
-- Overhead (insurance, gas, misc): −$150
-- Sales rep commission (15%): −$450
-- Manager override (5%): −$150
-- **Your net per install: ~$1,145 — that's 38% net margin**
+| Line Item | Amount |
+| --- | --- |
+| Sale price | $3,000 |
+| Hardware + harness | −$820 |
+| Labor + overhead | −$290 |
+| Sales commission (20% total) | −$600 |
+| **Net profit per pro install** | **~$1,145 (38%)** |
 
-We also sell a DIY kit at $2,100 shipped, which nets ~$715 per unit with no labor cost and no travel. Every sale through either channel is profitable from day one.
-
-Break-even is **2 professional installs per month**. That's less than one per week.
+Break-even is 2 installs a month. At 2 installs a week — which is conservative — we're generating about $9,000/month net within the first few months.
 
 ---
 
-**Where your $10,000 goes:**
+**Where your $10K goes:**
 
-- $5,000 → Initial hardware inventory (5 units + harnesses, ready to install immediately)
-- $1,500 → LLC formation + liability insurance
-- $1,500 → First 3 months of Google/Facebook ads
-- $1,000 → Roadside signs across Austin, Houston, Dallas
-- $500 → Branding, vehicle sticker, business cards
-- $500 → Working capital buffer
+| | |
+| --- | --- |
+| Hardware inventory (5 units ready to go) | $5,000 |
+| LLC + liability insurance | $1,500 |
+| First 3 months of ads | $1,500 |
+| Roadside signs across Austin, Houston, Dallas | $1,000 |
+| Working capital / contingency | $500 |
 
-The $10K gets us operational and stocked. After the first 9 installs, the business is self-funding.
+Nine installs and the business is completely self-funding from there.
 
 ---
 
-**Your deal:**
+**Your deal — and this is the part I worked hardest on:**
 
-This is a Revenue Participation Agreement — not equity, no board seat, no complexity.
+I wanted to make sure this was genuinely good for you, not just good enough to get you to say yes. So I kept adjusting the structure until I felt like I'd be comfortable being on your side of it.
 
-1. **Phase 1 — Get your money back first:** You receive **10% of monthly net profit** until your full $10,000 is returned. At our projected pace that's roughly **5–6 months**.
-2. **Phase 2 — Ongoing profit share:** After that you receive **5% of monthly net profit, ongoing.** No hard expiration. As we scale into Houston, Dallas, San Antonio and beyond, your 5% check grows every month with us.
-3. **The exit:** After **Month 36 (Year 3)**, we have the right to close the whole deal with a single **$20,000 buyout payment**. One check, everything done, nothing owed after that.
+Here's how it works:
 
-Here's what the projected payout looks like over 3 years:
+**Phase 1:** From day one, you receive **10% of monthly net profit** until your full $10,000 is back in your pocket. At our projected run rate that's about 5–6 months.
 
-| Period | What You Receive |
-|--------|-----------------|
+**Phase 2:** After that, you receive **5% of monthly net profit on an ongoing basis** — no expiration, no cutoff. As we expand into Houston, Dallas, San Antonio and more cities, your 5% grows with the revenue. You're riding the whole scale-up.
+
+**The exit:** After **Year 3** (Month 36), I have the right to close the agreement with a single **$20,000 buyout payment**. One check, clean break, nothing owed after that on either side.
+
+Here's what that looks like projected out:
+
+| Period | Your Take |
+| --- | --- |
 | Months 1–6 (Phase 1) | $10,000 returned |
-| Months 7–18 (Year 1 remainder) | ~$6,000 |
+| Months 7–18 (Year 1 tail) | ~$6,000 |
 | Months 19–30 (Year 2) | ~$22,500 |
 | Months 31–36 (Year 3 first half) | ~$17,500 |
 | Month 36+ buyout | $20,000 |
 | **Total** | **~$76,000 on a $10,000 investment** |
 
-That's roughly **7.6× your money back.** And those are conservative numbers — they don't include franchise royalties or the fact that Year 3 could be significantly larger.
+That's 7.6× your money back on conservative numbers — numbers that don't include what happens when we open franchises in Year 2 and beyond, which is where this gets really interesting.
 
-No board seat. No voting rights. No waiting on an acquisition. Your money comes back first, then you ride 5% of a growing business for 3 years, then we write you a $20K check and it's over.
-
----
-
-**What could go wrong — and why it doesn't kill us:**
-
-- *Slow sales early on:* The break-even is so low (2 installs/month) that we'd need to completely fail at marketing to not cover costs. We have 6 marketing channels running simultaneously from day one.
-- *Hardware issues / returns:* Every unit ships with a 30-day money-back guarantee backed by comma.ai — the manufacturer handles defects. Our refund exposure is minimal.
-- *Competition shows up:* Possible long-term, but we have a head start, a local brand, and customer relationships. This space has been wide open for 3 years and nobody has built the install service yet.
+No equity. No board seat. No waiting on an acquisition. You get your money back first, then you ride the growth for 3 years, then I write you a check and we're square.
 
 ---
 
-I've attached the full investor deck — it has the 3-year projections, the franchise model, and the full unit economics laid out visually. Should take you about 5 minutes to go through.
+**Worst case scenarios — and why they're manageable:**
 
-If the numbers make sense to you, I'd love to get this moving. I'm ready to start the moment we're capitalized.
+- **Slow start:** Break-even is 2 installs a month. Even at half our target pace, we're covering costs and paying you within weeks.
+- **Hardware issues:** Comma.ai backs every unit with a 30-day guarantee. Defects go back to them, not us.
+- **Competition:** This space has been open for years and nobody has built the install service. We get first-mover advantage and local brand recognition from day one.
+
+---
+
+I've attached the full deck and the proof document — the proof doc is worth a read, it has all the independent reviews, Consumer Reports data, and real user quotes so you can see this isn't just my pitch, it's what the market is already saying about the technology.
+
+Let me know what questions you have. If it looks good, I'm ready to move.
 
 — [Your Name]
 
@@ -90,5 +96,5 @@ If the numbers make sense to you, I'd love to get this moving. I'm ready to star
 
 ---
 
-*Attachment: Smoother-Drive-Investor-Deck.html*
+*Attachments: Smoother-Drive-Investor-Deck.html · Smoother-Drive-Proof-It-Works.html*
 
