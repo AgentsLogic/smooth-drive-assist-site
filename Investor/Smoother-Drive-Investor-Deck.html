@@ -3,483 +3,157 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Smoother Drive — Investor Deck 2026</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<title>SmootherDrive — Business Plan & Investment Agreement</title>
 <style>
-  *{margin:0;padding:0;box-sizing:border-box}
-  body{font-family:'Inter',sans-serif;background:#fff;color:#111;line-height:1.6}
-  .page{max-width:900px;margin:0 auto;padding:0 2rem 4rem}
-
-  /* COVER */
-  .cover{background:linear-gradient(135deg,#0a0a0a 0%,#0d1f14 50%,#0a0a0a 100%);color:#fff;padding:5rem 3rem 4rem;text-align:center;border-radius:0 0 2rem 2rem;margin-bottom:3rem}
-  .cover-logo{display:inline-flex;align-items:center;gap:0.75rem;margin-bottom:2rem}
-  .cover-logo svg{width:36px;height:36px;color:#00ff88}
-  .cover-logo span{font-size:1.4rem;font-weight:700;letter-spacing:-0.02em}
-  .cover h1{font-size:clamp(2rem,6vw,3.5rem);font-weight:800;line-height:1.1;margin-bottom:1rem}
-  .cover h1 span{color:#00ff88}
-  .cover p{font-size:1.1rem;color:rgba(255,255,255,0.7);max-width:600px;margin:0 auto 2rem}
-  .cover-stats{display:flex;justify-content:center;gap:3rem;flex-wrap:wrap;margin-top:2.5rem;padding-top:2rem;border-top:1px solid rgba(255,255,255,0.1)}
-  .stat{text-align:center}
-  .stat-val{display:block;font-size:2rem;font-weight:800;color:#00ff88}
-  .stat-label{font-size:0.8rem;color:rgba(255,255,255,0.5);text-transform:uppercase;letter-spacing:0.08em}
-  .badge{display:inline-block;background:rgba(0,255,136,0.12);border:1px solid rgba(0,255,136,0.3);color:#00ff88;font-size:0.8rem;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;padding:0.35rem 1rem;border-radius:999px;margin-bottom:1.5rem}
-
-  /* SECTIONS */
-  .section{margin-bottom:3rem}
-  .section-label{display:flex;align-items:center;gap:0.75rem;margin-bottom:1.25rem}
-  .section-num{width:32px;height:32px;background:#00ff88;color:#000;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:0.85rem;flex-shrink:0}
-  .section-title{font-size:1.5rem;font-weight:800}
-  p{color:#444;margin-bottom:0.75rem}
-  strong{color:#111}
-
-  /* DEVICE SHOWCASE */
-  .device-showcase{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin:1.5rem 0}
-  .device-img-wrap{border-radius:1rem;overflow:hidden;background:#f5f5f5;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center}
-  .device-img-wrap img{width:100%;height:100%;object-fit:cover}
-  .device-specs{background:#0a0a0a;color:#fff;border-radius:1rem;padding:1.5rem}
-  .device-specs h3{color:#00ff88;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.08em;margin-bottom:1rem}
-  .spec-row{display:flex;justify-content:space-between;padding:0.5rem 0;border-bottom:1px solid rgba(255,255,255,0.08);font-size:0.9rem}
-  .spec-row:last-child{border:none}
-  .spec-key{color:rgba(255,255,255,0.5)}
-  .spec-val{color:#fff;font-weight:500}
-
-  /* TABLES */
-  table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:0.9rem}
-  th{background:#0a0a0a;color:#fff;padding:0.75rem 1rem;text-align:left;font-weight:600}
-  th:first-child{border-radius:0.5rem 0 0 0}
-  th:last-child{border-radius:0 0.5rem 0 0}
-  td{padding:0.7rem 1rem;border-bottom:1px solid #f0f0f0}
-  tr:last-child td{border:none}
-  tr:hover td{background:#fafff8}
-  .highlight-row td{font-weight:700;color:#0a8a4a}
-  .green{color:#0a8a4a;font-weight:700}
-
-  /* CARDS */
-  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin:1.5rem 0}
-  .card{border:1.5px solid #e8e8e8;border-radius:1rem;padding:1.25rem}
-  .card-icon{font-size:1.75rem;margin-bottom:0.5rem}
-  .card h4{font-size:0.95rem;font-weight:700;margin-bottom:0.25rem}
-  .card p{font-size:0.85rem;color:#666;margin:0}
-  .card.featured{border-color:#00cc6a;background:#f0fff6}
-
-  /* TIMELINE */
-  .timeline{border-left:3px solid #00ff88;padding-left:1.5rem;margin:1.25rem 0;display:flex;flex-direction:column;gap:1.25rem}
-  .tl-item{position:relative}
-  .tl-item::before{content:'';position:absolute;left:-1.95rem;top:0.35rem;width:12px;height:12px;border-radius:50%;background:#00ff88}
-  .tl-month{font-size:0.75rem;font-weight:700;text-transform:uppercase;letter-spacing:0.08em;color:#00aa55;margin-bottom:0.2rem}
-  .tl-item h4{font-size:1rem;font-weight:700}
-  .tl-item p{font-size:0.9rem;color:#555;margin:0}
-
-  /* CALLOUT */
-  .callout{background:linear-gradient(135deg,#0a0a0a,#0d1f14);color:#fff;border-radius:1.25rem;padding:2.5rem;text-align:center;margin:2rem 0}
-  .callout h2{font-size:2rem;font-weight:800;margin-bottom:0.5rem}
-  .callout h2 span{color:#00ff88}
-  .callout p{color:rgba(255,255,255,0.6);max-width:540px;margin:0 auto 1.5rem}
-  .callout-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:1.5rem}
-  .callout-stat{background:rgba(255,255,255,0.05);border:1px solid rgba(0,255,136,0.2);border-radius:0.75rem;padding:1rem}
-  .callout-stat .val{font-size:1.75rem;font-weight:800;color:#00ff88;display:block}
-  .callout-stat .lbl{font-size:0.75rem;color:rgba(255,255,255,0.4);text-transform:uppercase;letter-spacing:0.06em}
-
-  /* COMPARISON */
-  .compare-table th.us{background:#00aa55;color:#fff}
-  .compare-table td.us{background:#f0fff6;font-weight:600;color:#0a6632}
-
-  /* FOOTER */
-  .footer{text-align:center;padding:2rem;margin-top:3rem;border-top:1px solid #eee;color:#999;font-size:0.85rem}
-
-  /* PRINT */
-  @media print{
-    .cover{border-radius:0}
-    body{font-size:12px}
-    .page{padding:0 1rem}
-  }
-  @media(max-width:640px){
-    .cover-stats{gap:1.5rem}
-    .device-showcase{grid-template-columns:1fr}
-    .callout-grid{grid-template-columns:1fr}
-    .cards{grid-template-columns:1fr}
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: Georgia, serif; background: #fff; color: #111; line-height: 1.7; font-size: 14pt; }
+  .page { max-width: 760px; margin: 0 auto; padding: 2.5rem 2rem 4rem; }
+  h1 { font-size: 20pt; text-align: center; margin-bottom: 0.25rem; }
+  h2 { font-size: 13pt; margin: 2rem 0 0.5rem; border-bottom: 1px solid #ccc; padding-bottom: 0.25rem; }
+  h3 { font-size: 11pt; margin: 1.25rem 0 0.4rem; }
+  p { margin-bottom: 0.75rem; }
+  .center { text-align: center; }
+  .subtitle { text-align: center; color: #555; font-size: 11pt; margin-bottom: 2rem; }
+  .divider { border: none; border-top: 1px solid #ccc; margin: 1.5rem 0; }
+  table { width: 100%; border-collapse: collapse; margin: 0.75rem 0 1.25rem; font-size: 11pt; }
+  th { background: #f0f0f0; border: 1px solid #ccc; padding: 0.4rem 0.75rem; text-align: left; font-weight: bold; }
+  td { border: 1px solid #ccc; padding: 0.4rem 0.75rem; }
+  .sig-block { margin-top: 3rem; display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; }
+  .sig-line { border-top: 1px solid #333; margin-top: 2.5rem; padding-top: 0.35rem; font-size: 10pt; color: #444; }
+  .sig-line + .sig-line { margin-top: 1.5rem; }
+  .footnote { margin-top: 3rem; font-size: 10pt; color: #777; text-align: center; }
+  @media print {
+    body { font-size: 11pt; }
+    .page { padding: 1rem; }
   }
 </style>
 </head>
 <body>
 <div class="page">
 
-  <!-- NAV -->
-  <nav style="display:flex;justify-content:space-between;align-items:center;padding:1.25rem 0;margin-bottom:0.5rem;border-bottom:1px solid #eee;font-size:0.85rem;color:#777;">
-    <strong style="color:#111;font-size:1rem;">Smoother Drive</strong>
-    <span>Investor Deck &mdash; April 2026 &mdash; Confidential</span>
-  </nav>
 
-  <!-- COVER -->
-  <div class="cover">
-    <div class="cover-logo">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
-      <span>Smoother Drive</span>
+  <h1>SmootherDrive</h1>
+  <p class="subtitle">Business Plan &amp; Investment Agreement &mdash; April 2026 &mdash; Confidential</p>
+  <hr class="divider">
+
+  <!-- PARTIES -->
+  <h2>Parties</h2>
+  <p><strong>Investor:</strong> Nick ___________________________ &nbsp;&nbsp; Address: _______________________________________________</p>
+  <p><strong>Operator:</strong> John Graham Jr &nbsp;&nbsp; 1213 Delsie Drive, Apt A, Lakeway, TX 78734</p>
+  <p><strong>Business:</strong> SmootherDrive &nbsp;&nbsp; smootherdrive.com &nbsp;&nbsp; claimman@mail.com</p>
+  <hr class="divider">
+
+
+  <!-- BUSINESS OVERVIEW -->
+  <h2>1. Business Overview</h2>
+  <p><strong>SmootherDrive</strong> is a mobile AI driver-assist installation business based in Austin, Texas. The company sells and installs an AI-powered driver assistance device compatible with 325+ vehicle makes and models. The device runs OpenPilot, rated the #1 driver assistance system by Consumer Reports, providing hands-free lane keeping, adaptive cruise control, and automated highway lane changes — without requiring the purchase of a new vehicle.</p>
+  <p>The business operates with zero fixed overhead. All hardware is sourced directly through the manufacturer with free shipping. The operator, John Graham Jr, handles sales, scheduling, and installations. The business accepts payment via PayPal (claimman@mail.com) and the website at smootherdrive.com.</p>
+
+  <h2>2. Products &amp; Pricing</h2>
+  <table>
+    <thead><tr><th>Product</th><th>Sale Price</th><th>Cost of Goods</th><th>Net Profit</th><th>Markup</th></tr></thead>
+    <tbody>
+      <tr><td>DIY Kit (device + harness, shipped)</td><td>$2,100</td><td>$1,120</td><td>$980</td><td>88%</td></tr>
+      <tr><td>Pro Install (device + harness + labor)</td><td>$3,000</td><td>$1,220</td><td>$1,780</td><td>146%</td></tr>
+      <tr><td>Monthly Support Plan (optional)</td><td>$100/mo</td><td>$0</td><td>$100/mo</td><td>100%</td></tr>
+    </tbody>
+  </table>
+  <p><em>Hardware shipped free by manufacturer. Harness ~$120 depending on vehicle. Pro install includes technician labor ($100).</em></p>
+
+  <h2>3. Financial Projections (3-Year)</h2>
+  <table>
+    <thead><tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
+    <tbody>
+      <tr><td>Pro Installs</td><td>100</td><td>250</td><td>600</td></tr>
+      <tr><td>DIY Kits Sold</td><td>100</td><td>200</td><td>400</td></tr>
+      <tr><td>Gross Revenue</td><td>~$552,000</td><td>~$1,230,000</td><td>~$2,760,000</td></tr>
+      <tr><td>Cost of Goods</td><td>~$234,000</td><td>~$529,000</td><td>~$1,180,000</td></tr>
+      <tr><td><strong>Net Profit</strong></td><td><strong>~$318,000</strong></td><td><strong>~$701,000</strong></td><td><strong>~$1,580,000</strong></td></tr>
+    </tbody>
+  </table>
+  <p><em>Projections are estimates based on 2 pro installs per week in Year 1, scaling with additional cities and referral reps. Not a guarantee of performance.</em></p>
+
+  <h2>4. Use of Investment Funds ($10,000)</h2>
+  <table>
+    <thead><tr><th>Category</th><th>Amount</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Initial Inventory</td><td>$5,000</td><td>5 SmootherDrive units + harnesses pre-stocked</td></tr>
+      <tr><td>Marketing Launch</td><td>$2,500</td><td>Ads, signage, vehicle branding, content creation</td></tr>
+      <tr><td>Operations Setup</td><td>$1,500</td><td>LLC, insurance, tools, software, install kit</td></tr>
+      <tr><td>Cash Reserve</td><td>$1,000</td><td>Buffer for returns, refunds, early expenses</td></tr>
+    </tbody>
+  </table>
+
+  <hr class="divider">
+
+  <!-- AGREEMENT -->
+  <h2>5. Investment Agreement — Revenue Participation</h2>
+
+  <p>This Revenue Participation Agreement ("Agreement") is entered into as of the date signed below, between:</p>
+
+  <p><strong>Investor:</strong> Nick ___________________________, residing at ______________________________________________<br>
+  <strong>Operator:</strong> John Graham Jr, 1213 Delsie Drive, Apt A, Lakeway, TX 78734<br>
+  operating under the business name <strong>SmootherDrive</strong>.</p>
+
+  <h3>5.1 Investment Amount</h3>
+  <p>The Investor agrees to provide a one-time seed investment of <strong>$10,000 (ten thousand dollars)</strong> to the Operator upon signing this Agreement. Funds are to be delivered via PayPal to claimman@mail.com or by mutually agreed method.</p>
+
+  <h3>5.2 Nature of Agreement</h3>
+  <p>This Agreement is a Revenue Participation Agreement and does not convey any equity ownership, voting rights, board representation, or claim on business assets. The Investor is not a partner, shareholder, or officer of SmootherDrive. The Investor has no liability for business debts or obligations.</p>
+
+  <h3>5.3 Payment Terms</h3>
+  <p><strong>Phase 1 — Return of Principal:</strong> Beginning the first full calendar month after funds are received, the Operator shall pay the Investor <strong>10% of monthly net profit</strong> until the Investor has received a cumulative total of $10,000. At projected volumes (~2 pro installs/week), this is expected to occur within approximately 4 months.</p>
+
+  <p><strong>Phase 2 — Ongoing Profit Share:</strong> After the Investor's full $10,000 principal has been returned, the Operator shall pay the Investor <strong>5% of monthly net profit</strong> on an ongoing basis for the remaining term of this Agreement.</p>
+
+  <p><strong>Payments</strong> shall be made on or before the 15th of each calendar month for the prior month's net profit. Net profit is defined as gross revenue less cost of hardware, harness, and technician labor. Overhead-free by design — no rent, no salaried staff costs are deducted.</p>
+
+  <h3>5.4 Projected Investor Returns</h3>
+  <table>
+    <thead><tr><th>Period</th><th>Projected Payments to Investor</th><th>Running Total</th></tr></thead>
+    <tbody>
+      <tr><td>Months 1–4 (Phase 1)</td><td>~$10,000 (principal returned)</td><td>~$10,000</td></tr>
+      <tr><td>Months 5–12 (Phase 2, Year 1 tail)</td><td>~$10,500</td><td>~$20,500</td></tr>
+      <tr><td>Months 13–24 (Phase 2, Year 2)</td><td>~$35,000</td><td>~$55,500</td></tr>
+      <tr><td>Months 25–36 (Phase 2, Year 3)</td><td>~$79,000</td><td>~$134,500</td></tr>
+      <tr><td>Buyout at Month 36 (Section 5.5)</td><td>$20,000</td><td>~$154,500</td></tr>
+    </tbody>
+  </table>
+  <p><em>Figures above are projections only and are not guaranteed.</em></p>
+
+  <h3>5.5 Buyout Option</h3>
+  <p>At any time after <strong>36 months</strong> from the date of this Agreement, the Operator reserves the right to terminate this Agreement in full by making a one-time lump-sum buyout payment of <strong>$20,000 (twenty thousand dollars)</strong> to the Investor. Upon receipt of said payment, the Agreement is permanently terminated, all obligations cease, and the Investor retains no further claim to profit share or any other payments.</p>
+
+  <h3>5.6 Reporting</h3>
+  <p>The Operator shall provide the Investor with a brief monthly summary of units sold and net profit calculation along with each payment.</p>
+
+  <h3>5.7 Governing Law</h3>
+  <p>This Agreement shall be governed by the laws of the State of Texas. Any disputes shall be resolved through good-faith negotiation; if unresolved, through binding arbitration in Travis County, Texas.</p>
+
+  <h3>5.8 Entire Agreement</h3>
+  <p>This document constitutes the entire agreement between the parties regarding this investment and supersedes all prior verbal or written discussions. Amendments must be in writing and signed by both parties.</p>
+
+  <hr class="divider">
+
+  <!-- SIGNATURES -->
+  <h2>6. Signatures</h2>
+  <p>By signing below, both parties agree to all terms set forth in this Agreement.</p>
+
+  <div class="sig-block">
+    <div>
+      <div class="sig-line">Investor Signature</div>
+      <div class="sig-line">Printed Name: Nick ___________________________</div>
+      <div class="sig-line">Date: ___________________________</div>
     </div>
-    <div class="badge">Confidential · Investor Brief · 2026</div>
-    <h1>The <span>Driver Assist</span> Install Business<br>Nobody Has Built Yet</h1>
-    <p>We bring professional AI driver-assist to 325+ cars people already own. No new car. No monthly fees. Just a one-time install — and a business model that prints from day one.</p>
-    <div class="cover-stats">
-      <div class="stat"><span class="stat-val">$3,000</span><span class="stat-label">Pro Install Price</span></div>
-      <div class="stat"><span class="stat-val">~146%</span><span class="stat-label">Markup per Pro Install</span></div>
-      <div class="stat"><span class="stat-val">~32×</span><span class="stat-label">Year 1 ROI Projection</span></div>
-    </div>
-  </div>
-
-
-  <!-- SECTION 1: THE PRODUCT -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">1</div>
-      <div class="section-title">The Product — What We Actually Sell</div>
-    </div>
-    <p>We source, install, and support the <strong>SmootherDrive</strong> — a professional-grade AI-powered driver assist device that mounts to your windshield and upgrades any compatible vehicle with hands-free lane keeping, adaptive cruise control, and automated lane changes on highways. It runs <strong>OpenPilot</strong>, the highest-rated open-source driver assistance system in the world, trusted by 50,000+ drivers and rated #1 by Consumer Reports.</p>
-    <p>Think of it as a Tesla Autopilot-level upgrade for the car you already own — professionally installed in under an hour, completely reversible, and backed by a 30-day money-back guarantee.</p>
-
-    <div class="device-showcase">
-      <div>
-        <div class="device-img-wrap">
-          <img src="https://blog.comma.ai/img/comma-four/commafour_windshield.jpg" alt="SmootherDrive AI device installed on windshield">
-        </div>
-        <p style="font-size:0.78rem;color:#999;text-align:center;margin-top:0.5rem;">SmootherDrive — windshield-mounted, fits 325+ vehicles</p>
-      </div>
-      <div class="device-specs">
-        <h3>SmootherDrive — Key Specs</h3>
-        <div class="spec-row"><span class="spec-key">Processor</span><span class="spec-val">Qualcomm Snapdragon 845</span></div>
-        <div class="spec-row"><span class="spec-key">Cameras</span><span class="spec-val">Dual-cam 360° + narrow far-vision</span></div>
-        <div class="spec-row"><span class="spec-key">Storage</span><span class="spec-val">128 GB built-in / 10 hrs footage</span></div>
-        <div class="spec-row"><span class="spec-key">Connectivity</span><span class="spec-val">LTE + Wi-Fi, OTA updates</span></div>
-        <div class="spec-row"><span class="spec-key">Display</span><span class="spec-val">1.9" OLED, 300 PPI</span></div>
-        <div class="spec-row"><span class="spec-key">Compatible cars</span><span class="spec-val">325+ makes &amp; models</span></div>
-        <div class="spec-row"><span class="spec-key">Software</span><span class="spec-val">OpenPilot (open-source, free)</span></div>
-        <div class="spec-row"><span class="spec-key">Rated by</span><span class="spec-val">Consumer Reports — #1 driver assist</span></div>
-      </div>
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">📦</div>
-        <h4>DIY Kit — $2,100</h4>
-        <p>Device + harness shipped to customer. Step-by-step guide included. 30-day money-back guarantee.</p>
-      </div>
-      <div class="card featured">
-        <div class="card-icon">⭐</div>
-        <h4>Pro Install — $3,000</h4>
-        <p>We travel to the customer. Install, calibrate, and train in under an hour. Available in Austin, Houston, Dallas, San Antonio &amp; more.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔁</div>
-        <h4>Support Plan — $100/mo</h4>
-        <p>Recurring revenue. Priority support, OTA updates, remote diagnostics, and feature guidance.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION 2: THE MONEY -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">2</div>
-      <div class="section-title">How We Make Money — Unit Economics</div>
-    </div>
-    <p>No overhead. No storefront. Shipping is free. Every install is profitable from the very first sale — here's exactly what it costs to deliver each product:</p>
-
-    <table>
-      <thead><tr><th>Line Item</th><th>DIY — $2,100</th><th>Pro Install — $3,000</th></tr></thead>
-      <tbody>
-        <tr><td>Sale Price</td><td>$2,100</td><td>$3,000</td></tr>
-        <tr><td>SmootherDrive Hardware</td><td>−$1,000</td><td>−$1,000</td></tr>
-        <tr><td>Vehicle Harness</td><td>−$120</td><td>−$120</td></tr>
-        <tr><td>Tech Labor (install + calibration)</td><td>—</td><td>−$100</td></tr>
-        <tr class="highlight-row"><td><strong>Net Profit per Sale</strong></td><td class="green"><strong>$980</strong> &nbsp;(88% markup)</td><td class="green"><strong>$1,780</strong> &nbsp;(146% markup)</td></tr>
-      </tbody>
-    </table>
-    <p style="font-size:0.85rem;color:#888;">* Hardware sourced directly through comma.ai with free shipping. Harness cost varies $110–$140 by vehicle — averaged at $120. Commission-only sales reps are used selectively on rep-sourced leads; direct and website sales keep 100% of the markup above.</p>
-  </div>
-
-
-
-  <!-- SECTION 3: WHY NOW / MARKET -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">3</div>
-      <div class="section-title">Why Now — The Market Opportunity</div>
-    </div>
-    <p>The average American car is <strong>12.6 years old</strong>. Millions of people drive vehicles with zero driver assistance. Meanwhile, factory driver-assist packages on new cars cost <strong>$8,000–$12,000+</strong> — and require buying an entirely new vehicle. We give them the same technology for a fraction of the cost, installed in their driveway.</p>
-    <p>OpenPilot has been tested by real drivers for <strong>over 100 million miles</strong>. Consumer Reports ranked it <strong>#1 among all driver assistance systems</strong> — including Tesla Autopilot. The technology is proven. The market is untapped. Nobody is out there installing this professionally at scale.</p>
-
-    <table class="compare-table">
-      <thead><tr><th>Option</th><th class="us">Smoother Drive</th><th>New Car w/ FSD</th><th>Tesla Model 3</th></tr></thead>
-      <tbody>
-        <tr><td>Upfront Cost</td><td class="us">$2,100–$3,000</td><td>$45,000+</td><td>$40,000+</td></tr>
-        <tr><td>Monthly Fee</td><td class="us">$0 (optional $100)</td><td>$0</td><td>$99/mo (FSD sub)</td></tr>
-        <tr><td>Works on your current car</td><td class="us">✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
-        <tr><td>Reversible / Resellable</td><td class="us">✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
-        <tr><td>Rated #1 by Consumer Reports</td><td class="us">✅ OpenPilot</td><td>Varies</td><td>⚠️ Ranked below</td></tr>
-        <tr><td>Available in 325+ vehicles</td><td class="us">✅ Yes</td><td>❌ No</td><td>❌ No</td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <!-- SECTION 4: MARKETING -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">4</div>
-      <div class="section-title">How We'll Get Customers — Guerrilla Marketing</div>
-    </div>
-    <p>We don't need a big ad budget. We get customers the same way every successful local service business does — by being <strong>everywhere our customers already are</strong>. Here's our full marketing playbook:</p>
-
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">🔍</div>
-        <h4>SEO + AI Search</h4>
-        <p>Keyword-optimized site, blog, forum. Targeting "aftermarket driver assist" and long-tail car-specific searches.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📱</div>
-        <h4>Social Media</h4>
-        <p>Short-form install videos on TikTok, YouTube Shorts, Instagram Reels. Before/after demos convert extremely well.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎥</div>
-        <h4>YouTube / Rumble</h4>
-        <p>Long-form review and install content. Builds trust, drives organic traffic, establishes authority in the niche.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📍</div>
-        <h4>Signs &amp; Stickers</h4>
-        <p>Mobile advertising — vehicles with our sticker become rolling billboards. Yard signs in neighborhoods we've served.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🤝</div>
-        <h4>Meetups &amp; Networking</h4>
-        <p>Host and attend local car meetups, tech meetups, EV owner groups. Demonstrate the system live — closes on the spot.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🎯</div>
-        <h4>PPC &amp; Retargeting</h4>
-        <p>Low-cost Google/Facebook ads targeting car-owner demographics. Retarget site visitors with install videos.</p>
-      </div>
+    <div>
+      <div class="sig-line">Operator Signature</div>
+      <div class="sig-line">Printed Name: John Graham Jr</div>
+      <div class="sig-line">Date: ___________________________</div>
     </div>
   </div>
 
+  <p class="footnote">This document is confidential and intended solely for the named parties. All financial projections are estimates and not guarantees of future performance. &mdash; SmootherDrive &middot; Austin, TX &middot; April 2026</p>
 
-
-  <!-- SECTION 5: FINANCIAL PROJECTIONS -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">5</div>
-      <div class="section-title">Financial Projections — 3-Year Outlook</div>
-    </div>
-    <p>Conservative projections based on <strong>2 pro installs/week</strong> in Year 1, scaling with additional sales reps and service cities. Monthly support subscriptions add a compounding recurring revenue layer.</p>
-
-    <table>
-      <thead><tr><th>Metric</th><th>Year 1</th><th>Year 2</th><th>Year 3</th></tr></thead>
-      <tbody>
-        <tr><td>Pro Installs (units)</td><td>100</td><td>250</td><td>600</td></tr>
-        <tr><td>DIY Kits Sold</td><td>100</td><td>200</td><td>400</td></tr>
-        <tr><td>Support Subscribers (avg)</td><td>40</td><td>150</td><td>400</td></tr>
-        <tr><td>Gross Revenue</td><td>~$552,000</td><td>~$1,230,000</td><td>~$2,760,000</td></tr>
-        <tr><td>Total COGS (device, harness, labor — shipping free)</td><td>~$234,000</td><td>~$529,000</td><td>~$1,180,000</td></tr>
-        <tr class="highlight-row"><td><strong>Net Profit</strong></td><td class="green">~$318,000</td><td class="green">~$701,000</td><td class="green">~$1,580,000</td></tr>
-        <tr><td>Net Markup on Cost</td><td>~136%</td><td>~133%</td><td>~134%</td></tr>
-      </tbody>
-    </table>
-    <p style="font-size:0.85rem;color:#888;">* Support plan revenue calculated at $100/mo × average subscriber count. Projections are conservative — no franchise revenue included.</p>
-  </div>
-
-  <!-- CALLOUT: INVESTOR RETURNS -->
-  <div class="callout">
-    <h2>Your <span>$10,000</span> Investment</h2>
-    <p>Here's exactly what happens to your money and how you get it back — plus much more.</p>
-    <div class="callout-grid">
-      <div class="callout-stat"><span class="val">6 installs</span><span class="lbl">To fully recover the $10K seed investment</span></div>
-      <div class="callout-stat"><span class="val">~32×</span><span class="lbl">Projected Year 1 ROI on $10K seed</span></div>
-      <div class="callout-stat"><span class="val">~$154K</span><span class="lbl">Projected total payout over 3 years + $20K buyout</span></div>
-    </div>
-  </div>
-
-  <!-- SECTION 6: USE OF FUNDS -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">6</div>
-      <div class="section-title">Use of Funds — Where Your $10K Goes</div>
-    </div>
-
-    <div class="cards">
-      <div class="card">
-        <div class="card-icon">📦</div>
-        <h4>Initial Inventory — $5,000</h4>
-        <p>5 SmootherDrive units + harnesses pre-stocked. Ready to install from day one. No waiting for orders to ship.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🌐</div>
-        <h4>Marketing Launch — $2,500</h4>
-        <p>PPC campaigns, branded vehicle wrap, signage, business cards, and first 3 months of social content creation.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">⚙️</div>
-        <h4>Ops Setup — $1,500</h4>
-        <p>LLC formation, insurance, tools, install kit, scheduling software, and CRM for customer management.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🛡️</div>
-        <h4>Cash Reserve — $1,000</h4>
-        <p>Working capital buffer for returns, refunds, and unexpected early-stage costs.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECTION 7: DEAL TERMS -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">7</div>
-      <div class="section-title">Your Deal — Exactly How It Works</div>
-    </div>
-    <p>This is a <strong>Revenue Participation Agreement (RPA)</strong> — not equity. You are not a shareholder. No board seat, no voting rights, no claim on assets. You receive a defined percentage of monthly net profit in two phases, plus a guaranteed $20,000 lump-sum buyout when we choose to close it out.</p>
-
-    <table>
-      <thead><tr><th>Phase</th><th>When</th><th>What You Receive</th><th>Note</th></tr></thead>
-      <tbody>
-        <tr><td><strong>Phase 1 — Return of Principal</strong></td><td>Month 1 → until $10K returned</td><td>10% of monthly net profit</td><td>~4 months at projected pace</td></tr>
-        <tr><td><strong>Phase 2 — Ongoing Profit Share</strong></td><td>After principal is returned</td><td>5% of monthly net profit</td><td>Grows as the business scales</td></tr>
-        <tr class="highlight-row"><td><strong>Buyout (our right, after Month 36)</strong></td><td>Any time after Month 36</td><td class="green">$20,000 one-time payment</td><td>Agreement terminates permanently</td></tr>
-      </tbody>
-    </table>
-
-    <table style="margin-top:1rem;">
-      <thead><tr><th>Period</th><th>Payments</th><th>Running Total</th></tr></thead>
-      <tbody>
-        <tr><td>Months 1–4 (Phase 1)</td><td>$10,000 returned</td><td>$10,000</td></tr>
-        <tr><td>Months 5–12 (Phase 2, Year 1 tail)</td><td>~$10,500</td><td>~$20,500</td></tr>
-        <tr><td>Months 13–24 (Phase 2, Year 2)</td><td>~$35,000</td><td>~$55,500</td></tr>
-        <tr><td>Months 25–36 (Phase 2, Year 3)</td><td>~$79,000</td><td>~$134,500</td></tr>
-        <tr class="highlight-row"><td>Buyout exercised (Month 36+)</td><td>$20,000</td><td class="green">~$154,000 total</td></tr>
-      </tbody>
-    </table>
-
-    <div class="cards" style="margin-top:1.5rem;">
-      <div class="card featured">
-        <div class="card-icon">💰</div>
-        <h4>Money Back First</h4>
-        <p>Phase 1 returns your full $10,000 before profit share begins. Your principal is never at risk once payments start.</p>
-      </div>
-      <div class="card featured">
-        <div class="card-icon">📈</div>
-        <h4>5% Grows With Us</h4>
-        <p>Your 5% share applies to net profit — so as installs scale and franchises open, your monthly payment grows with it.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔑</div>
-        <h4>$20K Clean Exit</h4>
-        <p>After Month 36 we can close the agreement with a $20,000 buyout. One payment, everything done. No negotiation required.</p>
-      </div>
-    </div>
-
-    <div style="background:#fafff8;border:1.5px solid #00cc6a;border-radius:1rem;padding:1.25rem;margin-top:1.25rem;">
-      <p style="margin:0;font-size:0.9rem;color:#0a6632;"><strong>Plain English:</strong> You put in $10K. You get it back in about 4 months. Then you collect 5% of our net profit every month for 3 years — payments that grow significantly as we scale into new cities. When we're ready to close it out after year 3, we write you a $20,000 check and the deal is done. Total projected payout: <strong>~$154,000 on a $10,000 investment.</strong></p>
-    </div>
-  </div>
-
-  <!-- SECTION 8: GROWTH ROADMAP -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">7</div>
-      <div class="section-title">Growth Roadmap</div>
-    </div>
-
-    <div class="timeline">
-      <div class="tl-item">
-        <div class="tl-month">Month 1–2 — Launch</div>
-        <h4>Go live. First 10 installs.</h4>
-        <p>Site live, PayPal active, first sales reps onboarded. Targeting Austin metro. First installs generate social proof and reviews.</p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-month">Month 3–6 — Traction</div>
-        <h4>Expand to Houston, Dallas. Hit 40+ installs/mo.</h4>
-        <p>SEO traffic growing. YouTube channel launching. First batch of support subscribers. Hire 2nd tech installer.</p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-month">Month 7–12 — Scale</div>
-        <h4>100+ installs, $200K+ net profit.</h4>
-        <p>Full Texas coverage. Recurring support revenue hits $4,000+/mo. Investor receiving 5% profit share monthly, growing with revenue.</p>
-      </div>
-      <div class="tl-item">
-        <div class="tl-month">Year 2 — Franchise / License</div>
-        <h4>License the model. Open new markets.</h4>
-        <p>Franchise-ready playbook. License fee income. Potential for national operator network. System-wide revenue surpasses $1M.</p>
-      </div>
-    </div>
-  </div>
-
-
-
-  <!-- SECTION 8: WHY US -->
-  <div class="section">
-    <div class="section-label">
-      <div class="section-num">8</div>
-      <div class="section-title">Why Smoother Drive Wins</div>
-    </div>
-    <div class="cards">
-      <div class="card featured">
-        <div class="card-icon">🏁</div>
-        <h4>First Mover</h4>
-        <p>No established national competitor. The install service market for OpenPilot is wide open.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">💡</div>
-        <h4>Zero R&amp;D Risk</h4>
-        <p>We sell and install proven, open-source technology. No product development. No patents needed.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">📈</div>
-        <h4>Asset-Light</h4>
-        <p>No warehouse, no retail location. Operate from any city with a truck and a toolkit.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🔒</div>
-        <h4>Recurring Revenue</h4>
-        <p>Every install is a potential $100/mo subscriber — compounding MRR from month one.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">🌎</div>
-        <h4>Scalable Model</h4>
-        <p>Franchise or license the playbook. Each new city is a new revenue stream with minimal capital.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">✅</div>
-        <h4>Consumer Reports #1</h4>
-        <p>We sell a product independently ranked as the best driver assist system on the market. The product sells itself.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- FINAL CALLOUT / CTA -->
-  <div class="callout">
-    <div class="badge">Ready to Move</div>
-    <h2>Let's Build This <span>Together</span></h2>
-    <p>We're raising a single $10,000 seed investment to launch operations, stock initial inventory, and generate our first $200,000+ in net profit. The window to be first is now.</p>
-    <div class="callout-grid">
-      <div class="callout-stat"><span class="val">$10K</span><span class="lbl">Total raise — one investor</span></div>
-      <div class="callout-stat"><span class="val">~$76K</span><span class="lbl">Projected total payout over 3-year term + buyout</span></div>
-      <div class="callout-stat"><span class="val">$20K</span><span class="lbl">One-time buyout after Year 3 — done forever</span></div>
-    </div>
-  </div>
-
-  <!-- CONTACT -->
-  <div class="section" style="text-align:center;padding:2rem 0;">
-    <h3 style="font-size:1.4rem;font-weight:800;margin-bottom:0.5rem;">Ready to talk?</h3>
-    <p style="color:#666;margin-bottom:1.5rem;">Reach out to schedule a live demo of the system installed in a real vehicle.</p>
-    <a href="mailto:claimman@mail.com" style="display:inline-block;background:#00cc6a;color:#000;font-weight:700;font-size:1rem;padding:0.85rem 2.5rem;border-radius:999px;text-decoration:none;letter-spacing:0.02em;">📧 &nbsp;claimman@mail.com</a>
-    <br><br>
-    <a href="https://smootherdrive.netlify.app" style="font-size:0.9rem;color:#00aa55;text-decoration:none;">smootherdrive.netlify.app</a>
-  </div>
-
-  <!-- FOOTER -->
-  <div class="footer">
-    <p><strong>Smoother Drive</strong> &mdash; Austin, TX &mdash; April 2026</p>
-    <p style="margin-top:0.25rem;">This document is confidential and intended solely for the named recipient. All financial projections are forward-looking estimates and not guarantees of future performance.</p>
-  </div>
-
-</div><!-- end .page -->
+</div>
 </body>
 </html>
