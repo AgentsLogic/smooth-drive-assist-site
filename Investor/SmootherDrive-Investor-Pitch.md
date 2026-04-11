@@ -49,9 +49,9 @@ Leading OEM driver-assist systems cost **$8,000–$12,000+** and lock customers 
 | Hardware COGS (comma 4) | ~$1,000/unit + $110–$140 harness |
 | Net Profit per Pro Install | $1,780 (146% markup on direct cost) |
 | Year 1 Revenue | ~$552K |
-| Year 1 Net Profit | ~$314K |
+| Year 1 Net Profit | ~$316K |
 | Additional Revenue | Support plans ($100/mo), future franchise fees |
-| ROI on Seed | **~31x Year 1** |
+| ROI on Seed | **~32x Year 1** |
 
 ---
 

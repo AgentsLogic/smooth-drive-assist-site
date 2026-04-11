@@ -34,11 +34,11 @@ There is no franchise or install chain doing this at scale. We are building that
 
 | Product | Price | Our Cost | Profit Per Sale |
 |---------|-------|----------|----------------|
-| DIY Kit (shipped) | $2,100 | $1,145 | **$955 (83% markup)** |
+| DIY Kit (free shipping) | $2,100 | $1,120 | **$980 (88% markup)** |
 | Professional Install | $3,000 | $1,220 | **$1,780 (146% markup)** |
 | Monthly Support Plan | $100/mo | ~$0 | **~$100/mo** |
 
-No overhead, no storefront — we operate from the founder's home base. Every single sale is profitable from day one. Commission-only sales reps (15% rep + 5% manager) are used selectively on rep-sourced leads.
+No overhead, no storefront, no shipping costs — we operate from the founder's home base with hardware shipped free directly from comma.ai. Every single sale is profitable from day one. Commission-only sales reps are used selectively on rep-sourced leads.
 
 ---
 
@@ -50,8 +50,8 @@ No overhead, no storefront — we operate from the founder's home base. Every si
 | Professional installs | 120 | $360,000 |
 | **Total** | **200** | **$528,000** |
 
-**Projected net profit: ~$314,000**
-**That is a ~31x return on the $10,000 investment in Year 1.**
+**Projected net profit: ~$316,000**
+**That is a ~32x return on the $10,000 investment in Year 1.**
 
 These are conservative numbers. They do not include subscription revenue, referral fees, or future franchise income.
 
@@ -116,7 +116,7 @@ You can also invest smaller: **$1,000 for 1%**, up to 10% total this round.
 
 **Month 6:** 10–15 installs per month. Business is profitable and cash-flow positive.
 
-**Year 1:** ~$314,000 net profit projected. Your 10% = **$31,400 back on a $10,000 investment.**
+**Year 1:** ~$316,000 net profit projected. Your 10% = **$31,600 back on a $10,000 investment.**
 
 **Year 2:** Franchise fees kick in at $25,000 per territory. Revenue scales without proportional cost increase. Your 10% compounds.
 
@@ -137,7 +137,7 @@ You can also invest smaller: **$1,000 for 1%**, up to 10% total this round.
 
 ## The Ask
 
-> **$10,000. 10% equity. ~31x Year 1 ROI projection. Buyout option at 3x after 18 months.**
+> **$10,000. Revenue participation. ~32x Year 1 ROI projection. Buyout option at $20K after 3 years.**
 
 This is a ground-floor opportunity in a category with no established franchise player. We are building that player — starting in Texas, expanding nationwide.
 

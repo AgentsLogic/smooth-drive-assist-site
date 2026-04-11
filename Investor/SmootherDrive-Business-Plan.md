@@ -13,7 +13,7 @@ We launch in Austin, TX from the founder's home base, scale across Texas via a c
 
 | Metric | Target |
 |--------|--------|
-| Year 1 Net Profit | ~$314,000 (~31× ROI on $10K seed) |
+| Year 1 Net Profit | ~$316,000 (~32× ROI on $10K seed) |
 | Year 1 Revenue | ~$552,000 (200 units + support) |
 | Year 3 Revenue | $5M+ system-wide (with franchises) |
 | Net Markup per Pro Install | ~146% on direct costs (device + harness + labor) |
@@ -93,16 +93,15 @@ Every unit sold is attributed to a sales rep and a sales manager. All reps work 
 
 ### Unit Economics — Net Profit Per Sale
 
-No overhead. No storefront. Costs are device, harness, shipping, and labor only.
+No overhead. No storefront. Shipping is free. Direct costs are device, harness, and labor only.
 
 | Line Item | DIY — $2,100 | Pro Install — $3,000 |
 |-----------|-------------|----------------------|
 | Sale Price | $2,100 | $3,000 |
 | comma 4 device | −$1,000 | −$1,000 |
 | Vehicle harness | −$120 | −$120 |
-| Shipping/fulfillment | −$25 | — |
 | Tech labor (install + calibration) | — | −$100 |
-| **Net Profit** | **$955 (83% markup)** | **$1,780 (146% markup)** |
+| **Net Profit** | **$980 (88% markup)** | **$1,780 (146% markup)** |
 
 Every sale is profitable from day one. Commission-only sales reps (15% rep + 5% manager) are used selectively on rep-sourced leads — direct and website sales keep 100% of the markup above.
 
@@ -222,9 +221,9 @@ There is no fixed monthly overhead — we operate from the founder's home base w
 | Metric | DIY (80 units) | Pro Install (120 units) | Support (avg 20 subs) | Total |
 |--------|---------------|------------------------|----------------------|-------|
 | Revenue | $168,000 | $360,000 | $24,000 | **$552,000** |
-| COGS (device, harness, labor, shipping) | −$91,600 | −$146,400 | — | −$238,000 |
-| **Net Profit** | — | — | — | **~$314,000** |
-| **ROI on $10K seed** | — | — | — | **~31×** |
+| COGS (device, harness, labor — shipping free) | −$89,600 | −$146,400 | — | −$236,000 |
+| **Net Profit** | — | — | — | **~$316,000** |
+| **ROI on $10K seed** | — | — | — | **~32×** |
 
 > *Note: Conservative projections at under 2 installs/week average. At just 1 install/week (52 pro installs for the year), net profit is still ~$93,000 — more than 9× the seed investment back.*
 
