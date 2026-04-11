@@ -8,7 +8,7 @@
 
 Smoother Drive — a professional driver-assist installation platform using OpenPilot on official comma.ai hardware (comma 4) — is **highly feasible** in the booming $500B+ US auto aftermarket. ADAS calibration alone is a $1.2B market today, projected to reach $3B by 2030 (12.8% CAGR per KPMG).
 
-**Strengths:** Low barriers to entry ($10K startup), ~52% fully-loaded net markup per pro install, recurring revenue via optional support plans, viral guerrilla marketing potential in Austin, and no required monthly subscription (unlike competitors charging $100+/month).
+**Strengths:** Low barriers to entry ($10K startup), ~146% markup per pro install on direct costs (no overhead, no storefront), recurring revenue via optional support plans, viral guerrilla marketing potential in Austin, and no required monthly subscription (unlike competitors charging $100+/month).
 
 **Challenges:** Hardware sourcing quality, liability exposure, and franchising regulations across states.
 
@@ -83,7 +83,7 @@ Smoother Drive — a professional driver-assist installation platform using Open
 
 - Bootstrap from garage — zero overhead during Phase 1
 - Founder performs all installs personally until revenue supports hiring
-- ~$1,025 net profit per install (fully loaded) provides strong cushion
+- $1,780 net profit per pro install provides strong cushion
 
 ---
 
